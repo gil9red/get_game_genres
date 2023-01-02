@@ -146,7 +146,7 @@ if __name__ == "__main__":
 
             create_genre_translate.run()
 
-            wait(days=1)
+            wait(hours=1)
 
         except:
             log.exception('')
