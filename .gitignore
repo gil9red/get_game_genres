@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# For current project
+backup/
+database/
+errors/
+logs/
