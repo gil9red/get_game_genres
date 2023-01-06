@@ -7,7 +7,6 @@ __author__ = 'ipetrash'
 import unicodedata
 
 from abc import ABCMeta, abstractmethod
-from typing import Union
 from pathlib import Path
 
 from bs4 import BeautifulSoup
@@ -50,7 +49,7 @@ class BaseParser(metaclass=Singleton):
     def instance(cls, *args, **kwargs):
         return cls(*args, **kwargs)
 
-    def send_get(self, url: str, return_html=False, **kwargs) -> Union[requests.Response, BeautifulSoup]:
+    def send_get(self, url: str, return_html=False, **kwargs) -> requests.Response | BeautifulSoup:
         rs = self.session.get(url, **kwargs)
         self._on_check_response(rs)
 
@@ -59,7 +58,14 @@ class BaseParser(metaclass=Singleton):
 
         return rs
 
-    def send_post(self, url: str, data=None, json=None, return_html=False, **kwargs) -> Union[requests.Response, BeautifulSoup]:
+    def send_post(
+            self,
+            url: str,
+            data=None,
+            json=None,
+            return_html=False,
+            **kwargs
+    ) -> requests.Response | BeautifulSoup:
         rs = self.session.post(url, data=data, json=json, **kwargs)
         self._on_check_response(rs)
 

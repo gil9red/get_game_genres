@@ -4,8 +4,10 @@
 __author__ = 'ipetrash'
 
 
-import datetime as DT
 import re
+import time
+
+from datetime import datetime
 from pathlib import Path
 
 
@@ -49,7 +51,7 @@ def pretty_path(path: str) -> str:
 
 
 def get_current_datetime_str(fmt='%Y-%m-%d_%H%M%S') -> str:
-    return DT.datetime.now().strftime(fmt)
+    return datetime.now().strftime(fmt)
 
 
 # SOURCE: https://github.com/django/django/blob/03dbdfd9bbbbd0b0172aad648c6bbe3f39541137/django/utils/text.py#L221
@@ -88,8 +90,6 @@ TEST_GAMES = [
 def _common_test(get_game_genres, sleep=1, max_number=None):
     if max_number is None:
         max_number = len(TEST_GAMES)
-
-    import time
 
     for name in TEST_GAMES[:max_number]:
         print(f'Search {name!r}...')

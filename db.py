@@ -4,16 +4,16 @@
 __author__ = 'ipetrash'
 
 
-import datetime as DT
 import json
 import shutil
 
 from collections import defaultdict
-from typing import Iterable, Optional, Type
+from datetime import datetime
+from typing import Iterable, Type
 from pathlib import Path
 
 # pip install peewee
-from peewee import *
+from peewee import Field, TextField, Model, CharField, ForeignKeyField
 from playhouse.sqliteq import SqliteQueueDatabase
 
 from third_party.shorten import shorten
@@ -31,7 +31,7 @@ def db_create_backup(backup_dir=DIR / 'backup', date_fmt='%Y-%m-%d'):
     backup_path = Path(backup_dir)
     backup_path.mkdir(parents=True, exist_ok=True)
 
-    zip_name = DT.datetime.today().strftime(date_fmt)
+    zip_name = datetime.today().strftime(date_fmt)
     zip_name = backup_path / zip_name
 
     shutil.make_archive(
@@ -47,7 +47,7 @@ class ListField(Field):
     def python_value(self, value: str) -> list:
         return json.loads(value)
 
-    def db_value(self, value: Optional[Iterable]) -> str:
+    def db_value(self, value: Iterable | None) -> str:
         if value is not None:
             if isinstance(value, str):
                 return value
@@ -58,16 +58,6 @@ class ListField(Field):
         return json.dumps(value, ensure_ascii=False)
 
 
-# Simple Sqlite
-# db = SqliteDatabase(
-#     DB_FILE_NAME,
-#     pragmas={
-#         'foreign_keys': 1,        # Ensure foreign-key constraints are enforced.
-#         'journal_mode': 'wal',    # WAL-mode
-#         'cache_size': -1024 * 64  # 64MB page-cache
-#     }
-# )
-#
 # This working with multithreading
 # SOURCE: http://docs.peewee-orm.com/en/latest/peewee/playhouse.html#sqliteq
 db = SqliteQueueDatabase(
