@@ -41,56 +41,57 @@ if USE_FAKE_PARSER:
 log = get_logger()
 counter = AtomicCounter()
 
+MAX_TIMEOUT = 10                  # 10 seconds
+TIMEOUT_EVERY_N_GAMES = 50        # Every 50 games
+TIMEOUT_BETWEEN_N_GAMES = 3 * 60  # 3 minutes
+
+PAUSES = [
+    ('15 minutes', 15 * 60),
+    ('30 minutes', 30 * 60),
+    ('45 minutes', 45 * 60),
+    ('1 hour',     60 * 60),
+]
+
 
 def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5):
     try:
-        pauses = [
-            ('15 minutes', 15 * 60),
-            ('30 minutes', 30 * 60),
-            ('45 minutes', 45 * 60),
-            ('1 hour', 60 * 60),
-        ]
-        SITE_NAME = parser.get_site_name()
-        timeout = 3                       # 3 seconds
-        MAX_TIMEOUT = 10                  # 10 seconds
-        TIMEOUT_EVERY_N_GAMES = 50        # Every 50 games
-        TIMEOUT_BETWEEN_N_GAMES = 3 * 60  # 3 minutes
+        site_name = parser.get_site_name()
+        timeout = 3  # 3 seconds
         number = 0
 
         for game_name in games:
+            if Dump.exists(site_name, game_name):
+                continue
+
             try:
-                if Dump.exists(SITE_NAME, game_name):
-                    continue
-
                 number += 1
-
                 num_request = 0
 
                 while True:
                     num_request += 1
                     try:
                         if num_request == 1:
-                            log.info(f'#{number}. Search genres for {game_name!r} ({SITE_NAME})')
+                            log.info(f'#{number}. Search genres for {game_name!r} ({site_name})')
                         else:
-                            log.info(f'#{number}. Search genres for {game_name!r} ({SITE_NAME}). '
+                            log.info(f'#{number}. Search genres for {game_name!r} ({site_name}). '
                                      f'Attempts {num_request}/{max_num_request}')
 
                         genres = parser.get_game_genres(game_name)
-                        log.info(f'#{number}. Found genres {game_name!r} ({SITE_NAME}): {genres}')
+                        log.info(f'#{number}. Found genres {game_name!r} ({site_name}): {genres}')
 
-                        Dump.add(SITE_NAME, game_name, genres)
+                        Dump.add(site_name, game_name, genres)
                         counter.inc()
 
                         time.sleep(timeout)
                         break
 
                     except:
-                        log.exception(f'#{number}. Error on request {num_request}/{max_num_request} ({SITE_NAME})')
+                        log.exception(f'#{number}. Error on request {num_request}/{max_num_request} ({site_name})')
                         if num_request >= max_num_request:
-                            log.info(f'#{number}. Attempts ended for {game_name!r} ({SITE_NAME})')
+                            log.info(f'#{number}. Attempts ended for {game_name!r} ({site_name})')
                             break
 
-                        pause_text, pause_secs = pauses[num_request - 1]
+                        pause_text, pause_secs = PAUSES[num_request - 1]
                         log.info(f'#{number}. Pause: {pause_text} secs')
                         time.sleep(pause_secs)
 
@@ -105,7 +106,7 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5):
                     time.sleep(TIMEOUT_BETWEEN_N_GAMES)
 
             except:
-                log.exception(f'#{number}. Error by game {game_name!r} ({SITE_NAME})')
+                log.exception(f'#{number}. Error by game {game_name!r} ({site_name})')
 
     except:
         log.exception(f'Error:')
