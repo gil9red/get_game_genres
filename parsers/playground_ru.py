@@ -13,8 +13,7 @@ class PlaygroundRuParser(BaseParser):
 
     def _parse(self) -> list[str]:
         url = f'{self.base_url}/api/game.search?query={self.game_name}&include_addons=1'
-        data = self.send_get(url).json()
-
+        data: dict = self.send_get(url, return_json=True)
         for game in data:
             title = game['name']
             if not self.is_found_game(title):

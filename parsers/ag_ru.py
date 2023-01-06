@@ -40,9 +40,8 @@ class AgRuParser(BaseParser):
             page=1,
             key=key,
         )
-        rs = self.send_get(url, params=params, headers=headers)
-
-        for item in rs.json()['results']:
+        rs_json: dict = self.send_get(url, params=params, headers=headers, return_json=True)
+        for item in rs_json['results']:
             title = item['name']
             if not self.is_found_game(title):
                 continue

@@ -49,30 +49,48 @@ class BaseParser(metaclass=Singleton):
     def instance(cls, *args, **kwargs):
         return cls(*args, **kwargs)
 
-    def send_get(self, url: str, return_html=False, **kwargs) -> requests.Response | BeautifulSoup:
-        rs = self.session.get(url, **kwargs)
-        self._on_check_response(rs)
+    @classmethod
+    def parse_html(cls, data: str | bytes) -> BeautifulSoup:
+        return BeautifulSoup(data, 'html.parser')
 
+    @classmethod
+    def process_response(
+            cls,
+            rs: requests.Response,
+            return_html: bool = False,
+            return_json: bool = False,
+    ) -> BeautifulSoup | requests.Response | dict | list:
         if return_html:
-            return BeautifulSoup(rs.content, 'html.parser')
+            return cls.parse_html(rs.content)
+
+        if return_json:
+            return rs.json()
 
         return rs
+
+    def send_get(
+            self,
+            url: str,
+            return_html: bool = False,
+            return_json: bool = False,
+            **kwargs
+    ) -> requests.Response | BeautifulSoup | dict | list:
+        rs = self.session.get(url, **kwargs)
+        self._on_check_response(rs)
+        return self.process_response(rs, return_html=return_html, return_json=return_json)
 
     def send_post(
             self,
             url: str,
             data=None,
             json=None,
-            return_html=False,
+            return_html: bool = False,
+            return_json: bool = False,
             **kwargs
     ) -> requests.Response | BeautifulSoup:
         rs = self.session.post(url, data=data, json=json, **kwargs)
         self._on_check_response(rs)
-
-        if return_html:
-            return BeautifulSoup(rs.content, 'html.parser')
-
-        return rs
+        return self.process_response(rs, return_html=return_html, return_json=return_json)
 
     def _save_error_response(self, rs: requests.Response):
         Path(self._dir_errors).mkdir(parents=True, exist_ok=True)
