@@ -9,6 +9,7 @@ import importlib.util
 import sys
 
 from logging.handlers import RotatingFileHandler
+from inspect import isclass
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -43,10 +44,10 @@ def get_parsers() -> list[BaseParser]:
     for file_name in DIR_PARSERS.glob('*.py'):
         module = module_from_file(file_name)
         for attr in dir(module):
-            if not attr.endswith('_Parser'):
+            cls = getattr(module, attr)
+            if not isclass(cls) or not issubclass(cls, BaseParser) or cls is BaseParser:
                 continue
 
-            cls = getattr(module, attr)
             parser: BaseParser = cls.instance()
             if parser.get_site_name() not in IGNORE_SITE_NAMES:
                 items.append(parser)
