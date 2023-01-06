@@ -27,14 +27,14 @@ class VGTimesRuParser(BaseParser):
 
         rs_json = self.send_post(url_search, data=data, return_json=True)
         rs_html = rs_json['games_result']
+        if rs_html:
+            root = self.parse_html(rs_html)
+            for game_el in root.select('.game_search'):
+                title = game_el.select_one('.title').text.strip()
+                if not self.is_found_game(title):
+                    continue
 
-        root = self.parse_html(rs_html)
-        for game_el in root.select('.game_search'):
-            title = game_el.select_one('.title').text.strip()
-            if not self.is_found_game(title):
-                continue
-
-            return game_el.select_one('.genre').text.strip().split(', ')
+                return game_el.select_one('.genre').text.strip().split(', ')
 
         self.log_info(f'Not found game {self.game_name!r}')
         return []
