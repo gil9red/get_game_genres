@@ -8,7 +8,7 @@ import re
 from parsers.base_parser import BaseParser
 
 
-class AgRu_Parser(BaseParser):
+class AgRuParser(BaseParser):
     def _parse(self) -> list[str]:
         headers = {
             'Host': 'ag.ru',
@@ -57,7 +57,7 @@ class AgRu_Parser(BaseParser):
 
 
 def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
-    return AgRu_Parser(*args, **kwargs).get_game_genres(game_name)
+    return AgRuParser(*args, **kwargs).get_game_genres(game_name)
 
 
 if __name__ == '__main__':

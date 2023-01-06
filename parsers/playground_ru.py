@@ -8,7 +8,7 @@ from urllib.parse import urljoin
 from parsers.base_parser import BaseParser
 
 
-class PlaygroundRu_Parser(BaseParser):
+class PlaygroundRuParser(BaseParser):
     base_url = 'https://www.playground.ru'
 
     def _parse(self) -> list[str]:
@@ -36,7 +36,7 @@ class PlaygroundRu_Parser(BaseParser):
 
 
 def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
-    return PlaygroundRu_Parser(*args, **kwargs).get_game_genres(game_name)
+    return PlaygroundRuParser(*args, **kwargs).get_game_genres(game_name)
 
 
 if __name__ == '__main__':

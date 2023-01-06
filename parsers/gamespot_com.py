@@ -8,7 +8,7 @@ from urllib.parse import urljoin
 from parsers.base_parser import BaseParser
 
 
-class GamespotCom_Parser(BaseParser):
+class GamespotComParser(BaseParser):
     def _parse(self) -> list[str]:
         url = f'https://www.gamespot.com/search/?i=site&q={self.game_name}'
         root = self.send_get(url, return_html=True)
@@ -41,7 +41,7 @@ class GamespotCom_Parser(BaseParser):
 
 
 def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
-    return GamespotCom_Parser(*args, **kwargs).get_game_genres(game_name)
+    return GamespotComParser(*args, **kwargs).get_game_genres(game_name)
 
 
 if __name__ == '__main__':

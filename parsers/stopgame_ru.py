@@ -8,7 +8,7 @@ import re
 from parsers.base_parser import BaseParser
 
 
-class StopgameRu_Parser(BaseParser):
+class StopgameRuParser(BaseParser):
     def _parse(self) -> list[str]:
         url = f'https://stopgame.ru/search/?s={self.game_name}&where=games&sort=relevance'
         root = self.send_get(url, return_html=True)
@@ -31,7 +31,7 @@ class StopgameRu_Parser(BaseParser):
 
 
 def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
-    return StopgameRu_Parser(*args, **kwargs).get_game_genres(game_name)
+    return StopgameRuParser(*args, **kwargs).get_game_genres(game_name)
 
 
 if __name__ == '__main__':

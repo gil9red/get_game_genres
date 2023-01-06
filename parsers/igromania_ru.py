@@ -7,7 +7,7 @@ __author__ = 'ipetrash'
 from parsers.base_parser import BaseParser
 
 
-class IgromaniaRu_Parser(BaseParser):
+class IgromaniaRuParser(BaseParser):
     def _parse(self) -> list[str]:
         headers = {
             'X-Requested-With': 'XMLHttpRequest',
@@ -39,7 +39,7 @@ class IgromaniaRu_Parser(BaseParser):
 
 
 def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
-    return IgromaniaRu_Parser(*args, **kwargs).get_game_genres(game_name)
+    return IgromaniaRuParser(*args, **kwargs).get_game_genres(game_name)
 
 
 if __name__ == '__main__':

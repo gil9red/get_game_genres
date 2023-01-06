@@ -8,7 +8,7 @@ from urllib.parse import urljoin
 from parsers.base_parser import BaseParser
 
 
-class MetacriticCom_Parser(BaseParser):
+class MetacriticComParser(BaseParser):
     def _parse(self) -> list[str]:
         url = f'https://www.metacritic.com/search/game/{self.game_name}/results'
         root = self.send_get(url, return_html=True)
@@ -40,7 +40,7 @@ class MetacriticCom_Parser(BaseParser):
 
 
 def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
-    return MetacriticCom_Parser(*args, **kwargs).get_game_genres(game_name)
+    return MetacriticComParser(*args, **kwargs).get_game_genres(game_name)
 
 
 if __name__ == '__main__':

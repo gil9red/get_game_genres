@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from parsers.base_parser import BaseParser
 
 
-class SquarefactionRu_Parser(BaseParser):
+class SquarefactionRuParser(BaseParser):
     def _parse(self) -> list[str]:
         url = f'http://squarefaction.ru/main/search/games?q={self.game_name}'
         rs = self.send_get(url)
@@ -57,7 +57,7 @@ class SquarefactionRu_Parser(BaseParser):
 
 
 def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
-    return SquarefactionRu_Parser(*args, **kwargs).get_game_genres(game_name)
+    return SquarefactionRuParser(*args, **kwargs).get_game_genres(game_name)
 
 
 if __name__ == '__main__':

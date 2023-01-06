@@ -8,7 +8,7 @@ from urllib.parse import urljoin
 from parsers.base_parser import BaseParser
 
 
-class GamebombRu_Parser(BaseParser):
+class GamebombRuParser(BaseParser):
     base_url = 'https://gamebomb.ru'
 
     def _parse(self) -> list[str]:
@@ -71,7 +71,7 @@ class GamebombRu_Parser(BaseParser):
 
 
 def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
-    return GamebombRu_Parser(*args, **kwargs).get_game_genres(game_name)
+    return GamebombRuParser(*args, **kwargs).get_game_genres(game_name)
 
 
 if __name__ == '__main__':

@@ -8,7 +8,7 @@ import re
 from parsers.base_parser import BaseParser
 
 
-class GameguruRu_Parser(BaseParser):
+class GameguruRuParser(BaseParser):
     def _parse(self) -> list[str]:
         url_search = f'https://gameguru.ru/games/?search={self.game_name}'
 
@@ -46,7 +46,7 @@ class GameguruRu_Parser(BaseParser):
 
 
 def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
-    return GameguruRu_Parser(*args, **kwargs).get_game_genres(game_name)
+    return GameguruRuParser(*args, **kwargs).get_game_genres(game_name)
 
 
 if __name__ == '__main__':

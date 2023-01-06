@@ -8,7 +8,7 @@ from urllib.parse import urljoin
 from parsers.base_parser import BaseParser
 
 
-class IwgsGames_Parser(BaseParser):
+class IwgsGamesParser(BaseParser):
     def _parse(self) -> list[str]:
         url = 'https://iwgs.games/'
 
@@ -34,7 +34,7 @@ class IwgsGames_Parser(BaseParser):
 
 
 def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
-    return IwgsGames_Parser(*args, **kwargs).get_game_genres(game_name)
+    return IwgsGamesParser(*args, **kwargs).get_game_genres(game_name)
 
 
 if __name__ == '__main__':

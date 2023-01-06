@@ -8,7 +8,7 @@ from urllib.parse import urljoin
 from parsers.base_parser import BaseParser
 
 
-class StoreSteampoweredCom_Parser(BaseParser):
+class StoreSteampoweredComParser(BaseParser):
     def _parse(self) -> list[str]:
         # category1 = Игры
         url = 'https://store.steampowered.com/search/'
@@ -41,7 +41,7 @@ class StoreSteampoweredCom_Parser(BaseParser):
 
 
 def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
-    return StoreSteampoweredCom_Parser(*args, **kwargs).get_game_genres(game_name)
+    return StoreSteampoweredComParser(*args, **kwargs).get_game_genres(game_name)
 
 
 if __name__ == '__main__':

@@ -8,7 +8,7 @@ from urllib.parse import urljoin
 from parsers.base_parser import BaseParser
 
 
-class MobygamesCom_Parser(BaseParser):
+class MobygamesComParser(BaseParser):
     def _parse(self) -> list[str]:
         url = f'https://www.mobygames.com/search/quick?q={self.game_name}&p=3&search=Go&sFilter=1&sG=on'
         root = self.send_get(url, return_html=True)
@@ -38,7 +38,7 @@ class MobygamesCom_Parser(BaseParser):
 
 
 def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
-    return MobygamesCom_Parser(*args, **kwargs).get_game_genres(game_name)
+    return MobygamesComParser(*args, **kwargs).get_game_genres(game_name)
 
 
 if __name__ == '__main__':
