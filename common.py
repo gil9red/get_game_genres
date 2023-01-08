@@ -4,6 +4,7 @@
 __author__ = 'ipetrash'
 
 
+import json
 import re
 import time
 
@@ -103,3 +104,10 @@ IGNORE_SITE_NAMES = [
     'gamer_info_com',  # NOTE: Не работает то ли, из-за версии HTTP/2, то ли из-за российского IP
     'metacritic_com',  # NOTE: Не работает то ли, из-за версии HTTP/2, то ли из-за российского IP
 ]
+
+
+def load(file_name: str | Path) -> dict:
+    try:
+        return json.load(open(file_name, encoding='utf-8'))
+    except:
+        return dict()

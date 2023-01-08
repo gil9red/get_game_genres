@@ -8,10 +8,9 @@ import json
 import shutil
 from pathlib import Path
 
-from genre_translate_file.load import load, FILE_NAME_GENRE_TRANSLATE
+from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
 from common_utils import get_logger
-from common import get_current_datetime_str
-
+from common import get_current_datetime_str, load
 
 # Инструкция:
 # Из <genre_translate.json> скопировать в <merge_genre_translate.json> жанры, что еще не
@@ -39,7 +38,7 @@ shutil.copy(
 
 log.info('Load genres')
 
-genre_translate = load()
+genre_translate = load(FILE_NAME_GENRE_TRANSLATE)
 log.info(
     f'Current genres: {len(genre_translate)}. '
     f'Null genres: {sum(1 for v in genre_translate.values() if v is None)}'

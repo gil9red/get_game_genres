@@ -12,8 +12,8 @@ from pathlib import Path
 
 from db import Dump
 from common_utils import get_logger
-from common import get_current_datetime_str
-from genre_translate_file.load import load
+from common import get_current_datetime_str, load
+from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
 
 
 log = get_logger('generate_games.txt')
@@ -108,7 +108,7 @@ def run():
     new_game_by_genres = Dump.dump()
     log.info(f'new_game_by_genres ({len(new_game_by_genres)})')
 
-    genre_translate = load()
+    genre_translate = load(FILE_NAME_GENRE_TRANSLATE)
     log.info(f'genre_translate ({len(genre_translate)})')
 
     log.info('Finish loading cache.')
