@@ -17,7 +17,7 @@ log = get_logger('genre_translate.txt')
 def run(need_notify=True):
     log.info('Start load genres.')
 
-    genre_translate = load_json(FILE_NAME_GENRE_TRANSLATE)
+    genre_translate: dict = load_json(FILE_NAME_GENRE_TRANSLATE)
     is_first_run = not genre_translate
 
     log.info(f'Current genres: {len(genre_translate)}')

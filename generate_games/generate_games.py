@@ -101,13 +101,13 @@ def run():
 
     log.info('Loading cache...')
 
-    game_by_genres = load_json(FILE_NAME_GAMES)
+    game_by_genres: dict = load_json(FILE_NAME_GAMES)
     log.info(f'game_by_genres ({len(game_by_genres)})')
 
     new_game_by_genres = Dump.dump()
     log.info(f'new_game_by_genres ({len(new_game_by_genres)})')
 
-    genre_translate = load_json(FILE_NAME_GENRE_TRANSLATE)
+    genre_translate: dict = load_json(FILE_NAME_GENRE_TRANSLATE)
     log.info(f'genre_translate ({len(genre_translate)})')
 
     log.info('Finish loading cache.')

@@ -4,19 +4,16 @@
 __author__ = 'ipetrash'
 
 
-import json
-
 from db import Dump
 
 import peewee
 from playhouse.shortcuts import dict_to_model
 
+from common import load_json
 from export import FILE_NAME_EXPORT_JSON
 
 
-items = json.load(
-    open(FILE_NAME_EXPORT_JSON, encoding='utf-8')
-)
+items: list = load_json(FILE_NAME_EXPORT_JSON)
 print('items:', len(items))
 print('Dump count before import:', Dump.select().count())
 

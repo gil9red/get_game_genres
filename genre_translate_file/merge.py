@@ -37,7 +37,7 @@ shutil.copy(
 
 log.info('Load genres')
 
-genre_translate = load_json(FILE_NAME_GENRE_TRANSLATE)
+genre_translate: dict = load_json(FILE_NAME_GENRE_TRANSLATE)
 log.info(
     f'Current genres: {len(genre_translate)}. '
     f'Null genres: {sum(1 for v in genre_translate.values() if v is None)}'
@@ -48,7 +48,7 @@ if genre_translate:
 
     log.info('Load merge')
 
-    merge_genre_translate = load_json(FILE_NAME_MERGE_GENRE_TRANSLATE)
+    merge_genre_translate: dict = load_json(FILE_NAME_MERGE_GENRE_TRANSLATE)
     log.info(f'Current merged genres: {len(merge_genre_translate)}')
 
     for k, v in merge_genre_translate.items():
