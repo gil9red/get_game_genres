@@ -22,6 +22,7 @@
         "Post apocalypse",
         "Puzzle",
         "Quest",
+        "Sci-fi",
         "Survival horror"
     ],
     "3:30 AM at Floater's Cemetery": [
@@ -75,8 +76,10 @@
     "Ace Combat 3: Electrosphere": [
         "Action",
         "Arcade",
+        "First-person",
         "Flight",
         "Simulation",
+        "Third-person",
         "Wargame"
     ],
     "Adam Wolfe": [
@@ -135,7 +138,7 @@
         "Platformer",
         "Puzzle",
         "Survival horror",
-        "TPS"
+        "Third-person"
     ],
     "Alien Hallway 2": [
         "Action",
@@ -597,7 +600,7 @@
     "Battlefield 1": [
         "Action",
         "FPS",
-        "MMOFPS",
+        "MMO",
         "Strategy",
         "TPS"
     ],
@@ -613,7 +616,6 @@
         "Arcade",
         "FPS",
         "MMO",
-        "MMOFPS",
         "Shoot 'em up",
         "Strategy",
         "TPS"
@@ -622,7 +624,7 @@
         "Action",
         "Arcade",
         "FPS",
-        "MMOFPS",
+        "MMO",
         "Shoot 'em up"
     ],
     "Battlefield Hardline": [
@@ -636,7 +638,6 @@
         "Action-adventure",
         "FPS",
         "MMO",
-        "MMOFPS",
         "Strategy"
     ],
     "Battlefield Vietnam": [
@@ -1289,7 +1290,7 @@
         "Action",
         "Arcade",
         "FPS",
-        "MMOFPS"
+        "MMO"
     ],
     "Call of Duty: World at War": [
         "Action",
@@ -1309,7 +1310,7 @@
         "Action-adventure",
         "Arcade",
         "FPS",
-        "MMOFPS",
+        "MMO",
         "Western"
     ],
     "Call of Juarez: Bound in Blood": [
@@ -1712,7 +1713,7 @@
         "Action",
         "Arcade",
         "FPS",
-        "MMOFPS",
+        "MMO",
         "Open world",
         "Post apocalypse",
         "RTS",
@@ -3356,7 +3357,7 @@
         "Action",
         "Arcade",
         "Casual",
-        "Music/Rhythm",
+        "Music",
         "Platformer",
         "Sandbox"
     ],
@@ -3842,7 +3843,7 @@
         "Action/RPG",
         "FPS",
         "Fantasy",
-        "MMORPG",
+        "MMO",
         "Post apocalypse",
         "Sci-fi",
         "Survival horror",
@@ -4934,7 +4935,6 @@
         "Action",
         "Arcade",
         "Robot war",
-        "Robots",
         "Sci-fi",
         "Simulation",
         "TPS",
@@ -5335,7 +5335,7 @@
         "Action/RPG",
         "Hack and slash",
         "Post apocalypse",
-        "Robots",
+        "Robot war",
         "Sci-fi",
         "Third-person"
     ],
@@ -5803,7 +5803,8 @@
     ],
     "Plants vs. Zombies: Garden Warfare 2": [
         "Action",
-        "MMOFPS",
+        "FPS",
+        "MMO",
         "Shoot 'em up",
         "Strategy",
         "TPS"
@@ -6485,7 +6486,6 @@
         "Crafting",
         "FPS",
         "MMO",
-        "MMOFPS",
         "Open world",
         "Survival"
     ],
@@ -8316,9 +8316,7 @@
         "Arcade",
         "FPS",
         "MMO",
-        "MMOFPS",
         "Robot war",
-        "Robots",
         "Sci-fi",
         "Shoot 'em up"
     ],
@@ -8694,7 +8692,7 @@
     "Vanquish": [
         "Action",
         "Arcade",
-        "Robots",
+        "Robot war",
         "Sci-fi",
         "TPS"
     ],
