@@ -4,9 +4,12 @@
 __author__ = 'ipetrash'
 
 
+import logging
 import unicodedata
+import sys
 
 from abc import ABCMeta, abstractmethod
+from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
 from bs4 import BeautifulSoup
@@ -162,25 +165,23 @@ class BaseParser(metaclass=Singleton):
 
     # SOURCE: https://github.com/gil9red/SimplePyScripts/blob/163c91d6882b548c904ad40703dac00c0a64e5a2/logger_example.py#L7
     def _get_logger(self, log_format: str, encoding='utf-8'):
-        Path(self._dir_logs).mkdir(parents=True, exist_ok=True)
+        dir_logs = Path(self._dir_logs) / 'parsers'
+        dir_logs.mkdir(parents=True, exist_ok=True)
 
         site = self.get_site_name()
 
         name = 'parser_' + site
-        file = self._dir_logs + '/' + site + '.txt'
+        file = dir_logs / (site + '.txt')
 
-        import logging
         log = logging.getLogger(name)
         log.setLevel(logging.DEBUG)
 
         formatter = logging.Formatter(log_format)
 
-        from logging.handlers import RotatingFileHandler
         fh = RotatingFileHandler(file, maxBytes=10_000_000, backupCount=5, encoding=encoding)
         fh.setFormatter(formatter)
         log.addHandler(fh)
 
-        import sys
         sh = logging.StreamHandler(stream=sys.stdout)
         sh.setFormatter(formatter)
         log.addHandler(sh)
