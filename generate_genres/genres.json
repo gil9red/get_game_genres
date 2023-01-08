@@ -1,0 +1,314 @@
+{
+    "2D": {
+        "title": "",
+        "description": ""
+    },
+    "Action": {
+        "title": "",
+        "description": ""
+    },
+    "Action-adventure": {
+        "title": "",
+        "description": ""
+    },
+    "Action/RPG": {
+        "title": "",
+        "description": ""
+    },
+    "Adventure": {
+        "title": "",
+        "description": ""
+    },
+    "Arcade": {
+        "title": "",
+        "description": ""
+    },
+    "Battle royale": {
+        "title": "",
+        "description": ""
+    },
+    "Beat 'em up": {
+        "title": "",
+        "description": ""
+    },
+    "Billiards": {
+        "title": "",
+        "description": ""
+    },
+    "Board game": {
+        "title": "",
+        "description": ""
+    },
+    "Cardgame": {
+        "title": "",
+        "description": ""
+    },
+    "Casual": {
+        "title": "",
+        "description": ""
+    },
+    "City building": {
+        "title": "",
+        "description": ""
+    },
+    "Comics": {
+        "title": "",
+        "description": ""
+    },
+    "Crafting": {
+        "title": "",
+        "description": ""
+    },
+    "Cyberpunk": {
+        "title": "",
+        "description": ""
+    },
+    "Cycle": {
+        "title": "",
+        "description": ""
+    },
+    "Dungeon": {
+        "title": "",
+        "description": ""
+    },
+    "FPS": {
+        "title": "",
+        "description": ""
+    },
+    "Fantasy": {
+        "title": "",
+        "description": ""
+    },
+    "Fighting": {
+        "title": "",
+        "description": ""
+    },
+    "First-person": {
+        "title": "",
+        "description": ""
+    },
+    "Flight": {
+        "title": "",
+        "description": ""
+    },
+    "God game": {
+        "title": "",
+        "description": ""
+    },
+    "Hack and slash": {
+        "title": "",
+        "description": ""
+    },
+    "Hidden object": {
+        "title": "",
+        "description": ""
+    },
+    "Horror": {
+        "title": "",
+        "description": ""
+    },
+    "Humor": {
+        "title": "",
+        "description": ""
+    },
+    "Isometric": {
+        "title": "",
+        "description": ""
+    },
+    "JRPG": {
+        "title": "",
+        "description": ""
+    },
+    "Life simulation": {
+        "title": "",
+        "description": ""
+    },
+    "Logic": {
+        "title": "",
+        "description": ""
+    },
+    "MMO": {
+        "title": "",
+        "description": ""
+    },
+    "MOBA": {
+        "title": "",
+        "description": ""
+    },
+    "Management": {
+        "title": "",
+        "description": ""
+    },
+    "Metroidvania": {
+        "title": "",
+        "description": ""
+    },
+    "Motorcycle": {
+        "title": "",
+        "description": ""
+    },
+    "Movie": {
+        "title": "",
+        "description": ""
+    },
+    "Music": {
+        "title": "",
+        "description": ""
+    },
+    "Open world": {
+        "title": "",
+        "description": ""
+    },
+    "Pinball": {
+        "title": "",
+        "description": ""
+    },
+    "Platformer": {
+        "title": "",
+        "description": ""
+    },
+    "Point-and-click": {
+        "title": "",
+        "description": ""
+    },
+    "Post apocalypse": {
+        "title": "",
+        "description": ""
+    },
+    "Puzzle": {
+        "title": "",
+        "description": ""
+    },
+    "Quest": {
+        "title": "",
+        "description": ""
+    },
+    "RPG": {
+        "title": "",
+        "description": ""
+    },
+    "RTS": {
+        "title": "",
+        "description": ""
+    },
+    "Racing": {
+        "title": "",
+        "description": ""
+    },
+    "Rail shooter": {
+        "title": "",
+        "description": ""
+    },
+    "Retro": {
+        "title": "",
+        "description": ""
+    },
+    "Robot war": {
+        "title": "",
+        "description": ""
+    },
+    "Roguelike": {
+        "title": "",
+        "description": ""
+    },
+    "Runner": {
+        "title": "",
+        "description": ""
+    },
+    "Sandbox": {
+        "title": "",
+        "description": ""
+    },
+    "Sci-fi": {
+        "title": "",
+        "description": ""
+    },
+    "Shoot 'em up": {
+        "title": "",
+        "description": ""
+    },
+    "Shooter": {
+        "title": "",
+        "description": ""
+    },
+    "Simulation": {
+        "title": "",
+        "description": ""
+    },
+    "Sniper": {
+        "title": "",
+        "description": ""
+    },
+    "Space": {
+        "title": "",
+        "description": ""
+    },
+    "Sport": {
+        "title": "",
+        "description": ""
+    },
+    "Stealth": {
+        "title": "",
+        "description": ""
+    },
+    "Steampunk": {
+        "title": "",
+        "description": ""
+    },
+    "Strategy": {
+        "title": "",
+        "description": ""
+    },
+    "Survival": {
+        "title": "",
+        "description": ""
+    },
+    "Survival horror": {
+        "title": "",
+        "description": ""
+    },
+    "TBS": {
+        "title": "",
+        "description": ""
+    },
+    "TPS": {
+        "title": "",
+        "description": ""
+    },
+    "TRPG": {
+        "title": "",
+        "description": ""
+    },
+    "Tank": {
+        "title": "",
+        "description": ""
+    },
+    "Text": {
+        "title": "",
+        "description": ""
+    },
+    "Third-person": {
+        "title": "",
+        "description": ""
+    },
+    "Tower defense": {
+        "title": "",
+        "description": ""
+    },
+    "Visual novel": {
+        "title": "",
+        "description": ""
+    },
+    "Wargame": {
+        "title": "",
+        "description": ""
+    },
+    "Western": {
+        "title": "",
+        "description": ""
+    },
+    "Zombie": {
+        "title": "",
+        "description": ""
+    }
+}
