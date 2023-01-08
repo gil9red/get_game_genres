@@ -73,7 +73,7 @@
     },
     "FPS": {
         "title": "",
-        "description": ""
+        "description": "Шутер от первого лица / First-person shooter"
     },
     "Fantasy": {
         "title": "",
@@ -117,7 +117,7 @@
     },
     "JRPG": {
         "title": "",
-        "description": ""
+        "description": "Японская ролевая игра / Japanese Role-Playing Game"
     },
     "Life simulation": {
         "title": "",
@@ -129,11 +129,11 @@
     },
     "MMO": {
         "title": "",
-        "description": ""
+        "description": "Массовая многопользовательская онлайн-игра / Massively Multiplayer Online Game"
     },
     "MOBA": {
         "title": "",
-        "description": ""
+        "description": "Многопользовательская онлайновая боевая арена / Multiplayer Online Battle Arena"
     },
     "Management": {
         "title": "",
@@ -185,11 +185,11 @@
     },
     "RPG": {
         "title": "",
-        "description": ""
+        "description": "Ролевая игра / Role-Playing Game"
     },
     "RTS": {
         "title": "",
-        "description": ""
+        "description": "Стратегия в реальном времени / Real-time strategy"
     },
     "Racing": {
         "title": "",
@@ -269,15 +269,15 @@
     },
     "TBS": {
         "title": "",
-        "description": ""
+        "description": "Пошаговая стратегия / Turn-Based Strategy"
     },
     "TPS": {
         "title": "",
-        "description": ""
+        "description": "Шутер от третьего лица / Third-person shooter"
     },
     "TRPG": {
         "title": "",
-        "description": ""
+        "description": "Тактическая ролевая игра / Tactical role-playing game"
     },
     "Tank": {
         "title": "",
