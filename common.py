@@ -106,8 +106,17 @@ IGNORE_SITE_NAMES = [
 ]
 
 
-def load(file_name: str | Path) -> dict:
+def load_json(file_name: str | Path) -> dict:
     try:
         return json.load(open(file_name, encoding='utf-8'))
     except:
         return dict()
+
+
+def save_json(data: dict | list, file_name: str | Path):
+    json.dump(
+        data,
+        open(file_name, 'w', encoding='utf-8'),
+        ensure_ascii=False,
+        indent=4
+    )

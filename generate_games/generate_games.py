@@ -4,7 +4,6 @@
 __author__ = 'ipetrash'
 
 
-import json
 import shutil
 import re
 
@@ -12,7 +11,7 @@ from pathlib import Path
 
 from db import Dump
 from common_utils import get_logger
-from common import get_current_datetime_str, load
+from common import get_current_datetime_str, load_json, save_json
 from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
 
 
@@ -102,13 +101,13 @@ def run():
 
     log.info('Loading cache...')
 
-    game_by_genres = load(FILE_NAME_GAMES)
+    game_by_genres = load_json(FILE_NAME_GAMES)
     log.info(f'game_by_genres ({len(game_by_genres)})')
 
     new_game_by_genres = Dump.dump()
     log.info(f'new_game_by_genres ({len(new_game_by_genres)})')
 
-    genre_translate = load(FILE_NAME_GENRE_TRANSLATE)
+    genre_translate = load_json(FILE_NAME_GENRE_TRANSLATE)
     log.info(f'genre_translate ({len(genre_translate)})')
 
     log.info('Finish loading cache.')
@@ -153,12 +152,7 @@ def run():
 
     log.info(f'Saving to {FILE_NAME_GAMES}')
 
-    json.dump(
-        game_by_genres,
-        open(FILE_NAME_GAMES, 'w', encoding='utf-8'),
-        ensure_ascii=False,
-        indent=4
-    )
+    save_json(game_by_genres, FILE_NAME_GAMES)
 
     log.info('Finish!')
 

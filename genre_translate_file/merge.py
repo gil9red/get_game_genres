@@ -4,13 +4,12 @@
 __author__ = 'ipetrash'
 
 
-import json
 import shutil
 from pathlib import Path
 
 from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
+from common import get_current_datetime_str, load_json, save_json
 from common_utils import get_logger
-from common import get_current_datetime_str, load
 
 # Инструкция:
 # Из <genre_translate.json> скопировать в <merge_genre_translate.json> жанры, что еще не
@@ -38,7 +37,7 @@ shutil.copy(
 
 log.info('Load genres')
 
-genre_translate = load(FILE_NAME_GENRE_TRANSLATE)
+genre_translate = load_json(FILE_NAME_GENRE_TRANSLATE)
 log.info(
     f'Current genres: {len(genre_translate)}. '
     f'Null genres: {sum(1 for v in genre_translate.values() if v is None)}'
@@ -49,7 +48,7 @@ if genre_translate:
 
     log.info('Load merge')
 
-    merge_genre_translate = load(FILE_NAME_MERGE_GENRE_TRANSLATE)
+    merge_genre_translate = load_json(FILE_NAME_MERGE_GENRE_TRANSLATE)
     log.info(f'Current merged genres: {len(merge_genre_translate)}')
 
     for k, v in merge_genre_translate.items():
@@ -61,12 +60,8 @@ if genre_translate:
     log.info(f'New merged: {number}')
     log.info('Save merged genres')
 
-    json.dump(
-        genre_translate,
-        open(FILE_NAME_GENRE_TRANSLATE, 'w', encoding='utf-8'),
-        ensure_ascii=False,
-        indent=4
-    )
+    save_json(genre_translate, FILE_NAME_GENRE_TRANSLATE)
+
 else:
     log.info('Empty genres. Skip.')
 

@@ -4,12 +4,12 @@
 __author__ = 'ipetrash'
 
 
-import json
 from pathlib import Path
 
-from db import Dump
-
 from playhouse.shortcuts import model_to_dict
+
+from common import save_json
+from db import Dump
 
 
 DIR = Path(__file__).parent.resolve() / 'data'
@@ -22,9 +22,4 @@ if __name__ == '__main__':
     items = [model_to_dict(dump) for dump in Dump.select()]
     print(len(items))
 
-    json.dump(
-        items,
-        open(FILE_NAME_EXPORT_JSON, 'w', encoding='utf-8'),
-        ensure_ascii=False,
-        indent=4
-    )
+    save_json(items, FILE_NAME_EXPORT_JSON)

@@ -4,12 +4,10 @@
 __author__ = 'ipetrash'
 
 
-import json
-
 from db import Dump
+from common import load_json, save_json
 from common_utils import get_logger
 from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
-from common import load
 from third_party.add_notify_telegram import add_notify
 
 
@@ -19,7 +17,7 @@ log = get_logger('genre_translate.txt')
 def run(need_notify=True):
     log.info('Start load genres.')
 
-    genre_translate = load(FILE_NAME_GENRE_TRANSLATE)
+    genre_translate = load_json(FILE_NAME_GENRE_TRANSLATE)
     is_first_run = not genre_translate
 
     log.info(f'Current genres: {len(genre_translate)}')
@@ -41,12 +39,7 @@ def run(need_notify=True):
 
         log.info('Save genres')
 
-        json.dump(
-            genre_translate,
-            open(FILE_NAME_GENRE_TRANSLATE, 'w', encoding='utf-8'),
-            ensure_ascii=False,
-            indent=4
-        )
+        save_json(genre_translate, FILE_NAME_GENRE_TRANSLATE)
 
     else:
         log.info('No new genres')

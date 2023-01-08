@@ -7,13 +7,13 @@ __author__ = 'ipetrash'
 import json
 from pathlib import Path
 
-from common import load
+from common import load_json
 
 FILE_NAME_GENRE_TRANSLATE = str(Path(__file__).parent.resolve() / 'data' / 'genre_translate.json')
 
 
 if __name__ == '__main__':
-    genre_translate = load(FILE_NAME_GENRE_TRANSLATE)
+    genre_translate = load_json(FILE_NAME_GENRE_TRANSLATE)
     print(f'Genre_translate ({len(genre_translate)}): {genre_translate}')
     print()
 
