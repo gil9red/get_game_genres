@@ -16,23 +16,16 @@ from pathlib import Path
 from peewee import Field, TextField, Model, CharField, ForeignKeyField
 from playhouse.sqliteq import SqliteQueueDatabase
 
+import common
+from config import DB_DIR_NAME, DB_FILE_NAME, DIR_BACKUP
 from third_party.shorten import shorten
 
 
-DIR = Path(__file__).resolve().parent
-
-DB_DIR_NAME = DIR / 'database'
-DB_DIR_NAME.mkdir(parents=True, exist_ok=True)
-
-DB_FILE_NAME = str(DB_DIR_NAME / 'games.sqlite')
-
-
-def db_create_backup(backup_dir=DIR / 'backup', date_fmt='%Y-%m-%d'):
-    backup_path = Path(backup_dir)
-    backup_path.mkdir(parents=True, exist_ok=True)
+def db_create_backup(backup_dir: Path = DIR_BACKUP, date_fmt: str = '%Y-%m-%d'):
+    backup_dir.mkdir(parents=True, exist_ok=True)
 
     zip_name = datetime.today().strftime(date_fmt)
-    zip_name = backup_path / zip_name
+    zip_name = backup_dir / zip_name
 
     shutil.make_archive(
         zip_name,
@@ -101,7 +94,7 @@ class BaseModel(Model):
 
     def __str__(self):
         fields = []
-        for k, field in self._meta.fields.items():
+        for k, field in common.items():
             v = getattr(self, k)
 
             if isinstance(field, (TextField, CharField)):

@@ -15,12 +15,11 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 import requests
 
-from common import (
-    DIR_ERRORS, DIR_LOGS, NEED_LOGS, LOG_FORMAT, USER_AGENT,
-    pretty_path, get_uniques, get_current_datetime_str, smart_comparing_names,
-    get_valid_filename
-)
+from common import get_uniques, get_current_datetime_str
+from config import USER_AGENT, DIR_ERRORS, DIR_LOGS, NEED_LOGS, LOG_FORMAT
 from parsers import dump
+from third_party.get_valid_filename import get_valid_filename
+from third_party.smart_comparing_names import smart_comparing_names
 
 
 class Singleton(ABCMeta):
@@ -36,12 +35,18 @@ class Singleton(ABCMeta):
 class BaseParser(metaclass=Singleton):
     _site_name = ''
 
-    def __init__(self, need_logs=NEED_LOGS, dir_errors=DIR_ERRORS, dir_logs=DIR_LOGS, log_format=LOG_FORMAT):
+    def __init__(
+            self,
+            need_logs: bool = NEED_LOGS,
+            dir_errors: Path = DIR_ERRORS,
+            dir_logs: Path = DIR_LOGS,
+            log_format: str = LOG_FORMAT,
+    ):
         self.session = requests.session()
         self.session.headers['User-Agent'] = USER_AGENT
 
-        self._dir_errors = pretty_path(dir_errors)
-        self._dir_logs = pretty_path(dir_logs)
+        self._dir_errors = dir_errors
+        self._dir_logs = dir_logs
 
         self.game_name = ''
         self._need_logs = need_logs
@@ -96,11 +101,10 @@ class BaseParser(metaclass=Singleton):
         return self.process_response(rs, return_html=return_html, return_json=return_json)
 
     def _save_error_response(self, rs: requests.Response):
-        Path(self._dir_errors).mkdir(parents=True, exist_ok=True)
+        self._dir_errors.mkdir(parents=True, exist_ok=True)
 
-        file_name = pretty_path(
-            f'{self._dir_errors}/{self.get_site_name()}_{get_valid_filename(self.game_name)}_{get_current_datetime_str()}.dump'
-        )
+        safe_name = get_valid_filename(self.game_name)
+        file_name = self._dir_errors / f'{self.get_site_name()}_{safe_name}_{get_current_datetime_str()}.dump'
         self.log_debug(f'Save dump to {file_name}')
 
         data = dump.dump_all(rs, request_prefix=b'> ', response_prefix=b'< ')
@@ -163,9 +167,8 @@ class BaseParser(metaclass=Singleton):
         self.log_info(f'Genres: {genres}')
         return genres
 
-    # SOURCE: https://github.com/gil9red/SimplePyScripts/blob/163c91d6882b548c904ad40703dac00c0a64e5a2/logger_example.py#L7
-    def _get_logger(self, log_format: str, encoding='utf-8'):
-        dir_logs = Path(self._dir_logs) / 'parsers'
+    def _get_logger(self, log_format: str, encoding: str = 'utf-8'):
+        dir_logs = self._dir_logs / 'parsers'
         dir_logs.mkdir(parents=True, exist_ok=True)
 
         site = self.get_site_name()

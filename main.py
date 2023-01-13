@@ -9,11 +9,11 @@ import time
 from timeit import default_timer
 from threading import Thread
 
-from genre_translate_file import create as create_genre_translate
-
+from config import IGNORE_SITE_NAMES
+from common import get_games_list, get_logger
 from db import db_create_backup, Dump
-from common import IGNORE_SITE_NAMES
-from common_utils import get_parsers, get_games_list, get_logger, print_parsers
+from genre_translate_file import create as create_genre_translate
+from parsers import get_parsers, print_parsers
 from parsers.base_parser import BaseParser
 from third_party.atomic_counter import AtomicCounter
 from third_party.seconds_to_str import seconds_to_str

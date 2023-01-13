@@ -4,9 +4,8 @@
 __author__ = 'ipetrash'
 
 
+from common import load_json, save_json, get_logger
 from db import Dump
-from common import load_json, save_json
-from common_utils import get_logger
 from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
 from third_party.add_notify_telegram import add_notify
 

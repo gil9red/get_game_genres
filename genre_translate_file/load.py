@@ -9,7 +9,8 @@ from pathlib import Path
 
 from common import load_json
 
-FILE_NAME_GENRE_TRANSLATE = str(Path(__file__).parent.resolve() / 'data' / 'genre_translate.json')
+
+FILE_NAME_GENRE_TRANSLATE = Path(__file__).parent.resolve() / 'data' / 'genre_translate.json'
 
 
 if __name__ == '__main__':

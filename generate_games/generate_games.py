@@ -9,9 +9,8 @@ import re
 
 from pathlib import Path
 
+from common import get_current_datetime_str, load_json, save_json, get_logger
 from db import Dump
-from common_utils import get_logger
-from common import get_current_datetime_str, load_json, save_json
 from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
 
 

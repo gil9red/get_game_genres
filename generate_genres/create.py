@@ -6,12 +6,11 @@ __author__ = 'ipetrash'
 
 from pathlib import Path
 
-from common import load_json, save_json
-from common_utils import get_logger
+from common import load_json, save_json, get_logger
 from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
 
 
-FILE_NAME_GENRES = str(Path(__file__).parent.resolve() / 'genres.json')
+FILE_NAME_GENRES = Path(__file__).parent.resolve() / 'genres.json'
 
 
 log = get_logger('generate_genres.txt')

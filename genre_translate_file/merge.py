@@ -7,9 +7,8 @@ __author__ = 'ipetrash'
 import shutil
 from pathlib import Path
 
+from common import get_current_datetime_str, load_json, save_json, get_logger
 from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
-from common import get_current_datetime_str, load_json, save_json
-from common_utils import get_logger
 
 # Инструкция:
 # Из <genre_translate.json> скопировать в <merge_genre_translate.json> жанры, что еще не
@@ -27,7 +26,7 @@ log = get_logger('merge_genre_translate.txt')
 log.info('Start.')
 
 backup_file_name = (
-    FILE_NAME_BACKUP / f'{get_current_datetime_str()}_{Path(FILE_NAME_GENRE_TRANSLATE).name}'
+    FILE_NAME_BACKUP / f'{get_current_datetime_str()}_{FILE_NAME_GENRE_TRANSLATE.name}'
 )
 log.info(f'Save backup to: {backup_file_name}')
 shutil.copy(
