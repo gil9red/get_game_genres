@@ -6,19 +6,27 @@ __author__ = 'ipetrash'
 
 import json
 import shutil
+import time
 
 from collections import defaultdict
 from datetime import datetime
-from typing import Iterable, Type
+from typing import Iterable, Type, Optional
 from pathlib import Path
 
 # pip install peewee
 from peewee import Field, TextField, Model, CharField, ForeignKeyField
 from playhouse.sqliteq import SqliteQueueDatabase
 
-import common
 from config import DB_DIR_NAME, DB_FILE_NAME, DIR_BACKUP
 from third_party.shorten import shorten
+
+
+class NotDefinedParameterException(Exception):
+    def __init__(self, parameter_name: str):
+        self.parameter_name = parameter_name
+        text = f'Parameter "{self.parameter_name}" must be defined!'
+
+        super().__init__(text)
 
 
 def db_create_backup(backup_dir: Path = DIR_BACKUP, date_fmt: str = '%Y-%m-%d'):
@@ -94,7 +102,7 @@ class BaseModel(Model):
 
     def __str__(self):
         fields = []
-        for k, field in common.items():
+        for k, field in self._meta.fields.items():
             v = getattr(self, k)
 
             if isinstance(field, (TextField, CharField)):
@@ -128,7 +136,7 @@ class Dump(BaseModel):
         ).exists()
 
     @classmethod
-    def add(cls, site: str, name: str, genres: list):
+    def add(cls, site: str, name: str, genres: list[str]):
         if not cls.exists(site, name):
             cls.create(site=site, name=name, genres=genres)
 
@@ -191,8 +199,42 @@ class Dump(BaseModel):
         return repr(self)
 
 
+class Game(BaseModel):
+    name = TextField(primary_key=True)
+    genres = ListField()
+
+    @classmethod
+    def add_or_update(cls, name: str, genres: list[str]) -> 'Game':
+        genres = sorted(set(genres))
+
+        obj = cls.get_by(name)
+        if obj:
+            if sorted(obj.genres) != genres:
+                obj.genres = genres
+                obj.save()
+
+        else:
+            obj = cls.create(
+                name=name,
+                genres=genres,
+            )
+
+        return obj
+
+    @classmethod
+    def get_by(cls, name: str) -> Optional['Game']:
+        if not name or not name.strip():
+            raise NotDefinedParameterException(parameter_name='name')
+
+        return cls.get_or_none(name=name)
+
+
 db.connect()
 db.create_tables(BaseModel.get_inherited_models())
+
+# Задержка в 50мс, чтобы дать время на запуск SqliteQueueDatabase и создание таблиц
+# Т.к. в SqliteQueueDatabase запросы на чтение выполняются сразу, а на запись попадают в очередь
+time.sleep(0.050)
 
 
 if __name__ == '__main__':
