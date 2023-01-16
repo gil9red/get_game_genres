@@ -28,3 +28,5 @@ IGNORE_SITE_NAMES = [
     'gamer_info_com',  # NOTE: Не работает то ли, из-за версии HTTP/2, то ли из-за российского IP
     'metacritic_com',  # NOTE: Не работает то ли, из-за версии HTTP/2, то ли из-за российского IP
 ]
+
+PORT = 12123

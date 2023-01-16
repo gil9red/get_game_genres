@@ -15,6 +15,7 @@ from pathlib import Path
 
 # pip install peewee
 from peewee import Field, TextField, Model, CharField, ForeignKeyField
+from playhouse.shortcuts import model_to_dict
 from playhouse.sqliteq import SqliteQueueDatabase
 
 from config import DB_DIR_NAME, DB_FILE_NAME, DIR_BACKUP
@@ -99,6 +100,9 @@ class BaseModel(Model):
         if filters:
             query = query.filter(*filters)
         return query.count()
+
+    def to_dict(self) -> dict:
+        return model_to_dict(self)
 
     def __str__(self):
         fields = []
