@@ -7,6 +7,7 @@ __author__ = 'ipetrash'
 from pathlib import Path
 
 from common import load_json, save_json, get_logger
+from db import Genre
 from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
 
 
@@ -57,6 +58,13 @@ def run():
         save_json(new_genres, FILE_NAME_GENRES)
     else:
         log.info('Новых жанров нет. Сохранять не нужно')
+
+    for genre, info in new_genres.items():
+        Genre.add_or_update(
+            name=genre,
+            title=info['title'],
+            description=info['description']
+        )
 
     log.info("Финиш\n")
 
