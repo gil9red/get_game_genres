@@ -192,12 +192,6 @@ class Dump(BaseModel):
 
         return game_by_genres
 
-    def __repr__(self):
-        return f'Dump(name={self.name!r}, site={self.site!r}, genres={self.genres})'
-
-    def __str__(self):
-        return repr(self)
-
 
 class Game(BaseModel):
     name = TextField(primary_key=True)
