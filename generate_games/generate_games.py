@@ -10,7 +10,7 @@ import re
 from pathlib import Path
 
 from common import get_current_datetime_str, load_json, save_json, get_logger
-from db import Dump
+from db import Dump, Game
 from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
 
 
@@ -154,6 +154,9 @@ def run():
         save_json(game_by_genres, FILE_NAME_GAMES)
     else:
         log.info('No need to save')
+
+    for game, genres in game_by_genres.items():
+        Game.add_or_update(game, genres)
 
     log.info('Finish!')
 
