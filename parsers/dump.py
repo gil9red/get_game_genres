@@ -6,8 +6,6 @@ from requests import compat
 
 __all__ = ('dump_response', 'dump_all')
 
-import common
-
 HTTP_VERSIONS = {
     9: b'0.9',
     10: b'1.0',
@@ -72,7 +70,7 @@ def _dump_request_data(request, prefixes, bytearr, proxy_info=None):
     host_header = _coerce_to_bytes(headers.pop('Host', uri.netloc))
     bytearr.extend(prefix + b'Host: ' + host_header + b'\r\n')
 
-    for name, value in common.items():
+    for name, value in headers.items():
         bytearr.extend(prefix + _format_header(name, value))
 
     bytearr.extend(prefix + b'\r\n')
