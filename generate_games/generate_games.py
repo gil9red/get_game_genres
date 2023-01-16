@@ -149,9 +149,11 @@ def run():
 
     log.info(f'Finish search games. New games: {number}.')
 
-    log.info(f'Saving to {FILE_NAME_GAMES}')
-
-    save_json(game_by_genres, FILE_NAME_GAMES)
+    if number:
+        log.info(f'Saving to {FILE_NAME_GAMES}')
+        save_json(game_by_genres, FILE_NAME_GAMES)
+    else:
+        log.info('No need to save')
 
     log.info('Finish!')
 
