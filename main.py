@@ -9,11 +9,12 @@ import time
 from timeit import default_timer
 from threading import Thread
 
-from config import IGNORE_SITE_NAMES
-from common import get_games_list, get_logger
 from db import db_create_backup, Dump
+from common import IGNORE_SITE_NAMES
+from common_utils import get_parsers, get_games_list, get_logger, print_parsers
+from generate_games import generate_games as create_generate_games
+from generate_genres import create as create_generate_genres
 from genre_translate_file import create as create_genre_translate
-from parsers import get_parsers, print_parsers
 from parsers.base_parser import BaseParser
 from third_party.atomic_counter import AtomicCounter
 from third_party.seconds_to_str import seconds_to_str
@@ -149,6 +150,8 @@ if __name__ == "__main__":
                      f'Elapsed time: {seconds_to_str(default_timer() - t)}')
 
             create_genre_translate.run()
+            create_generate_genres.run()
+            create_generate_games.run()
 
             wait(hours=1)
 
