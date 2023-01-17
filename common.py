@@ -58,11 +58,12 @@ def get_games_list() -> list[str]:
 
     platforms = parse_played_games(content_gist)
 
-    games = []
+    all_games = []
     for categories in platforms.values():
-        games += categories['FINISHED_GAME'] + categories['FINISHED_WATCHED']
+        for games in categories.values():
+            all_games += games
 
-    return sorted(set(games))
+    return sorted(set(all_games))
 
 
 def get_logger(name: str = 'dump.txt', dir_logs: Path = DIR_LOGS, encoding='utf-8'):
