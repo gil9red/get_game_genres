@@ -9229,5 +9229,95 @@
         "Action-adventure",
         "FPS",
         "Stealth"
+    ],
+    "Deus Ex: Human Revolution": [
+        "Action-adventure",
+        "Action/RPG",
+        "Cyberpunk",
+        "FPS",
+        "Point-and-click",
+        "Sci-fi",
+        "Shoot 'em up",
+        "Stealth",
+        "TPS"
+    ],
+    "Drakensang: The Dark Eye": [
+        "RPG",
+        "TPS"
+    ],
+    "Final Fantasy Tactics": [
+        "Adventure",
+        "Fantasy",
+        "Isometric",
+        "RPG",
+        "Strategy",
+        "TBS",
+        "TRPG"
+    ],
+    "God of War: Ragnarök": [],
+    "Might & Magic Heroes VII": [
+        "Adventure",
+        "RPG",
+        "Strategy",
+        "Wargame"
+    ],
+    "No Man’s Sky": [
+        "Action-adventure",
+        "Action/RPG",
+        "FPS",
+        "MMO",
+        "Open world",
+        "Sandbox",
+        "Sci-fi",
+        "Simulation",
+        "Space",
+        "Survival"
+    ],
+    "Risen 2: Dark Waters": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Open world",
+        "Third-person"
+    ],
+    "Tales of Destiny": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "JRPG",
+        "Third-person"
+    ],
+    "Tales of Eternia": [
+        "Action-adventure",
+        "Action/RPG",
+        "JRPG"
+    ],
+    "The Legend of Zelda: Ocarina of Time": [
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Puzzle"
+    ],
+    "Wild Arms 2": [
+        "Adventure",
+        "JRPG",
+        "Puzzle",
+        "RPG",
+        "TBS",
+        "Third-person"
+    ],
+    "World of Warcraft": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "First-person",
+        "MMO",
+        "Open world",
+        "Third-person",
+        "Wargame"
+    ],
+    "Магия крови": [
+        "Action-adventure",
+        "Action/RPG"
     ]
 }
