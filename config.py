@@ -29,4 +29,4 @@ IGNORE_SITE_NAMES = [
     'metacritic_com',  # NOTE: Не работает то ли, из-за версии HTTP/2, то ли из-за российского IP
 ]
 
-PORT = 12123
+PORT = 5501
