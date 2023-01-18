@@ -14,11 +14,11 @@ from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
 FILE_NAME_GENRES = Path(__file__).parent.resolve() / 'genres.json'
 
 
-log = get_logger('generate_genres.txt')
+log = get_logger('generate_genres')
 
 
 def run():
-    log.info("Старт")
+    log.info("Запуск генератора жанров.")
 
     current_genres: dict = load_json(FILE_NAME_GENRES)
     log.info(f'Жанров: {len(current_genres)}')
@@ -66,7 +66,7 @@ def run():
             description=info['description']
         )
 
-    log.info("Финиш\n")
+    log.info("Завершено!\n")
 
 
 if __name__ == '__main__':

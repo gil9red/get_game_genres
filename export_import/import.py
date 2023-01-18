@@ -13,18 +13,18 @@ from common import load_json
 from export import FILE_NAME_EXPORT_JSON
 
 
-items: list = load_json(FILE_NAME_EXPORT_JSON)
-print('items:', len(items))
-print('Dump count before import:', Dump.select().count())
+items: list[dict] = load_json(FILE_NAME_EXPORT_JSON)
+print('Количество дампов в файле:', len(items))
+print('Количество дампов в базе:', Dump.select().count())
 
 for x in items:
     try:
         dump = dict_to_model(Dump, x)
         dump.save(force_insert=True)
-        print(f'Import {x}')
+        print(f'Импорт {x}')
 
     except peewee.IntegrityError as e:
         # Ignore error "UNIQUE constraint failed: dump.id"
         pass
 
-print('Current dump count:', Dump.select().count())
+print('Текущее количество дампов:', Dump.select().count())

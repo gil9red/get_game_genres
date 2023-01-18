@@ -51,10 +51,10 @@ TIMEOUT_EVERY_N_GAMES = 50        # Every 50 games
 TIMEOUT_BETWEEN_N_GAMES = 3 * 60  # 3 minutes
 
 PAUSES = [
-    ('15 minutes', 15 * 60),
-    ('30 minutes', 30 * 60),
-    ('45 minutes', 45 * 60),
-    ('1 hour',     60 * 60),
+    ('15 минут', 15 * 60),
+    ('30 минут', 30 * 60),
+    ('45 минут', 45 * 60),
+    ('1 час',    60 * 60),
 ]
 
 
@@ -75,14 +75,13 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5):
                 while True:
                     num_request += 1
                     try:
-                        if num_request == 1:
-                            log.info(f'#{number}. Search genres for {game_name!r} ({site_name})')
-                        else:
-                            log.info(f'#{number}. Search genres for {game_name!r} ({site_name}). '
-                                     f'Attempts {num_request}/{max_num_request}')
+                        message = f'#{number}. Поиск жанров для {game_name!r} ({site_name})'
+                        if num_request > 1:
+                            message = f'{message}. Попытки {num_request}/{max_num_request}'
+                        log.info(message)
 
                         genres = parser.get_game_genres(game_name)
-                        log.info(f'#{number}. Found genres {game_name!r} ({site_name}): {genres}')
+                        log.info(f'#{number}. Найдено жанров {game_name!r} ({site_name}): {genres}')
 
                         Dump.add(site_name, game_name, genres)
                         counter.inc()
@@ -91,13 +90,13 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5):
                         break
 
                     except:
-                        log.exception(f'#{number}. Error on request {num_request}/{max_num_request} ({site_name})')
+                        log.exception(f'#{number}. Ошибка при запросе {num_request}/{max_num_request} ({site_name})')
                         if num_request >= max_num_request:
-                            log.info(f'#{number}. Attempts ended for {game_name!r} ({site_name})')
+                            log.info(f'#{number}. Попытки закончились для {game_name!r} ({site_name})')
                             break
 
                         pause_text, pause_secs = PAUSES[num_request - 1]
-                        log.info(f'#{number}. Pause: {pause_text} secs')
+                        log.info(f'#{number}. Пауза на {pause_text}')
                         time.sleep(pause_secs)
 
                         timeout += 1
@@ -106,15 +105,15 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5):
 
                 if number % TIMEOUT_EVERY_N_GAMES == 0:
                     log.info(
-                        f'#{number}. Pause for every {TIMEOUT_EVERY_N_GAMES} games: {TIMEOUT_BETWEEN_N_GAMES} secs'
+                        f'#{number}. Пауза за каждые {TIMEOUT_EVERY_N_GAMES} игр: {TIMEOUT_BETWEEN_N_GAMES} секунд'
                     )
                     time.sleep(TIMEOUT_BETWEEN_N_GAMES)
 
             except:
-                log.exception(f'#{number}. Error by game {game_name!r} ({site_name})')
+                log.exception(f'#{number}. Ошибка с игрой {game_name!r} ({site_name})')
 
     except:
-        log.exception(f'Error:')
+        log.exception(f'Ошибка:')
 
 
 if __name__ == "__main__":
@@ -123,20 +122,20 @@ if __name__ == "__main__":
 
     while True:
         try:
-            log.info(f'Started')
+            log.info(f'Запуск')
             t = default_timer()
 
             db_create_backup()
 
             games = get_games_list()
-            log.info(f'Total games: {len(games)}')
+            log.info(f'Всего игр: {len(games)}')
 
             threads = []
             for parser in parsers:
                 threads.append(
                     Thread(target=run_parser, args=[parser, games])
                 )
-            log.info(f'Total parsers/threads: {len(threads)}')
+            log.info(f'Всего парсеров/потоков: {len(threads)}')
             log.info(f'Ignore parsers ({len(IGNORE_SITE_NAMES)}): {", ".join(IGNORE_SITE_NAMES)}')
 
             counter.value = 0
@@ -147,8 +146,11 @@ if __name__ == "__main__":
             for thread in threads:
                 thread.join()
 
-            log.info(f'Finished. Added games: {counter.value}. Total games: {Dump.select().count()}. '
-                     f'Elapsed time: {seconds_to_str(default_timer() - t)}')
+            log.info(
+                f'Добавлено игр: {counter.value}. Игр в базе: {Dump.select().count()}. '
+                f'Пройдено времени: {seconds_to_str(default_timer() - t)}'
+            )
+            log.info(f'Завершено.\n')
 
             create_genre_translate.run()
             create_generate_genres.run()

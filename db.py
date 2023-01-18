@@ -25,7 +25,7 @@ from third_party.shorten import shorten
 class NotDefinedParameterException(Exception):
     def __init__(self, parameter_name: str):
         self.parameter_name = parameter_name
-        text = f'Parameter "{self.parameter_name}" must be defined!'
+        text = f'Параметр "{self.parameter_name}" должен быть задан!'
 
         super().__init__(text)
 

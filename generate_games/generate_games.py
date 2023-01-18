@@ -49,7 +49,7 @@ def do_genres_compression(genres: list[str], need_log: bool = True) -> list[str]
             genres.append(target)
 
             if need_log:
-                log.info(f'Compress genres {src_1!r} and {src_2!r} -> {target!r}')
+                log.info(f'Сжатие жанров {src_1!r} и {src_2!r} -> {target!r}')
 
     for x in to_remove:
         genres.remove(x)
@@ -75,7 +75,7 @@ def remove_partial_duplicates(genres: list[str], need_log: bool = True) -> list[
         for genre in genres:
             if genre.lower() in words:
                 if need_log:
-                    log.info(f"Remove partial duplicate {genre!r} of {complex_genre!r}")
+                    log.info(f"Удаление частичного дубликата {genre!r} из {complex_genre!r}")
                 to_remove.append(genre)
 
     for genre in to_remove:
@@ -85,7 +85,7 @@ def remove_partial_duplicates(genres: list[str], need_log: bool = True) -> list[
 
 
 def run():
-    log.info('Start.')
+    log.info('Запуск генератора игр.')
 
     if FILE_NAME_GAMES.exists():
         backup_file_name = str(
@@ -95,24 +95,24 @@ def run():
             FILE_NAME_GAMES,
             backup_file_name
         )
-        log.info(f'Save backup to: {backup_file_name}')
+        log.info(f'Сохранение бекапа в: {backup_file_name}')
         log.info('')
 
-    log.info('Loading cache...')
+    log.info('Загрузка кэша...')
 
     game_by_genres: dict = load_json(FILE_NAME_GAMES)
-    log.info(f'game_by_genres ({len(game_by_genres)})')
+    log.info(f'Данных из файла игр: {len(game_by_genres)}')
 
     new_game_by_genres = Dump.dump()
-    log.info(f'new_game_by_genres ({len(new_game_by_genres)})')
+    log.info(f'Данных из базы: {len(new_game_by_genres)}')
 
     genre_translate: dict = load_json(FILE_NAME_GENRE_TRANSLATE)
-    log.info(f'genre_translate ({len(genre_translate)})')
+    log.info(f'Данных из файла трансляций: {len(genre_translate)}')
 
-    log.info('Finish loading cache.')
+    log.info('Завершение загрузки кэша.')
     log.info('')
 
-    log.info('Search games...')
+    log.info('Поиск игр...')
 
     number = 0
 
@@ -120,7 +120,7 @@ def run():
         if game in game_by_genres:
             continue
 
-        log.info(f'Added game {game!r} with genres ({len(genres)}): {genres}')
+        log.info(f'Добавлена игра {game!r} с жанрами ({len(genres)}): {genres}')
         number += 1
 
         new_genres = []
@@ -137,28 +137,28 @@ def run():
                 new_genres.extend(tr_genres)
 
             else:
-                log.warning(f'Unsupported type genres {tr_genres} from {x!r}')
+                log.warning(f'Неподдерживаемый тип жанров {tr_genres} из {x!r}')
 
         new_genres = do_genres_compression(new_genres)
         new_genres = remove_partial_duplicates(new_genres)
 
-        log.info(f'Successful translate genres ({len(new_genres)}): {new_genres}')
+        log.info(f'Завершение трансляции жанров ({len(new_genres)}): {new_genres}')
         game_by_genres[game] = new_genres
 
         log.info('')
 
-    log.info(f'Finish search games. New games: {number}.')
+    log.info(f'Завершение поиска игр. Новые игры: {number}.')
 
     if number:
-        log.info(f'Saving to {FILE_NAME_GAMES}')
+        log.info(f'Сохранение в {FILE_NAME_GAMES}')
         save_json(game_by_genres, FILE_NAME_GAMES)
     else:
-        log.info('No need to save')
+        log.info('Сохранять нет необходимости')
 
     for game, genres in game_by_genres.items():
         Game.add_or_update(game, genres)
 
-    log.info('Finish!')
+    log.info('Завершено!\n')
 
 
 if __name__ == '__main__':

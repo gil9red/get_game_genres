@@ -105,7 +105,7 @@ class BaseParser(metaclass=Singleton):
 
         safe_name = get_valid_filename(self.game_name)
         file_name = self._dir_errors / f'{self.get_site_name()}_{safe_name}_{get_current_datetime_str()}.dump'
-        self.log_debug(f'Save dump to {file_name}')
+        self.log_debug(f'Сохранение дампа в {file_name}')
 
         data = dump.dump_all(rs, request_prefix=b'> ', response_prefix=b'< ')
         with open(file_name, 'wb') as f:
@@ -115,7 +115,7 @@ class BaseParser(metaclass=Singleton):
         if rs.ok:
             return
 
-        self.log_warn(f'Something went wrong...: status_code: {rs.status_code}\n{rs.text}')
+        self.log_warn(f'Случилось что-то плохое...: статус HTTP: {rs.status_code}\n{rs.text}')
         self._save_error_response(rs)
 
     def log_debug(self, msg, *args, **kwargs):
@@ -149,7 +149,7 @@ class BaseParser(metaclass=Singleton):
 
     def get_game_genres(self, game_name: str) -> list[str]:
         self.game_name = game_name
-        self.log_info(f'Search {game_name!r}...')
+        self.log_info(f'Поиск {game_name!r}...')
 
         try:
             genres = self._parse()
@@ -161,10 +161,10 @@ class BaseParser(metaclass=Singleton):
             raise e
 
         except BaseException as e:
-            self.log_exception('Parsing error:')
+            self.log_exception('Ошибка при парсинге:')
             raise e
 
-        self.log_info(f'Genres: {genres}')
+        self.log_info(f'Жанров: {genres}')
         return genres
 
     def _get_logger(self, log_format: str, encoding: str = 'utf-8'):

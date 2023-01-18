@@ -56,7 +56,7 @@ def print_parsers(parsers: list, log=print):
         for parser in parsers
     ]
 
-    log(f'Parsers ({len(parsers)}):\n' + "\n".join(items))
+    log(f'Парсеры ({len(parsers)}):\n' + "\n".join(items))
 
 
 TEST_GAMES = [

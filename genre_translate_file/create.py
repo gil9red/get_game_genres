@@ -28,22 +28,22 @@ log = get_logger('genre_translate.txt')
 
 
 def run(need_notify=True):
-    log.info('Start load genres.')
+    log.info('Запуск трансляции жанров.')
 
     genre_translate: dict[str, list[str] | str | None] = load_json(FILE_NAME_GENRE_TRANSLATE)
     is_first_run = not genre_translate
 
-    log.info(f'Current genres: {len(genre_translate)}')
+    log.info(f'Жанров: {len(genre_translate)}')
 
     new_genres: dict[str, list[str] | str | None] = dict()
     for genre in Dump.get_all_genres():
         if genre not in genre_translate:
-            log.info(f'Added new genre: {genre!r}')
+            log.info(f'Добавлен новый жанр: {genre!r}')
 
             # Попробуем найти жанр среди существующих
             value = get_similar_genre(genre, genre_translate)
             if value:
-                log.info(f'Found value from similar genre: {genre!r}={value!r}')
+                log.info(f'Найдено значение из похожего жанра: {genre!r}={value!r}')
 
             genre_translate[genre] = value
             new_genres[genre] = value
@@ -57,7 +57,7 @@ def run(need_notify=True):
             else:
                 unknown_genres.append(k)
 
-        text = f"Added genres ({len(new_genres)}):"
+        text = f"Добавлены жанры ({len(new_genres)}):"
         if unknown_genres:
             text += '\n' + ', '.join(unknown_genres)
 
@@ -70,14 +70,13 @@ def run(need_notify=True):
         if not is_first_run and need_notify:
             add_notify(log.name, text)
 
-        log.info('Save genres')
-
+        log.info('Сохранение жанров')
         save_json(genre_translate, FILE_NAME_GENRE_TRANSLATE)
 
     else:
-        log.info('No new genres')
+        log.info('Нет новых жанров')
 
-    log.info('Finish!')
+    log.info('Завершено!\n')
 
 
 if __name__ == '__main__':
