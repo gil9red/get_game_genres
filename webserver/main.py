@@ -22,7 +22,7 @@ def get_games():
 @app.route("/api/game/<path:name>")
 def get_game(name: str):
     game = Game.get_by(name)
-    return jsonify(game.to_dict())
+    return jsonify(game.to_dict() if game else None)
 
 
 @app.route("/api/genres")
@@ -33,7 +33,7 @@ def get_genres():
 @app.route("/api/genre/<path:name>")
 def get_genre(name: str):
     genre = Genre.get_by(name)
-    return jsonify(genre.to_dict())
+    return jsonify(genre.to_dict() if genre else None)
 
 
 if __name__ == '__main__':

@@ -5,6 +5,8 @@ __author__ = 'ipetrash'
 
 
 import unittest
+import uuid
+
 from urllib.parse import quote
 
 import requests
@@ -53,6 +55,12 @@ class TestCase(unittest.TestCase):
 
             self.assertEqual(game, rs_json, f'Ошибка с {name!r} результат с сервера: {rs.text!r}')
 
+    def test_api_game_is_not_found(self):
+        name = uuid.uuid4().hex
+        url = f'{URL_GAME}/{quote(name)}'
+        rs = requests.get(url)
+        self.assertIsNone(rs.json())
+
     def test_api_genres(self):
         rs = requests.get(URL_GENRES)
         rs_json: list[dict] = rs.json()
@@ -80,6 +88,12 @@ class TestCase(unittest.TestCase):
                 raise Exception(f'Ошибка с {name!r} результат с сервера: {rs.text!r}')
 
             self.assertEqual(genre, rs_json, f'Ошибка с {name!r} результат с сервера: {rs.text!r}')
+
+    def test_api_genre_is_not_found(self):
+        name = uuid.uuid4().hex
+        url = f'{URL_GENRE}/{quote(name)}'
+        rs = requests.get(url)
+        self.assertIsNone(rs.json())
 
 
 if __name__ == '__main__':
