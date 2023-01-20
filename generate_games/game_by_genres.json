@@ -321,10 +321,30 @@
         "Quest",
         "Survival horror"
     ],
-    "Amnesia: The Dark Descent - A Late Night Drink (MOD)": [],
-    "Amnesia: The Dark Descent - Emma's Story (MOD)": [],
-    "Amnesia: The Dark Descent - The Grey Eagle (MOD)": [],
-    "Amnesia: The Dark Descent - White Night (MOD)": [],
+    "Amnesia: The Dark Descent - A Late Night Drink (MOD)": [
+        "Action-adventure",
+        "First-person",
+        "Quest",
+        "Survival horror"
+    ],
+    "Amnesia: The Dark Descent - Emma's Story (MOD)": [
+        "Action-adventure",
+        "First-person",
+        "Quest",
+        "Survival horror"
+    ],
+    "Amnesia: The Dark Descent - The Grey Eagle (MOD)": [
+        "Action-adventure",
+        "First-person",
+        "Quest",
+        "Survival horror"
+    ],
+    "Amnesia: The Dark Descent - White Night (MOD)": [
+        "Action-adventure",
+        "First-person",
+        "Quest",
+        "Survival horror"
+    ],
     "Among The Sleep": [
         "Action-adventure",
         "First-person",
@@ -501,11 +521,41 @@
         "Hack and slash",
         "TPS"
     ],
-    "Asura's Wrath: Episode 11.5 (DLC)": [],
-    "Asura's Wrath: Episode 15.5 (DLC)": [],
-    "Asura's Wrath: Episode Pack: Part IV (DLC)": [],
-    "Asura's Wrath: Lost Episode 1 (DLC)": [],
-    "Asura's Wrath: Lost Episode 2 (DLC)": [],
+    "Asura's Wrath: Episode 11.5 (DLC)": [
+        "Action-adventure",
+        "Beat 'em up",
+        "Fighting",
+        "Hack and slash",
+        "TPS"
+    ],
+    "Asura's Wrath: Episode 15.5 (DLC)": [
+        "Action-adventure",
+        "Beat 'em up",
+        "Fighting",
+        "Hack and slash",
+        "TPS"
+    ],
+    "Asura's Wrath: Episode Pack: Part IV (DLC)": [
+        "Action-adventure",
+        "Beat 'em up",
+        "Fighting",
+        "Hack and slash",
+        "TPS"
+    ],
+    "Asura's Wrath: Lost Episode 1 (DLC)": [
+        "Action-adventure",
+        "Beat 'em up",
+        "Fighting",
+        "Hack and slash",
+        "TPS"
+    ],
+    "Asura's Wrath: Lost Episode 2 (DLC)": [
+        "Action-adventure",
+        "Beat 'em up",
+        "Fighting",
+        "Hack and slash",
+        "TPS"
+    ],
     "Atlantis: The Lost Empire": [
         "Adventure"
     ],
@@ -734,7 +784,16 @@
         "Stealth",
         "Strategy"
     ],
-    "Beholder (Beta)": [],
+    "Beholder (Beta)": [
+        "Adventure",
+        "Life simulation",
+        "Logic",
+        "Puzzle",
+        "Quest",
+        "RPG",
+        "Stealth",
+        "Strategy"
+    ],
     "Beholder: Blissful Sleep (DLC)": [
         "Adventure",
         "Quest"
@@ -996,9 +1055,33 @@
         "Action/RPG",
         "Shooter"
     ],
-    "Borderlands 2: Headhunter 1: Bloody Harvest (DLC)": [],
-    "Borderlands 2: Headhunter 2: Wattle Gobbler (DLC)": [],
-    "Borderlands 2: Headhunter 3: Mercenary Day (DLC)": [],
+    "Borderlands 2: Headhunter 1: Bloody Harvest (DLC)": [
+        "Action/RPG",
+        "Arcade",
+        "Beat 'em up",
+        "FPS",
+        "Open world",
+        "Racing",
+        "Sci-fi"
+    ],
+    "Borderlands 2: Headhunter 2: Wattle Gobbler (DLC)": [
+        "Action/RPG",
+        "Arcade",
+        "Beat 'em up",
+        "FPS",
+        "Open world",
+        "Racing",
+        "Sci-fi"
+    ],
+    "Borderlands 2: Headhunter 3: Mercenary Day (DLC)": [
+        "Action/RPG",
+        "Arcade",
+        "Beat 'em up",
+        "FPS",
+        "Open world",
+        "Racing",
+        "Sci-fi"
+    ],
     "Borderlands 2: Mr. Torgue’s Campaign of Carnage (DLC)": [
         "Action/RPG",
         "Shooter"
@@ -1018,7 +1101,13 @@
         "FPS",
         "Sci-fi"
     ],
-    "Borderlands 3: Bounty of Blood (DLC)": [],
+    "Borderlands 3: Bounty of Blood (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "FPS",
+        "Sci-fi"
+    ],
     "Borderlands 3: Guns, Love, and Tentacles (DLC)": [
         "Action/RPG",
         "Shooter"
@@ -1048,7 +1137,14 @@
         "Sci-fi",
         "Shoot 'em up"
     ],
-    "Borderlands: The Pre-Sequel! - Claptastic Voyage and Ultimate Vault Hunter Upgrade Pack 2 (DLC)": [],
+    "Borderlands: The Pre-Sequel! - Claptastic Voyage and Ultimate Vault Hunter Upgrade Pack 2 (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "FPS",
+        "Sci-fi",
+        "Shoot 'em up"
+    ],
     "Borderlands: The Secret Armory of General Knoxx (DLC)": [
         "Action",
         "Shooter"
@@ -1875,9 +1971,18 @@
         "Action-adventure",
         "Action/RPG"
     ],
-    "Dark Souls II: Scholar of the First Sin - Crown of the Ivory King (DLC)": [],
-    "Dark Souls II: Scholar of the First Sin - Crown of the Old Iron King (DLC)": [],
-    "Dark Souls II: Scholar of the First Sin - Crown of the Sunken King (DLC)": [],
+    "Dark Souls II: Scholar of the First Sin - Crown of the Ivory King (DLC)": [
+        "Action-adventure",
+        "Action/RPG"
+    ],
+    "Dark Souls II: Scholar of the First Sin - Crown of the Old Iron King (DLC)": [
+        "Action-adventure",
+        "Action/RPG"
+    ],
+    "Dark Souls II: Scholar of the First Sin - Crown of the Sunken King (DLC)": [
+        "Action-adventure",
+        "Action/RPG"
+    ],
     "Dark Souls III": [
         "Action/RPG"
     ],
@@ -1893,14 +1998,24 @@
         "Fantasy",
         "Third-person"
     ],
-    "Dark Souls: Prepare to Die Edition - Artorias of the Abyss (DLC)": [],
+    "Dark Souls: Prepare to Die Edition - Artorias of the Abyss (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Third-person"
+    ],
     "Dark Souls: Remastered": [
         "Action/RPG",
         "Fantasy",
         "Horror",
         "Third-person"
     ],
-    "Dark Souls: Remastered - Artorias of the Abyss (DLC)": [],
+    "Dark Souls: Remastered - Artorias of the Abyss (DLC)": [
+        "Action/RPG",
+        "Fantasy",
+        "Horror",
+        "Third-person"
+    ],
     "Dark Void": [
         "Action-adventure",
         "Flight",
@@ -1979,10 +2094,38 @@
         "Platformer",
         "Roguelike"
     ],
-    "Dead Cells: Fatal Falls (DLC)": [],
-    "Dead Cells: Rise of the Giant (DLC)": [],
-    "Dead Cells: The Bad Seed (DLC)": [],
-    "Dead Cells: The Queen and the Sea (DLC)": [],
+    "Dead Cells: Fatal Falls (DLC)": [
+        "2D",
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Platformer",
+        "Roguelike"
+    ],
+    "Dead Cells: Rise of the Giant (DLC)": [
+        "2D",
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Platformer",
+        "Roguelike"
+    ],
+    "Dead Cells: The Bad Seed (DLC)": [
+        "2D",
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Platformer",
+        "Roguelike"
+    ],
+    "Dead Cells: The Queen and the Sea (DLC)": [
+        "2D",
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Platformer",
+        "Roguelike"
+    ],
     "Dead Effect": [
         "Action-adventure",
         "Arcade",
@@ -2592,7 +2735,13 @@
     "Dragon Age: Inquisition - Jaws of Hakkon (DLC)": [
         "RPG"
     ],
-    "Dragon Age: Inquisition - The Descent (DLC)": [],
+    "Dragon Age: Inquisition - The Descent (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Strategy",
+        "Third-person"
+    ],
     "Dragon Age: Inquisition - Trespasser (DLC)": [
         "Action/RPG"
     ],
@@ -2611,10 +2760,38 @@
         "Strategy",
         "Third-person"
     ],
-    "Dragon Age: Origins - Leliana's Song (DLC)": [],
-    "Dragon Age: Origins - The Darkspawn Chronicles (DLC)": [],
-    "Dragon Age: Origins - The Golems of Amgarrak (DLC)": [],
-    "Dragon Age: Origins - Witch Hunt (DLC)": [],
+    "Dragon Age: Origins - Leliana's Song (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Strategy",
+        "Third-person",
+        "Wargame"
+    ],
+    "Dragon Age: Origins - The Darkspawn Chronicles (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Strategy",
+        "Third-person",
+        "Wargame"
+    ],
+    "Dragon Age: Origins - The Golems of Amgarrak (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Strategy",
+        "Third-person",
+        "Wargame"
+    ],
+    "Dragon Age: Origins - Witch Hunt (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Strategy",
+        "Third-person",
+        "Wargame"
+    ],
     "Dragon's Dogma: Dark Arisen": [
         "Action-adventure",
         "Action/RPG",
@@ -2897,8 +3074,14 @@
         "Action-adventure",
         "Action/RPG"
     ],
-    "Fable II: Knothole Island (DLC)": [],
-    "Fable II: See the Future (DLC)": [],
+    "Fable II: Knothole Island (DLC)": [
+        "Action-adventure",
+        "Action/RPG"
+    ],
+    "Fable II: See the Future (DLC)": [
+        "Action-adventure",
+        "Action/RPG"
+    ],
     "Fable III": [
         "Action-adventure",
         "Action/RPG"
@@ -3058,7 +3241,14 @@
         "Shoot 'em up",
         "Sport"
     ],
-    "Far Cry Primal: Legend of the Mammoth (DLC)": [],
+    "Far Cry Primal: Legend of the Mammoth (DLC)": [
+        "Action-adventure",
+        "Arcade",
+        "FPS",
+        "Open world",
+        "Shoot 'em up",
+        "Sport"
+    ],
     "FarSky": [
         "Action-adventure",
         "Survival"
@@ -3079,9 +3269,30 @@
         "RPG",
         "TBS"
     ],
-    "Final Fantasy III (Remake)": [],
-    "Final Fantasy IV (Remake)": [],
-    "Final Fantasy IV: The After Years (Remake)": [],
+    "Final Fantasy III (Remake)": [
+        "Adventure",
+        "Arcade",
+        "Fantasy",
+        "JRPG",
+        "RPG",
+        "TBS"
+    ],
+    "Final Fantasy IV (Remake)": [
+        "Adventure",
+        "Casual",
+        "Fantasy",
+        "JRPG",
+        "RPG",
+        "TBS"
+    ],
+    "Final Fantasy IV: The After Years (Remake)": [
+        "Adventure",
+        "Casual",
+        "Fantasy",
+        "JRPG",
+        "RPG",
+        "TBS"
+    ],
     "Final Fantasy IX": [
         "Adventure",
         "Cardgame",
@@ -3145,7 +3356,10 @@
         "JRPG",
         "RPG"
     ],
-    "Final Fantasy X HD Remaster: Eternal Calm (DLC)": [],
+    "Final Fantasy X HD Remaster: Eternal Calm (DLC)": [
+        "JRPG",
+        "RPG"
+    ],
     "Final Fantasy XII": [
         "Action-adventure",
         "Fantasy",
@@ -3181,9 +3395,36 @@
         "TBS",
         "Third-person"
     ],
-    "Final Fantasy XIII-2 - Lightning's Story: Requiem of the Goddess (DLC)": [],
-    "Final Fantasy XIII-2 - Sazh's Story: Heads or Tails? (DLC)": [],
-    "Final Fantasy XIII-2 - Snow's Story: Perpetual Battlefield (DLC)": [],
+    "Final Fantasy XIII-2 - Lightning's Story: Requiem of the Goddess (DLC)": [
+        "Adventure",
+        "Fantasy",
+        "JRPG",
+        "RPG",
+        "RTS",
+        "Sci-fi",
+        "TBS",
+        "Third-person"
+    ],
+    "Final Fantasy XIII-2 - Sazh's Story: Heads or Tails? (DLC)": [
+        "Adventure",
+        "Fantasy",
+        "JRPG",
+        "RPG",
+        "RTS",
+        "Sci-fi",
+        "TBS",
+        "Third-person"
+    ],
+    "Final Fantasy XIII-2 - Snow's Story: Perpetual Battlefield (DLC)": [
+        "Adventure",
+        "Fantasy",
+        "JRPG",
+        "RPG",
+        "RTS",
+        "Sci-fi",
+        "TBS",
+        "Third-person"
+    ],
     "Final Fantasy XV": [
         "Action-adventure",
         "Action/RPG",
@@ -3193,8 +3434,24 @@
         "Sci-fi",
         "Third-person"
     ],
-    "Final Fantasy XV: Ardyn (DLC)": [],
-    "Final Fantasy XV: Comrades (DLC)": [],
+    "Final Fantasy XV: Ardyn (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "JRPG",
+        "Post apocalypse",
+        "Sci-fi",
+        "Third-person"
+    ],
+    "Final Fantasy XV: Comrades (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "JRPG",
+        "Post apocalypse",
+        "Sci-fi",
+        "Third-person"
+    ],
     "Final Fantasy XV: Episode Gladiolus (DLC)": [
         "Action-adventure",
         "Action/RPG"
@@ -3519,7 +3776,12 @@
         "Racing",
         "Wargame"
     ],
-    "Grand Theft Auto IV: Episodes from Liberty City (DLC)": [],
+    "Grand Theft Auto IV: Episodes from Liberty City (DLC)": [
+        "Action-adventure",
+        "Open world",
+        "Racing",
+        "Wargame"
+    ],
     "Grand Theft Auto V": [
         "Action-adventure",
         "FPS",
@@ -3576,7 +3838,13 @@
         "Hack and slash",
         "Isometric"
     ],
-    "Grim Dawn: Ashes of Malmouth (DLC)": [],
+    "Grim Dawn: Ashes of Malmouth (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Hack and slash",
+        "Isometric"
+    ],
     "Grim Dawn: Forgotten Gods (DLC)": [
         "Action/RPG"
     ],
@@ -3690,7 +3958,14 @@
         "Sci-fi",
         "Shoot 'em up"
     ],
-    "Half-Life 2 - Entropy : Zero (MOD)": [],
+    "Half-Life 2 - Entropy : Zero (MOD)": [
+        "Action-adventure",
+        "Arcade",
+        "FPS",
+        "Puzzle",
+        "Sci-fi",
+        "Shoot 'em up"
+    ],
     "Half-Life 2: Episode One": [
         "Action",
         "Arcade",
@@ -3708,8 +3983,22 @@
         "Sci-fi",
         "Shoot 'em up"
     ],
-    "Half-Life 2: Lost Coast (MOD)": [],
-    "Half-Life 2: Underhell (MOD)": [],
+    "Half-Life 2: Lost Coast (MOD)": [
+        "Action-adventure",
+        "Arcade",
+        "FPS",
+        "Puzzle",
+        "Sci-fi",
+        "Shoot 'em up"
+    ],
+    "Half-Life 2: Underhell (MOD)": [
+        "Action-adventure",
+        "Arcade",
+        "FPS",
+        "Puzzle",
+        "Sci-fi",
+        "Shoot 'em up"
+    ],
     "Half-Life: Alyx": [
         "Action-adventure",
         "Arcade",
@@ -3799,7 +4088,14 @@
         "Sci-fi",
         "Shoot 'em up"
     ],
-    "Hard Reset: Exile (DLC)": [],
+    "Hard Reset: Exile (DLC)": [
+        "Action",
+        "Arcade",
+        "Cyberpunk",
+        "FPS",
+        "Sci-fi",
+        "Shoot 'em up"
+    ],
     "Hard West": [
         "Action-adventure",
         "Action/RPG",
@@ -3811,7 +4107,17 @@
         "TBS",
         "Western"
     ],
-    "Hard West: Scars of Freedom (DLC)": [],
+    "Hard West: Scars of Freedom (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Isometric",
+        "Open world",
+        "RTS",
+        "Shooter",
+        "Strategy",
+        "TBS",
+        "Western"
+    ],
     "Harry Potter and the Chamber of Secrets": [
         "Action-adventure",
         "Arcade",
@@ -3971,8 +4277,24 @@
         "Shoot 'em up",
         "Stealth"
     ],
-    "Homefront: The Revolution - Aftermath (DLC)": [],
-    "Homefront: The Revolution - Beyond the Walls (DLC)": [],
+    "Homefront: The Revolution - Aftermath (DLC)": [
+        "Action-adventure",
+        "Arcade",
+        "FPS",
+        "Open world",
+        "Sci-fi",
+        "Shoot 'em up",
+        "Stealth"
+    ],
+    "Homefront: The Revolution - Beyond the Walls (DLC)": [
+        "Action-adventure",
+        "Arcade",
+        "FPS",
+        "Open world",
+        "Sci-fi",
+        "Shoot 'em up",
+        "Stealth"
+    ],
     "Homefront: The Revolution - The Voice of Freedom (DLC)": [
         "Shooter"
     ],
@@ -4104,8 +4426,20 @@
         "RPG",
         "Strategy"
     ],
-    "Icewind Dale: Enhanced Edition - Heart of Winter (DLC)": [],
-    "Icewind Dale: Enhanced Edition - Trials of the Luremaster (DLC)": [],
+    "Icewind Dale: Enhanced Edition - Heart of Winter (DLC)": [
+        "Adventure",
+        "Fantasy",
+        "Isometric",
+        "RPG",
+        "Strategy"
+    ],
+    "Icewind Dale: Enhanced Edition - Trials of the Luremaster (DLC)": [
+        "Adventure",
+        "Fantasy",
+        "Isometric",
+        "RPG",
+        "Strategy"
+    ],
     "Immortal Redneck": [
         "Action-adventure",
         "Arcade",
@@ -4324,7 +4658,15 @@
         "TBS",
         "Third-person"
     ],
-    "King's Bounty: Warriors of the North - Ice and Fire (DLC)": [],
+    "King's Bounty: Warriors of the North - Ice and Fire (DLC)": [
+        "Adventure",
+        "Beat 'em up",
+        "Fantasy",
+        "RPG",
+        "Strategy",
+        "TBS",
+        "Third-person"
+    ],
     "King's Field": [
         "Action-adventure",
         "Action/RPG",
@@ -4759,8 +5101,22 @@
         "Isometric",
         "Strategy"
     ],
-    "Magicka: Dungeons and Daemons (DLC)": [],
-    "Magicka: Dungeons and Gargoyles (DLC)": [],
+    "Magicka: Dungeons and Daemons (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Fantasy",
+        "Strategy",
+        "Third-person"
+    ],
+    "Magicka: Dungeons and Gargoyles (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Fantasy",
+        "Strategy",
+        "Third-person"
+    ],
     "Magicka: The Other Side of the Coin (DLC)": [
         "Action/RPG"
     ],
@@ -4845,7 +5201,12 @@
         "Sci-fi",
         "TPS"
     ],
-    "Mass Effect: Legendary Edition - Bring Down the Sky (DLC)": [],
+    "Mass Effect: Legendary Edition - Bring Down the Sky (DLC)": [
+        "Action/RPG",
+        "RTS",
+        "Sci-fi",
+        "TPS"
+    ],
     "Masters of Anima": [
         "Action-adventure",
         "Action/RPG",
@@ -5028,10 +5389,38 @@
         "Sci-fi",
         "Stealth"
     ],
-    "Metro Last Light Redux: Chronicles Pack (DLC)": [],
-    "Metro Last Light Redux: Developer Pack (DLC)": [],
-    "Metro Last Light Redux: Faction Pack (DLC)": [],
-    "Metro Last Light Redux: Tower Pack (DLC)": [],
+    "Metro Last Light Redux: Chronicles Pack (DLC)": [
+        "Action",
+        "Arcade",
+        "FPS",
+        "Post apocalypse",
+        "Sci-fi",
+        "Stealth"
+    ],
+    "Metro Last Light Redux: Developer Pack (DLC)": [
+        "Action",
+        "Arcade",
+        "FPS",
+        "Post apocalypse",
+        "Sci-fi",
+        "Stealth"
+    ],
+    "Metro Last Light Redux: Faction Pack (DLC)": [
+        "Action",
+        "Arcade",
+        "FPS",
+        "Post apocalypse",
+        "Sci-fi",
+        "Stealth"
+    ],
+    "Metro Last Light Redux: Tower Pack (DLC)": [
+        "Action",
+        "Arcade",
+        "FPS",
+        "Post apocalypse",
+        "Sci-fi",
+        "Stealth"
+    ],
     "Metroid Prime": [
         "Action-adventure",
         "FPS",
@@ -5056,7 +5445,13 @@
         "Open world",
         "Third-person"
     ],
-    "Middle-earth: Shadow of Mordor - Lord of the Hunt (DLC)": [],
+    "Middle-earth: Shadow of Mordor - Lord of the Hunt (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Open world",
+        "Third-person"
+    ],
     "Middle-earth: Shadow of Mordor - The Bright Lord (DLC)": [
         "Action",
         "Open world"
@@ -5172,7 +5567,12 @@
         "Fighting",
         "Sci-fi"
     ],
-    "Mortal Kombat 11: Aftermath (DLC)": [],
+    "Mortal Kombat 11: Aftermath (DLC)": [
+        "Action-adventure",
+        "Arcade",
+        "Fighting",
+        "Sci-fi"
+    ],
     "Mortal Kombat 3": [
         "2D",
         "Action",
@@ -5514,7 +5914,16 @@
         "Tower defense",
         "Wargame"
     ],
-    "Orcs Must Die! - Lost Adventures (DLC)": [],
+    "Orcs Must Die! - Lost Adventures (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "RTS",
+        "Strategy",
+        "Third-person",
+        "Tower defense",
+        "Wargame"
+    ],
     "Ori and the Blind Forest": [
         "2D",
         "Action-adventure",
@@ -5628,7 +6037,13 @@
         "Action",
         "Shooter"
     ],
-    "Painkiller: Hell & Damnation - Demonic Vacation at the Blood Sea (DLC)": [],
+    "Painkiller: Hell & Damnation - Demonic Vacation at the Blood Sea (DLC)": [
+        "Action",
+        "Arcade",
+        "FPS",
+        "Fantasy",
+        "Shoot 'em up"
+    ],
     "Painkiller: Hell & Damnation - Operation \"Zombie Bunker\" (DLC)": [
         "Action"
     ],
@@ -5764,12 +6179,24 @@
     "Pillars of Eternity II: Deadfire": [
         "RPG"
     ],
-    "Pillars of Eternity II: Deadfire - Beast of Winter (DLC)": [],
-    "Pillars of Eternity II: Deadfire - Seeker, Slayer, Survivor (DLC)": [],
+    "Pillars of Eternity II: Deadfire - Beast of Winter (DLC)": [
+        "RPG"
+    ],
+    "Pillars of Eternity II: Deadfire - Seeker, Slayer, Survivor (DLC)": [
+        "RPG"
+    ],
     "Pillars of Eternity II: Deadfire - The Forgotten Sanctum (DLC)": [
         "RPG"
     ],
-    "Pillars of Eternity: Champion Edition Upgrade Pack (DLC)": [],
+    "Pillars of Eternity: Champion Edition Upgrade Pack (DLC)": [
+        "Adventure",
+        "Fantasy",
+        "Isometric",
+        "RPG",
+        "RTS",
+        "Strategy",
+        "Third-person"
+    ],
     "Pillars of Eternity: The White March Part I (DLC)": [
         "Adventure",
         "RPG"
@@ -5860,7 +6287,11 @@
         "Horror",
         "Puzzle"
     ],
-    "Poppy Playtime: Chapter 2 (DLC)": [],
+    "Poppy Playtime: Chapter 2 (DLC)": [
+        "Action-adventure",
+        "Horror",
+        "Puzzle"
+    ],
     "Portal": [
         "Action-adventure",
         "Arcade",
@@ -5907,12 +6338,24 @@
         "Action",
         "Shooter"
     ],
-    "Postal 2: Happy Night (DLC)": [],
+    "Postal 2: Happy Night (DLC)": [
+        "Action-adventure",
+        "Arcade",
+        "FPS",
+        "Humor",
+        "Shoot 'em up"
+    ],
     "Postal 2: Paradise Lost (DLC)": [
         "Action-adventure",
         "Shooter"
     ],
-    "Postal 2: Штопор жжот (DLC)": [],
+    "Postal 2: Штопор жжот (DLC)": [
+        "Action-adventure",
+        "Arcade",
+        "FPS",
+        "Humor",
+        "Shoot 'em up"
+    ],
     "Postal: Brain Damaged": [
         "Action",
         "FPS",
@@ -6214,8 +6657,14 @@
         "Action",
         "Horror"
     ],
-    "Resident Evil 2 / Biohazard RE:2: The 4th Survivor (DLC)": [],
-    "Resident Evil 2 / Biohazard RE:2: The Ghost Survivors (DLC)": [],
+    "Resident Evil 2 / Biohazard RE:2: The 4th Survivor (DLC)": [
+        "Action",
+        "Horror"
+    ],
+    "Resident Evil 2 / Biohazard RE:2: The Ghost Survivors (DLC)": [
+        "Action",
+        "Horror"
+    ],
     "Resident Evil 2 Remake / Biohazard RE:2": [],
     "Resident Evil 2 Remake / Biohazard RE:2 - The 4th Survivor (DLC)": [],
     "Resident Evil 2 Remake / Biohazard RE:2 - The Ghost Survivors (DLC)": [],
@@ -6246,7 +6695,12 @@
         "TPS",
         "Zombie"
     ],
-    "Resident Evil 5: Desperate Escape (DLC)": [],
+    "Resident Evil 5: Desperate Escape (DLC)": [
+        "Action-adventure",
+        "Survival horror",
+        "TPS",
+        "Zombie"
+    ],
     "Resident Evil 5: Lost in Nightmares (DLC)": [
         "Action",
         "Shooter"
@@ -6409,7 +6863,12 @@
     "Rise of the Tomb Raider - Cold Darkness Awakened (DLC)": [
         "Action"
     ],
-    "Rise of the Tomb Raider - Endurance Mode (DLC)": [],
+    "Rise of the Tomb Raider - Endurance Mode (DLC)": [
+        "Action-adventure",
+        "Open world",
+        "Platformer",
+        "TPS"
+    ],
     "Risen": [
         "Action-adventure",
         "Action/RPG",
@@ -6777,7 +7236,13 @@
         "Sandbox",
         "Sci-fi"
     ],
-    "Serious Sam 3: BFE - Jewel of the Nile (DLC)": [],
+    "Serious Sam 3: BFE - Jewel of the Nile (DLC)": [
+        "Action",
+        "Arcade",
+        "FPS",
+        "Sandbox",
+        "Sci-fi"
+    ],
     "Serious Sam 3: Jewel of the Nile (DLC)": [
         "Action",
         "Shooter"
@@ -6909,7 +7374,11 @@
         "Survival horror",
         "TPS"
     ],
-    "Silent Hill 2: Born from a Wish (DLC)": [],
+    "Silent Hill 2: Born from a Wish (DLC)": [
+        "Action-adventure",
+        "Survival horror",
+        "TPS"
+    ],
     "Silent Hill: Alchemilla": [],
     "Silverfall": [
         "Action-adventure",
@@ -7229,7 +7698,16 @@
         "Strategy",
         "Wargame"
     ],
-    "StarCraft: Brood War (DLC)": [],
+    "StarCraft: Brood War (DLC)": [
+        "Action",
+        "Isometric",
+        "RTS",
+        "Sandbox",
+        "Sci-fi",
+        "Space",
+        "Strategy",
+        "Wargame"
+    ],
     "SteamWorld Dig": [
         "2D",
         "Action-adventure",
@@ -7590,7 +8068,13 @@
         "JRPG",
         "Third-person"
     ],
-    "Tales of Zestiria - Additional Chapter: Alisha's Story (DLC)": [],
+    "Tales of Zestiria - Additional Chapter: Alisha's Story (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "JRPG",
+        "Third-person"
+    ],
     "Tasty Planet: Back for Seconds": [
         "Action-adventure",
         "Arcade",
@@ -7831,16 +8315,34 @@
         "First-person",
         "RPG"
     ],
-    "The Elder Scrolls III: Morrowind - Bloodmoon (DLC)": [],
-    "The Elder Scrolls III: Morrowind - Tribunal (DLC)": [],
+    "The Elder Scrolls III: Morrowind - Bloodmoon (DLC)": [
+        "Adventure",
+        "First-person",
+        "RPG"
+    ],
+    "The Elder Scrolls III: Morrowind - Tribunal (DLC)": [
+        "Adventure",
+        "First-person",
+        "RPG"
+    ],
     "The Elder Scrolls IV: Oblivion": [
         "Action-adventure",
         "Action/RPG",
         "First-person",
         "Sandbox"
     ],
-    "The Elder Scrolls IV: Oblivion - Knights of the Nine (DLC)": [],
-    "The Elder Scrolls IV: Oblivion - Shivering Isles (DLC)": [],
+    "The Elder Scrolls IV: Oblivion - Knights of the Nine (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "First-person",
+        "Sandbox"
+    ],
+    "The Elder Scrolls IV: Oblivion - Shivering Isles (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "First-person",
+        "Sandbox"
+    ],
     "The Elder Scrolls V: Skyrim": [
         "Action-adventure",
         "Action/RPG",
@@ -7853,7 +8355,11 @@
         "Action-adventure",
         "Action/RPG"
     ],
-    "The Elder Scrolls V: Skyrim - Falskaar (MOD)": [],
+    "The Elder Scrolls V: Skyrim - Falskaar (MOD)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Sandbox"
+    ],
     "The Elder Scrolls V: Skyrim - Hearthfire (DLC)": [
         "Adventure",
         "RPG"
@@ -8143,11 +8649,20 @@
         "Sci-fi",
         "Third-person"
     ],
-    "The Surge 2: The Kraken (DLC)": [],
+    "The Surge 2: The Kraken (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Cyberpunk",
+        "Sci-fi",
+        "Third-person"
+    ],
     "The Surge: A Walk in the Park (DLC)": [
         "Action/RPG"
     ],
-    "The Surge: The Good, the Bad and the Augmented (DLC)": [],
+    "The Surge: The Good, the Bad and the Augmented (DLC)": [
+        "Action/RPG",
+        "Cyberpunk"
+    ],
     "The Swords of Ditto: Mormo's Curse": [
         "Action-adventure",
         "Action/RPG"
@@ -8325,8 +8840,22 @@
     "Titan Quest: Atlantis (DLC)": [
         "RPG"
     ],
-    "Titan Quest: Eternal Embers (DLC)": [],
-    "Titan Quest: Ragnarök (DLC)": [],
+    "Titan Quest: Eternal Embers (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Hack and slash",
+        "Isometric",
+        "Third-person"
+    ],
+    "Titan Quest: Ragnarök (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Hack and slash",
+        "Isometric",
+        "Third-person"
+    ],
     "Titan Quest: The Immortal Throne (DLC)": [
         "Action/RPG",
         "Wargame"
@@ -8488,7 +9017,15 @@
         "Platformer",
         "Puzzle"
     ],
-    "Trine 4: The Nightmare Prince - Melody of Mystery (DLC)": [],
+    "Trine 4: The Nightmare Prince - Melody of Mystery (DLC)": [
+        "2D",
+        "Action-adventure",
+        "Arcade",
+        "Fantasy",
+        "Logic",
+        "Platformer",
+        "Puzzle"
+    ],
     "Troll Tale": [
         "Puzzle"
     ],
@@ -8703,7 +9240,14 @@
         "Roguelike",
         "Survival"
     ],
-    "Vampire Survivors: Legacy of the Moonspell (DLC)": [],
+    "Vampire Survivors: Legacy of the Moonspell (DLC)": [
+        "Action/RPG",
+        "Arcade",
+        "Casual",
+        "Fantasy",
+        "Roguelike",
+        "Survival"
+    ],
     "Vanguard Bandits": [
         "Isometric",
         "RPG",
@@ -8829,12 +9373,26 @@
         "Stealth",
         "TPS"
     ],
-    "Watch Dogs: Access Granted (DLC)": [],
+    "Watch Dogs: Access Granted (DLC)": [
+        "Action-adventure",
+        "Cyberpunk",
+        "Open world",
+        "Sandbox",
+        "Stealth",
+        "TPS"
+    ],
     "Watch Dogs: Bad Blood (DLC)": [
         "Action",
         "Shooter"
     ],
-    "Watch Dogs: Conspiracy (DLC)": [],
+    "Watch Dogs: Conspiracy (DLC)": [
+        "Action-adventure",
+        "Cyberpunk",
+        "Open world",
+        "Sandbox",
+        "Stealth",
+        "TPS"
+    ],
     "Wavetale": [
         "Action"
     ],
@@ -8927,10 +9485,30 @@
         "FPS",
         "Sci-fi"
     ],
-    "Wolfenstein II: The New Colossus - The Freedom Chronicles: Episode Zero (DLC)": [],
-    "Wolfenstein II: The New Colossus - The Freedom Chronicles: The Adventures of Gunslinger Joe (DLC)": [],
-    "Wolfenstein II: The New Colossus - The Freedom Chronicles: The Deeds of Captain Wilkins (DLC)": [],
-    "Wolfenstein II: The New Colossus - The Freedom Chronicles: The Diaries of Agent Silent Death (DLC)": [],
+    "Wolfenstein II: The New Colossus - The Freedom Chronicles: Episode Zero (DLC)": [
+        "Action",
+        "Arcade",
+        "FPS",
+        "Sci-fi"
+    ],
+    "Wolfenstein II: The New Colossus - The Freedom Chronicles: The Adventures of Gunslinger Joe (DLC)": [
+        "Action",
+        "Arcade",
+        "FPS",
+        "Sci-fi"
+    ],
+    "Wolfenstein II: The New Colossus - The Freedom Chronicles: The Deeds of Captain Wilkins (DLC)": [
+        "Action",
+        "Arcade",
+        "FPS",
+        "Sci-fi"
+    ],
+    "Wolfenstein II: The New Colossus - The Freedom Chronicles: The Diaries of Agent Silent Death (DLC)": [
+        "Action",
+        "Arcade",
+        "FPS",
+        "Sci-fi"
+    ],
     "Wolfenstein: The New Order": [
         "Action-adventure",
         "Arcade",
