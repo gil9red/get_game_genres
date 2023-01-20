@@ -117,8 +117,16 @@
         "Survival horror",
         "TPS"
     ],
-    "Alan Wake Remastered: The Signal (DLC)": [],
-    "Alan Wake Remastered: The Writer (DLC)": [],
+    "Alan Wake Remastered: The Signal (DLC)": [
+        "Action-adventure",
+        "Survival horror",
+        "TPS"
+    ],
+    "Alan Wake Remastered: The Writer (DLC)": [
+        "Action-adventure",
+        "Survival horror",
+        "TPS"
+    ],
     "Alan Wake's American Nightmare": [
         "Action-adventure",
         "Survival horror",
@@ -145,8 +153,20 @@
         "RTS",
         "Strategy"
     ],
-    "Alien Isolation: Crew Expendable (DLC)": [],
-    "Alien Isolation: Last Survivor (DLC)": [],
+    "Alien Isolation: Crew Expendable (DLC)": [
+        "Action-adventure",
+        "FPS",
+        "Sci-fi",
+        "Shoot 'em up",
+        "Survival horror"
+    ],
+    "Alien Isolation: Last Survivor (DLC)": [
+        "Action-adventure",
+        "FPS",
+        "Sci-fi",
+        "Shoot 'em up",
+        "Survival horror"
+    ],
     "Alien Rage - Unlimited": [
         "Action",
         "Shooter"
@@ -233,7 +253,14 @@
         "Sci-fi",
         "Shoot 'em up"
     ],
-    "Aliens: Colonial Marines - Stasis Interrupted (DLC)": [],
+    "Aliens: Colonial Marines - Stasis Interrupted (DLC)": [
+        "Action",
+        "Arcade",
+        "FPS",
+        "Horror",
+        "Sci-fi",
+        "Shoot 'em up"
+    ],
     "Almost My Floor": [
         "Adventure",
         "Horror",
