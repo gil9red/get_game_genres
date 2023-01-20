@@ -587,9 +587,17 @@
         "First-person",
         "Simulation"
     ],
-    "Bad Dream: Bridge": [],
+    "Bad Dream: Bridge": [
+        "Adventure",
+        "Arcade",
+        "Horror",
+        "Point-and-click"
+    ],
     "Bad Dream: Butcher": [
-        "Adventure"
+        "Adventure",
+        "Arcade",
+        "Horror",
+        "Point-and-click"
     ],
     "Bad Dream: Coma": [
         "Adventure",
@@ -597,10 +605,30 @@
         "Horror",
         "Point-and-click"
     ],
-    "Bad Dream: Cyclops": [],
-    "Bad Dream: Graveyard": [],
-    "Bad Dream: Hospital": [],
-    "Bad Dream: Memories": [],
+    "Bad Dream: Cyclops": [
+        "Adventure",
+        "Arcade",
+        "Horror",
+        "Point-and-click"
+    ],
+    "Bad Dream: Graveyard": [
+        "Adventure",
+        "Arcade",
+        "Horror",
+        "Point-and-click"
+    ],
+    "Bad Dream: Hospital": [
+        "Adventure",
+        "Arcade",
+        "Horror",
+        "Point-and-click"
+    ],
+    "Bad Dream: Memories": [
+        "Adventure",
+        "Arcade",
+        "Horror",
+        "Point-and-click"
+    ],
     "Baldur's Gate": [
         "Fantasy",
         "Isometric",
@@ -751,7 +779,13 @@
         "Fighting",
         "Platformer"
     ],
-    "Battletoads and Double Dragon": [],
+    "Battletoads and Double Dragon": [
+        "Action-adventure",
+        "Arcade",
+        "Beat 'em up",
+        "Fighting",
+        "Platformer"
+    ],
     "Bayonetta": [
         "Action-adventure",
         "Hack and slash",
@@ -1717,7 +1751,16 @@
         "First-person",
         "JRPG"
     ],
-    "Costume Quest: Grubbins on Ice Part": [],
+    "Costume Quest: Grubbins on Ice Part": [
+        "Action-adventure",
+        "Action/RPG",
+        "Casual",
+        "Fantasy",
+        "Humor",
+        "JRPG",
+        "TBS",
+        "Third-person"
+    ],
     "Counter-Strike": [
         "Action",
         "FPS",
@@ -2663,7 +2706,12 @@
         "Horror",
         "Shoot 'em up"
     ],
-    "Doom II: Hell on Earth": [],
+    "Doom II: Hell on Earth": [
+        "Action-adventure",
+        "Arcade",
+        "FPS",
+        "Shoot 'em up"
+    ],
     "Doorways: Holy Mountains of Flesh": [
         "Action-adventure",
         "First-person",
@@ -2806,7 +2854,9 @@
         "TBS",
         "Third-person"
     ],
-    "Draw a Stickman: Episode 1": [],
+    "Draw a Stickman: Episode 1": [
+        "Adventure"
+    ],
     "Draw a Stickman: Episode 2": [
         "Adventure"
     ],
@@ -4020,8 +4070,18 @@
         "FPS",
         "Sci-fi"
     ],
-    "Half-Life: Paranoia": [],
-    "Half-Life: The Xeno Project": [],
+    "Half-Life: Paranoia": [
+        "Action",
+        "Arcade",
+        "FPS",
+        "Sci-fi"
+    ],
+    "Half-Life: The Xeno Project": [
+        "Action",
+        "Arcade",
+        "FPS",
+        "Sci-fi"
+    ],
     "Halloween Stories: Invitation (Collector's Edition)": [],
     "Halo 2": [
         "Action",
@@ -5074,7 +5134,11 @@
         "Arcade",
         "Platformer"
     ],
-    "Madagascar 2: Escape Africa": [],
+    "Madagascar 2: Escape Africa": [
+        "Action-adventure",
+        "Arcade",
+        "Platformer"
+    ],
     "Magibot": [
         "2D",
         "Action-adventure",
@@ -5186,15 +5250,60 @@
         "Shoot 'em up",
         "TPS"
     ],
-    "Mass Effect 2: Legendary Edition": [],
-    "Mass Effect 2: Legendary Edition - Arrival (DLC)": [],
-    "Mass Effect 2: Legendary Edition - Firewalker Pack (DLC)": [],
-    "Mass Effect 2: Legendary Edition - Genesis (DLC)": [],
-    "Mass Effect 2: Legendary Edition - Kasumi: Stolen Memory (DLC)": [],
-    "Mass Effect 2: Legendary Edition - Lair of the Shadow Broker (DLC)": [],
-    "Mass Effect 2: Legendary Edition - Normandy Crash Site (DLC)": [],
-    "Mass Effect 2: Legendary Edition - Overlord (DLC)": [],
-    "Mass Effect 2: Legendary Edition - Zaeed: The Price of Revenge (DLC)": [],
+    "Mass Effect 2: Legendary Edition": [
+        "Action/RPG",
+        "Sci-fi",
+        "Shoot 'em up",
+        "TPS"
+    ],
+    "Mass Effect 2: Legendary Edition - Arrival (DLC)": [
+        "Action/RPG",
+        "Sci-fi",
+        "Shoot 'em up",
+        "TPS"
+    ],
+    "Mass Effect 2: Legendary Edition - Firewalker Pack (DLC)": [
+        "Action/RPG",
+        "Sci-fi",
+        "Shoot 'em up",
+        "TPS"
+    ],
+    "Mass Effect 2: Legendary Edition - Genesis (DLC)": [
+        "Action/RPG",
+        "Sci-fi",
+        "Shoot 'em up",
+        "TPS"
+    ],
+    "Mass Effect 2: Legendary Edition - Kasumi: Stolen Memory (DLC)": [
+        "Action/RPG",
+        "Sci-fi",
+        "Shoot 'em up",
+        "TPS"
+    ],
+    "Mass Effect 2: Legendary Edition - Lair of the Shadow Broker (DLC)": [
+        "Action/RPG",
+        "Sci-fi",
+        "Shoot 'em up",
+        "TPS"
+    ],
+    "Mass Effect 2: Legendary Edition - Normandy Crash Site (DLC)": [
+        "Action/RPG",
+        "Sci-fi",
+        "Shoot 'em up",
+        "TPS"
+    ],
+    "Mass Effect 2: Legendary Edition - Overlord (DLC)": [
+        "Action/RPG",
+        "Sci-fi",
+        "Shoot 'em up",
+        "TPS"
+    ],
+    "Mass Effect 2: Legendary Edition - Zaeed: The Price of Revenge (DLC)": [
+        "Action/RPG",
+        "Sci-fi",
+        "Shoot 'em up",
+        "TPS"
+    ],
     "Mass Effect: Legendary Edition": [
         "Action/RPG",
         "RTS",
@@ -5581,7 +5690,12 @@
         "Fighting",
         "Third-person"
     ],
-    "Mortal Kombat IX": [],
+    "Mortal Kombat IX": [
+        "2D",
+        "Action",
+        "Arcade",
+        "Fighting"
+    ],
     "Mortal Kombat X": [
         "2D",
         "Action",
@@ -5824,7 +5938,12 @@
         "Survival horror",
         "Third-person"
     ],
-    "Obscure II: The Aftermath": [],
+    "Obscure II: The Aftermath": [
+        "Action-adventure",
+        "Action/RPG",
+        "Survival horror",
+        "Third-person"
+    ],
     "Oceanhorn Monster of Uncharted Seas": [
         "Action-adventure",
         "Action/RPG",
@@ -6648,26 +6767,52 @@
         "Zombie"
     ],
     "Resident Evil / Biohazard HD REMASTER": [
-        "Action-adventure"
+        "Action-adventure",
+        "Zombie"
     ],
     "Resident Evil 0 / Biohazard 0 HD REMASTER": [
-        "Action-adventure"
+        "Action-adventure",
+        "Zombie"
     ],
     "Resident Evil 2 / Biohazard RE:2": [
         "Action",
-        "Horror"
+        "Horror",
+        "Zombie"
     ],
     "Resident Evil 2 / Biohazard RE:2: The 4th Survivor (DLC)": [
         "Action",
-        "Horror"
+        "Horror",
+        "Zombie"
     ],
     "Resident Evil 2 / Biohazard RE:2: The Ghost Survivors (DLC)": [
         "Action",
-        "Horror"
+        "Horror",
+        "Zombie"
     ],
-    "Resident Evil 2 Remake / Biohazard RE:2": [],
-    "Resident Evil 2 Remake / Biohazard RE:2 - The 4th Survivor (DLC)": [],
-    "Resident Evil 2 Remake / Biohazard RE:2 - The Ghost Survivors (DLC)": [],
+    "Resident Evil 2 Remake / Biohazard RE:2": [
+        "Action-adventure",
+        "Survival horror",
+        "Zombie",
+        "Puzzle",
+        "Shoot 'em up",
+        "Third-person"
+    ],
+    "Resident Evil 2 Remake / Biohazard RE:2 - The 4th Survivor (DLC)": [
+        "Action-adventure",
+        "Survival horror",
+        "Zombie",
+        "Puzzle",
+        "Shoot 'em up",
+        "Third-person"
+    ],
+    "Resident Evil 2 Remake / Biohazard RE:2 - The Ghost Survivors (DLC)": [
+        "Action-adventure",
+        "Survival horror",
+        "Zombie",
+        "Puzzle",
+        "Shoot 'em up",
+        "Third-person"
+    ],
     "Resident Evil 3 Remake": [
         "Action-adventure",
         "Survival horror"
@@ -7054,22 +7199,51 @@
     "Sable Maze: Forbidden Garden (Collector's Edition)": [
         "Adventure",
         "Casual",
-        "Puzzle"
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
     ],
-    "Sable Maze: Nightmare Shadows (Collector's Edition)": [],
+    "Sable Maze: Nightmare Shadows (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
     "Sable Maze: Norwich Caves (Collector's Edition)": [
         "Adventure",
-        "Casual"
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
     ],
-    "Sable Maze: Sinister Knowledge (Collector's Edition)": [],
-    "Sable Maze: Soul Catcher (Collector's Edition)": [],
+    "Sable Maze: Sinister Knowledge (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Sable Maze: Soul Catcher (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
     "Sable Maze: Sullivan River (Collector's Edition)": [
         "Adventure",
-        "Casual"
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
     ],
     "Sable Maze: Twelve Fears (Collector's Edition)": [
         "Adventure",
-        "Casual"
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
     ],
     "Sacred": [
         "Action-adventure",
@@ -7079,7 +7253,14 @@
         "Open world",
         "Third-person"
     ],
-    "Sacred 2: Fallen Angel (Ice & Blood)": [],
+    "Sacred 2: Fallen Angel (Ice & Blood)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Isometric",
+        "Open world",
+        "Third-person"
+    ],
     "Sacred 3": [
         "Action-adventure",
         "Action/RPG",
@@ -7096,9 +7277,27 @@
         "Platformer",
         "Shoot 'em up"
     ],
-    "Saga of the Nine Worlds: The Four Stags (Collector's Edition)": [],
-    "Saga of the Nine Worlds: The Gathering (Collector's Edition)": [],
-    "Saga of the Nine Worlds: The Hunt (Collector's Edition)": [],
+    "Saga of the Nine Worlds: The Four Stags (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Saga of the Nine Worlds: The Gathering (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Saga of the Nine Worlds: The Hunt (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
     "Saints Row IV": [
         "Action-adventure",
         "Fighting",
@@ -7379,7 +7578,11 @@
         "Survival horror",
         "TPS"
     ],
-    "Silent Hill: Alchemilla": [],
+    "Silent Hill: Alchemilla": [
+        "Action-adventure",
+        "Survival horror",
+        "TPS"
+    ],
     "Silverfall": [
         "Action-adventure",
         "Action/RPG"
@@ -7574,34 +7777,87 @@
     "Spirits of Mystery: Amber Maiden (Collector's Edition)": [
         "Adventure",
         "Casual",
+        "Puzzle",
         "Hidden object",
-        "Puzzle"
+        "Point-and-click"
     ],
     "Spirits of Mystery: Chains of Promise (Collector's Edition)": [
         "Adventure",
-        "Casual"
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
     ],
-    "Spirits of Mystery: Family Lies (Collector's Edition)": [],
-    "Spirits of Mystery: Illusions (Collector's Edition)": [],
+    "Spirits of Mystery: Family Lies (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Spirits of Mystery: Illusions (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
     "Spirits of Mystery: Song of the Phoenix (Collector's Edition)": [
         "Adventure",
-        "Casual"
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
     ],
     "Spirits of Mystery: The Dark Minotaur (Collector's Edition)": [
         "Adventure",
         "Casual",
-        "Puzzle"
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
     ],
-    "Spirits of Mystery: The Fifth Kingdom (Collector's Edition)": [],
-    "Spirits of Mystery: The Last Fire Queen (Collector's Edition)": [],
-    "Spirits of Mystery: The Lost Queen (Collector's Edition)": [],
-    "Spirits of Mystery: The Moon Crystal (Collector's Edition)": [],
+    "Spirits of Mystery: The Fifth Kingdom (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Spirits of Mystery: The Last Fire Queen (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Spirits of Mystery: The Lost Queen (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Spirits of Mystery: The Moon Crystal (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
     "Spirits of Mystery: The Silver Arrow (Collector's Edition)": [
         "Adventure",
         "Casual",
-        "Puzzle"
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
     ],
-    "Spirits of Mystery: Whisper of the Past (Collector's Edition)": [],
+    "Spirits of Mystery: Whisper of the Past (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
     "Spooky's House of Jump Scares": [
         "Action-adventure",
         "Horror"
@@ -8703,7 +8959,11 @@
         "Adventure",
         "Movie"
     ],
-    "The Walking Dead: Season One": [],
+    "The Walking Dead: Season One": [
+        "Adventure",
+        "Movie",
+        "Point-and-click"
+    ],
     "The Walking Dead: Season Two": [
         "Adventure",
         "Movie",
@@ -9029,13 +9289,34 @@
     "Troll Tale": [
         "Puzzle"
     ],
-    "Trollface Quest": [],
-    "Trollface Quest 2": [],
-    "Trollface Quest 3": [],
-    "Trollface Quest 4": [],
-    "Trollface Quest 5": [],
-    "Trollface Quest 6": [],
-    "Trollface Quest 7": [],
+    "Trollface Quest": [
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Trollface Quest 2": [
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Trollface Quest 3": [
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Trollface Quest 4": [
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Trollface Quest 5": [
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Trollface Quest 6": [
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Trollface Quest 7": [
+        "Point-and-click",
+        "Puzzle"
+    ],
     "Trollface Quest: Video Memes": [
         "Point-and-click",
         "Puzzle"
@@ -9780,16 +10061,36 @@
         "Shooter"
     ],
     "Вольт / Bolt": [],
-    "Как достать соседа 2: Адские каникулы / Neighbours from Hell 2: On Vacation": [],
-    "Как достать соседа 3: В офисе (2006) / Pranksterz: Off Your Boss": [],
+    "Как достать соседа 2: Адские каникулы / Neighbours from Hell 2: On Vacation": [
+        "Adventure",
+        "Arcade",
+        "Logic",
+        "Puzzle"
+    ],
+    "Как достать соседа 3: В офисе (2006) / Pranksterz: Off Your Boss": [
+        "Adventure",
+        "Arcade",
+        "Logic",
+        "Puzzle"
+    ],
     "Как достать соседа. Каникулы олигарха": [
         "Adventure",
         "Arcade",
         "Logic",
         "Puzzle"
     ],
-    "Как достать соседа: Сладкая месть / Neighbours from Hell: Revenge Is a Sweet": [],
-    "Как достать соседку: Полный гламур (2009) / Neighbours from Hell: Full Glamor": [],
+    "Как достать соседа: Сладкая месть / Neighbours from Hell: Revenge Is a Sweet": [
+        "Adventure",
+        "Arcade",
+        "Logic",
+        "Puzzle"
+    ],
+    "Как достать соседку: Полный гламур (2009) / Neighbours from Hell: Full Glamor": [
+        "Adventure",
+        "Arcade",
+        "Logic",
+        "Puzzle"
+    ],
     "Князь 3: Новая династия": [
         "RPG"
     ],
@@ -9859,7 +10160,13 @@
         "TBS",
         "TRPG"
     ],
-    "God of War: Ragnarök": [],
+    "God of War: Ragnarök": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Hack and slash",
+        "Third-person"
+    ],
     "Might & Magic Heroes VII": [
         "Adventure",
         "RPG",
