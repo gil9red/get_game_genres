@@ -229,22 +229,19 @@ class Game(BaseModel):
 
 class Genre(BaseModel):
     name = TextField(primary_key=True)
-    title = TextField()
     description = TextField()
 
     @classmethod
-    def add_or_update(cls, name: str, title: str, description: str) -> 'Genre':
+    def add_or_update(cls, name: str, description: str) -> 'Genre':
         obj = cls.get_by(name)
         if obj:
-            if obj.title != title or obj.description != description:
-                obj.title = title
+            if obj.description != description:
                 obj.description = description
                 obj.save()
 
         else:
             obj = cls.create(
                 name=name,
-                title=title,
                 description=description,
             )
 

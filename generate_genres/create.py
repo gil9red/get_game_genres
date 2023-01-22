@@ -40,15 +40,11 @@ def run():
 
     new_genres = dict()
     for genre in all_genres:
-        genre_info = current_genres.get(genre)
-        if genre_info:
-            new_genres[genre] = genre_info
+        if genre in current_genres:
+            new_genres[genre] = current_genres.get(genre)
         else:
             log.info(f'Добавлен новый жанр: {genre!r}')
-            new_genres[genre] = dict(
-                title='',
-                description='',
-            )
+            new_genres[genre] = ''
 
     number = len(new_genres) - len(current_genres)
     if number:
@@ -59,11 +55,10 @@ def run():
     else:
         log.info('Новых жанров нет. Сохранять не нужно')
 
-    for genre, info in new_genres.items():
+    for genre, description in new_genres.items():
         Genre.add_or_update(
             name=genre,
-            title=info['title'],
-            description=info['description']
+            description=description
         )
 
     log.info("Завершено!\n")

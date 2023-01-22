@@ -1,314 +1,80 @@
 {
-    "2D": {
-        "title": "",
-        "description": ""
-    },
-    "Action": {
-        "title": "",
-        "description": ""
-    },
-    "Action-adventure": {
-        "title": "",
-        "description": ""
-    },
-    "Action/RPG": {
-        "title": "",
-        "description": ""
-    },
-    "Adventure": {
-        "title": "",
-        "description": ""
-    },
-    "Arcade": {
-        "title": "",
-        "description": ""
-    },
-    "Battle royale": {
-        "title": "",
-        "description": ""
-    },
-    "Beat 'em up": {
-        "title": "",
-        "description": ""
-    },
-    "Billiards": {
-        "title": "",
-        "description": ""
-    },
-    "Board game": {
-        "title": "",
-        "description": ""
-    },
-    "Cardgame": {
-        "title": "",
-        "description": ""
-    },
-    "Casual": {
-        "title": "",
-        "description": ""
-    },
-    "City building": {
-        "title": "",
-        "description": ""
-    },
-    "Comics": {
-        "title": "",
-        "description": ""
-    },
-    "Crafting": {
-        "title": "",
-        "description": ""
-    },
-    "Cyberpunk": {
-        "title": "",
-        "description": ""
-    },
-    "Cycle": {
-        "title": "",
-        "description": ""
-    },
-    "Dungeon": {
-        "title": "",
-        "description": ""
-    },
-    "FPS": {
-        "title": "",
-        "description": "Шутер от первого лица / First-person shooter"
-    },
-    "Fantasy": {
-        "title": "",
-        "description": ""
-    },
-    "Fighting": {
-        "title": "",
-        "description": ""
-    },
-    "First-person": {
-        "title": "",
-        "description": ""
-    },
-    "Flight": {
-        "title": "",
-        "description": ""
-    },
-    "God game": {
-        "title": "",
-        "description": ""
-    },
-    "Hack and slash": {
-        "title": "",
-        "description": ""
-    },
-    "Hidden object": {
-        "title": "",
-        "description": ""
-    },
-    "Horror": {
-        "title": "",
-        "description": ""
-    },
-    "Humor": {
-        "title": "",
-        "description": ""
-    },
-    "Isometric": {
-        "title": "",
-        "description": ""
-    },
-    "JRPG": {
-        "title": "",
-        "description": "Японская ролевая игра / Japanese Role-Playing Game"
-    },
-    "Life simulation": {
-        "title": "",
-        "description": ""
-    },
-    "Logic": {
-        "title": "",
-        "description": ""
-    },
-    "MMO": {
-        "title": "",
-        "description": "Массовая многопользовательская онлайн-игра / Massively Multiplayer Online Game"
-    },
-    "MOBA": {
-        "title": "",
-        "description": "Многопользовательская онлайновая боевая арена / Multiplayer Online Battle Arena"
-    },
-    "Management": {
-        "title": "",
-        "description": ""
-    },
-    "Metroidvania": {
-        "title": "",
-        "description": ""
-    },
-    "Motorcycle": {
-        "title": "",
-        "description": ""
-    },
-    "Movie": {
-        "title": "",
-        "description": ""
-    },
-    "Music": {
-        "title": "",
-        "description": ""
-    },
-    "Open world": {
-        "title": "",
-        "description": ""
-    },
-    "Pinball": {
-        "title": "",
-        "description": ""
-    },
-    "Platformer": {
-        "title": "",
-        "description": ""
-    },
-    "Point-and-click": {
-        "title": "",
-        "description": ""
-    },
-    "Post apocalypse": {
-        "title": "",
-        "description": ""
-    },
-    "Puzzle": {
-        "title": "",
-        "description": ""
-    },
-    "Quest": {
-        "title": "",
-        "description": ""
-    },
-    "RPG": {
-        "title": "",
-        "description": "Ролевая игра / Role-Playing Game"
-    },
-    "RTS": {
-        "title": "",
-        "description": "Стратегия в реальном времени / Real-time strategy"
-    },
-    "Racing": {
-        "title": "",
-        "description": ""
-    },
-    "Rail shooter": {
-        "title": "",
-        "description": ""
-    },
-    "Retro": {
-        "title": "",
-        "description": ""
-    },
-    "Robot war": {
-        "title": "",
-        "description": ""
-    },
-    "Roguelike": {
-        "title": "",
-        "description": ""
-    },
-    "Runner": {
-        "title": "",
-        "description": ""
-    },
-    "Sandbox": {
-        "title": "",
-        "description": ""
-    },
-    "Sci-fi": {
-        "title": "",
-        "description": ""
-    },
-    "Shoot 'em up": {
-        "title": "",
-        "description": ""
-    },
-    "Shooter": {
-        "title": "",
-        "description": ""
-    },
-    "Simulation": {
-        "title": "",
-        "description": ""
-    },
-    "Sniper": {
-        "title": "",
-        "description": ""
-    },
-    "Space": {
-        "title": "",
-        "description": ""
-    },
-    "Sport": {
-        "title": "",
-        "description": ""
-    },
-    "Stealth": {
-        "title": "",
-        "description": ""
-    },
-    "Steampunk": {
-        "title": "",
-        "description": ""
-    },
-    "Strategy": {
-        "title": "",
-        "description": ""
-    },
-    "Survival": {
-        "title": "",
-        "description": ""
-    },
-    "Survival horror": {
-        "title": "",
-        "description": ""
-    },
-    "TBS": {
-        "title": "",
-        "description": "Пошаговая стратегия / Turn-Based Strategy"
-    },
-    "TPS": {
-        "title": "",
-        "description": "Шутер от третьего лица / Third-person shooter"
-    },
-    "TRPG": {
-        "title": "",
-        "description": "Тактическая ролевая игра / Tactical role-playing game"
-    },
-    "Tank": {
-        "title": "",
-        "description": ""
-    },
-    "Text": {
-        "title": "",
-        "description": ""
-    },
-    "Third-person": {
-        "title": "",
-        "description": ""
-    },
-    "Tower defense": {
-        "title": "",
-        "description": ""
-    },
-    "Visual novel": {
-        "title": "",
-        "description": ""
-    },
-    "Wargame": {
-        "title": "",
-        "description": ""
-    },
-    "Western": {
-        "title": "",
-        "description": ""
-    },
-    "Zombie": {
-        "title": "",
-        "description": ""
-    }
+    "2D": "",
+    "Action": "",
+    "Action-adventure": "",
+    "Action/RPG": "",
+    "Adventure": "",
+    "Arcade": "",
+    "Battle royale": "",
+    "Beat 'em up": "",
+    "Billiards": "",
+    "Board game": "",
+    "Cardgame": "",
+    "Casual": "",
+    "City building": "",
+    "Comics": "",
+    "Crafting": "",
+    "Cyberpunk": "",
+    "Cycle": "",
+    "Dungeon": "",
+    "FPS": "Шутер от первого лица / First-person shooter",
+    "Fantasy": "",
+    "Fighting": "",
+    "First-person": "",
+    "Flight": "",
+    "God game": "",
+    "Hack and slash": "",
+    "Hidden object": "",
+    "Horror": "",
+    "Humor": "",
+    "Isometric": "",
+    "JRPG": "Японская ролевая игра / Japanese Role-Playing Game",
+    "Life simulation": "",
+    "Logic": "",
+    "MMO": "Массовая многопользовательская онлайн-игра / Massively Multiplayer Online Game",
+    "MOBA": "Многопользовательская онлайновая боевая арена / Multiplayer Online Battle Arena",
+    "Management": "",
+    "Metroidvania": "",
+    "Motorcycle": "",
+    "Movie": "",
+    "Music": "",
+    "Open world": "",
+    "Pinball": "",
+    "Platformer": "",
+    "Point-and-click": "",
+    "Post apocalypse": "",
+    "Puzzle": "",
+    "Quest": "",
+    "RPG": "Ролевая игра / Role-Playing Game",
+    "RTS": "Стратегия в реальном времени / Real-time strategy",
+    "Racing": "",
+    "Rail shooter": "",
+    "Retro": "",
+    "Robot war": "",
+    "Roguelike": "",
+    "Runner": "",
+    "Sandbox": "",
+    "Sci-fi": "",
+    "Shoot 'em up": "",
+    "Shooter": "",
+    "Simulation": "",
+    "Sniper": "",
+    "Space": "",
+    "Sport": "",
+    "Stealth": "",
+    "Steampunk": "",
+    "Strategy": "",
+    "Survival": "",
+    "Survival horror": "",
+    "TBS": "Пошаговая стратегия / Turn-Based Strategy",
+    "TPS": "Шутер от третьего лица / Third-person shooter",
+    "TRPG": "Тактическая ролевая игра / Tactical role-playing game",
+    "Tank": "",
+    "Text": "",
+    "Third-person": "",
+    "Tower defense": "",
+    "Visual novel": "",
+    "Wargame": "",
+    "Western": "",
+    "Zombie": ""
 }
