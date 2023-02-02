@@ -26,7 +26,7 @@ class VGTimesRuParser(BaseParser):
         }
 
         rs_json = self.send_post(url_search, data=data, return_json=True)
-        rs_html = rs_json['games_result']
+        rs_html = rs_json['results'].get('games')
         if rs_html:
             root = self.parse_html(rs_html)
             for game_el in root.select('.game_search'):
