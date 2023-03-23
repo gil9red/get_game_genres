@@ -230,7 +230,7 @@ class Game(BaseModel):
 class Genre(BaseModel):
     name = TextField(primary_key=True)
     description = TextField()
-    aliases = TextField()
+    aliases = TextField(default='')
 
     @classmethod
     def add_or_update(cls, name: str, description: str, aliases: str = '') -> 'Genre':

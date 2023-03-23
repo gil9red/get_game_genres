@@ -17,5 +17,5 @@ migrator = SqliteMigrator(db)
 
 with db.atomic():
     migrate(
-        migrator.add_column('genre', 'aliases', TextField()),
+        migrator.add_column('genre', 'aliases', TextField(default='')),
     )
