@@ -230,19 +230,25 @@ class Game(BaseModel):
 class Genre(BaseModel):
     name = TextField(primary_key=True)
     description = TextField()
+    aliases = TextField()
 
     @classmethod
-    def add_or_update(cls, name: str, description: str) -> 'Genre':
+    def add_or_update(cls, name: str, description: str, aliases: str = '') -> 'Genre':
         obj = cls.get_by(name)
         if obj:
             if obj.description != description:
                 obj.description = description
                 obj.save()
 
+            if aliases and obj.aliases != aliases:
+                obj.aliases = aliases
+                obj.save()
+
         else:
             obj = cls.create(
                 name=name,
                 description=description,
+                aliases=aliases,
             )
 
         return obj
