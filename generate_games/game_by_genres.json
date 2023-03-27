@@ -10231,5 +10231,78 @@
     "Магия крови": [
         "Action-adventure",
         "Action/RPG"
+    ],
+    "One Piece Odyssey": [
+        "Action-adventure",
+        "Action/RPG",
+        "Casual",
+        "JRPG"
+    ],
+    "Red Dead Redemption": [
+        "Action-adventure",
+        "Cardgame",
+        "FPS",
+        "Open world",
+        "TPS",
+        "Western"
+    ],
+    "XCOM 2": [
+        "RPG",
+        "RTS",
+        "Sci-fi",
+        "Strategy",
+        "TBS",
+        "Wargame"
+    ],
+    "Mass Effect 3: Legendary Edition": [],
+    "Mass Effect 3: Legendary Edition - Leviathan (DLC)": [],
+    "Mass Effect 3: Legendary Edition - Omega (DLC)": [],
+    "Mass Effect 3: Legendary Edition - From Ashes (DLC)": [],
+    "Mass Effect 3: Legendary Edition - Citadel (DLC)": [],
+    "Disco Elysium": [
+        "Adventure",
+        "Isometric",
+        "Movie",
+        "RPG"
+    ],
+    "Bendy and the Ink Machine": [
+        "Action-adventure",
+        "First-person",
+        "Puzzle",
+        "Quest",
+        "Strategy",
+        "Survival horror"
+    ],
+    "The House of the Dead: Remake": [
+        "Action",
+        "Arcade",
+        "Beat 'em up",
+        "FPS",
+        "Horror",
+        "Rail shooter"
+    ],
+    "Shadow Warrior 3": [
+        "Action-adventure",
+        "FPS",
+        "Hack and slash",
+        "Humor"
+    ],
+    "Hellbound": [
+        "Action",
+        "FPS",
+        "TPS"
+    ],
+    "Dusk": [
+        "Action",
+        "FPS",
+        "Horror",
+        "Retro"
+    ],
+    "Amid Evil": [
+        "Action-adventure",
+        "FPS",
+        "Fantasy",
+        "Horror",
+        "Retro"
     ]
 }
