@@ -30,19 +30,15 @@ if USE_FAKE_PARSER:
         def get_site_name(cls): return "_test_"
 
         def _parse(self) -> list[str]:
-            pass
-
-        def get_game_genres(self, game_name: str) -> list[str]:
-            if game_name == 'Foo':
-                raise Exception('Error')
-
+            if self.game_name == 'С_умлаутом':
+                return ['Файтинг̆', 'Файтинг']
             return ['RGB-bar', 'Action-bar']
 
     # Monkey Patch
-    def get_parsers():
-        return [FakeParser()]
+    def get_parsers(): return [FakeParser()]
 
-    def get_games_list(): return ['Foo', 'Bar', 'Zet']
+    # Monkey Patch
+    def get_games_list(): return ['Foo', 'Bar', 'С_умлаутом']
 
 
 log = get_logger()

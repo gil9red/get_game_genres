@@ -15,7 +15,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 import requests
 
-from common import get_uniques, get_current_datetime_str
+from common import get_uniques, get_current_datetime_str, process_umlauts
 from config import USER_AGENT, DIR_ERRORS, DIR_LOGS, NEED_LOGS, LOG_FORMAT
 from parsers import dump
 from third_party.get_valid_filename import get_valid_filename
@@ -153,7 +153,7 @@ class BaseParser(metaclass=Singleton):
 
         try:
             genres = self._parse()
-            genres = [x.strip() for x in genres]
+            genres = [process_umlauts(x.strip()) for x in genres]
             genres = get_uniques(genres)
             genres.sort()
 
