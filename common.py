@@ -7,6 +7,7 @@ __author__ = 'ipetrash'
 import json
 import logging
 import sys
+import unicodedata
 
 from datetime import datetime
 from logging.handlers import RotatingFileHandler
@@ -86,7 +87,24 @@ def get_logger(name: str = 'dump.txt', dir_logs: Path = DIR_LOGS, encoding='utf-
     return log
 
 
+def process_umlauts(text: str) -> str:
+    # Замена "и" с умлаутом на один символ "й"
+    replace = {
+        'й': 'й',
+        'Й': 'Й',
+    }
+    for k, v in replace.items():
+        text = text.replace(k, v)
+
+    # Дополнительная чистка умлаутом
+    text = ''.join(c for c in text if unicodedata.category(c) != 'Mn')
+
+    return text
+
+
 if __name__ == "__main__":
     items = get_games_list()
     print(f'Games ({len(items)}): {", ".join(items[:5])}...')
     # Games (743): 35MM, 60 Seconds!, A Bird Story, A Plague Tale: Innocence, A Story About My Uncle...
+
+    assert process_umlauts('Файтинг̆') == 'Файтинг'
