@@ -25,12 +25,14 @@ from third_party.wait import wait
 # Test
 USE_FAKE_PARSER = False
 if USE_FAKE_PARSER:
-    class FakeParser:
+    class FakeParser(BaseParser):
         @classmethod
-        def get_site_name(cls): return "<test>"
+        def get_site_name(cls): return "_test_"
 
-        @staticmethod
-        def get_game_genres(game_name):
+        def _parse(self) -> list[str]:
+            pass
+
+        def get_game_genres(self, game_name: str) -> list[str]:
             if game_name == 'Foo':
                 raise Exception('Error')
 
@@ -38,7 +40,7 @@ if USE_FAKE_PARSER:
 
     # Monkey Patch
     def get_parsers():
-        return [FakeParser]
+        return [FakeParser()]
 
     def get_games_list(): return ['Foo', 'Bar', 'Zet']
 
