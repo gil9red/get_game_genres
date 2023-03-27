@@ -16,6 +16,7 @@ for dump in Dump.select():
     genres = [process_umlauts(genre) for genre in dump.genres]
     if genres != dump.genres:
         print(f'Обновлен {dump}')
+        dump.genres = genres
         dump.save()
 
 # Обновление списка игр из Dump
