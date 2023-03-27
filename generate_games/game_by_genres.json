@@ -300,6 +300,13 @@
         "Puzzle",
         "TPS"
     ],
+    "Amid Evil": [
+        "Action-adventure",
+        "FPS",
+        "Fantasy",
+        "Horror",
+        "Retro"
+    ],
     "Amnesia: A Machine for Pigs": [
         "Action-adventure",
         "First-person",
@@ -842,6 +849,14 @@
         "Arcade",
         "Horror",
         "Platformer"
+    ],
+    "Bendy and the Ink Machine": [
+        "Action-adventure",
+        "First-person",
+        "Puzzle",
+        "Quest",
+        "Strategy",
+        "Survival horror"
     ],
     "Berzerk Ball 2": [],
     "Besiege": [
@@ -1610,6 +1625,12 @@
         "Action",
         "Arcade",
         "MMO"
+    ],
+    "Choo-Choo Charles": [
+        "Action-adventure",
+        "FPS",
+        "Open world",
+        "Survival horror"
     ],
     "Chrono Cross": [
         "Adventure",
@@ -2422,6 +2443,17 @@
         "Sci-fi",
         "Third-person"
     ],
+    "Deus Ex: Human Revolution": [
+        "Action-adventure",
+        "Action/RPG",
+        "Cyberpunk",
+        "FPS",
+        "Point-and-click",
+        "Sci-fi",
+        "Shoot 'em up",
+        "Stealth",
+        "TPS"
+    ],
     "Devil May Cry": [
         "Action-adventure",
         "Fantasy",
@@ -2576,6 +2608,12 @@
         "Fantasy",
         "Strategy",
         "TBS"
+    ],
+    "Disco Elysium": [
+        "Adventure",
+        "Isometric",
+        "Movie",
+        "RPG"
     ],
     "Dishonored": [
         "Action-adventure",
@@ -2854,6 +2892,10 @@
         "TBS",
         "Third-person"
     ],
+    "Drakensang: The Dark Eye": [
+        "RPG",
+        "TPS"
+    ],
     "Draw a Stickman: Episode 1": [
         "Adventure"
     ],
@@ -2900,6 +2942,12 @@
     "Dungeon Nightmares": [
         "Action-adventure",
         "First-person"
+    ],
+    "Dusk": [
+        "Action",
+        "FPS",
+        "Horror",
+        "Retro"
     ],
     "Dying Light": [
         "Action-adventure",
@@ -3353,6 +3401,15 @@
         "TBS",
         "Third-person"
     ],
+    "Final Fantasy Tactics": [
+        "Adventure",
+        "Fantasy",
+        "Isometric",
+        "RPG",
+        "Strategy",
+        "TBS",
+        "TRPG"
+    ],
     "Final Fantasy Type-0 HD": [
         "Action/RPG"
     ],
@@ -3767,6 +3824,7 @@
         "Puzzle",
         "Third-person"
     ],
+    "God of War: Ragnarök": [],
     "Gold and Glory: The Road to El Dorado": [
         "Action-adventure",
         "Action/RPG",
@@ -4230,6 +4288,11 @@
         "Hack and slash",
         "Open world",
         "Third-person"
+    ],
+    "Hellbound": [
+        "Action",
+        "FPS",
+        "TPS"
     ],
     "Hellgate: London": [
         "Action-adventure",
@@ -5204,6 +5267,9 @@
         "Puzzle",
         "Quest"
     ],
+    "Marginalia Hero": [
+        "Action-adventure"
+    ],
     "Mario Kart 8": [
         "Action",
         "Arcade",
@@ -5299,6 +5365,36 @@
         "TPS"
     ],
     "Mass Effect 2: Legendary Edition - Zaeed: The Price of Revenge (DLC)": [
+        "Action/RPG",
+        "Sci-fi",
+        "Shoot 'em up",
+        "TPS"
+    ],
+    "Mass Effect 3: Legendary Edition": [
+        "Action/RPG",
+        "Sci-fi",
+        "Shoot 'em up",
+        "TPS"
+    ],
+    "Mass Effect 3: Legendary Edition - Citadel (DLC)": [
+        "Action/RPG",
+        "Sci-fi",
+        "Shoot 'em up",
+        "TPS"
+    ],
+    "Mass Effect 3: Legendary Edition - From Ashes (DLC)": [
+        "Action/RPG",
+        "Sci-fi",
+        "Shoot 'em up",
+        "TPS"
+    ],
+    "Mass Effect 3: Legendary Edition - Leviathan (DLC)": [
+        "Action/RPG",
+        "Sci-fi",
+        "Shoot 'em up",
+        "TPS"
+    ],
+    "Mass Effect 3: Legendary Edition - Omega (DLC)": [
         "Action/RPG",
         "Sci-fi",
         "Shoot 'em up",
@@ -5588,6 +5684,12 @@
         "RPG",
         "Strategy",
         "TBS",
+        "Wargame"
+    ],
+    "Might & Magic Heroes VII": [
+        "Adventure",
+        "RPG",
+        "Strategy",
         "Wargame"
     ],
     "Minecraft": [
@@ -5917,6 +6019,18 @@
         "Sci-fi",
         "Shoot 'em up"
     ],
+    "No Man’s Sky": [
+        "Action-adventure",
+        "Action/RPG",
+        "FPS",
+        "MMO",
+        "Open world",
+        "Sandbox",
+        "Sci-fi",
+        "Simulation",
+        "Space",
+        "Survival"
+    ],
     "Nobody Saves the World": [
         "Action-adventure",
         "Action/RPG",
@@ -5973,6 +6087,15 @@
         "Quest"
     ],
     "One Night at Flumpty's 2": [],
+    "One Piece Odyssey": [
+        "Action-adventure",
+        "Action/RPG",
+        "Casual",
+        "Humor",
+        "JRPG",
+        "Open world",
+        "Third-person"
+    ],
     "One Piece: Burning Blood": [
         "Action",
         "Arcade",
@@ -6670,6 +6793,14 @@
         "Action-adventure",
         "Point-and-click"
     ],
+    "Red Dead Redemption": [
+        "Action-adventure",
+        "Cardgame",
+        "FPS",
+        "Open world",
+        "TPS",
+        "Western"
+    ],
     "Red Faction": [
         "Action",
         "FPS",
@@ -7015,6 +7146,13 @@
         "TPS"
     ],
     "Risen": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Open world",
+        "Third-person"
+    ],
+    "Risen 2: Dark Waters": [
         "Action-adventure",
         "Action/RPG",
         "Fantasy",
@@ -7482,6 +7620,12 @@
         "Cyberpunk",
         "FPS",
         "Fantasy"
+    ],
+    "Shadow Warrior 3": [
+        "Action-adventure",
+        "FPS",
+        "Hack and slash",
+        "Humor"
     ],
     "Shadow of the Colossus": [
         "Action-adventure",
@@ -8311,6 +8455,18 @@
         "JRPG",
         "Third-person"
     ],
+    "Tales of Destiny": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "JRPG",
+        "Third-person"
+    ],
+    "Tales of Eternia": [
+        "Action-adventure",
+        "Action/RPG",
+        "JRPG"
+    ],
     "Tales of Vesperia": [
         "Action/RPG",
         "Fantasy",
@@ -8720,6 +8876,14 @@
         "First-person",
         "Horror"
     ],
+    "The House of the Dead: Remake": [
+        "Action",
+        "Arcade",
+        "Beat 'em up",
+        "FPS",
+        "Horror",
+        "Rail shooter"
+    ],
     "The Incredible Adventures of Van Helsing": [
         "Action-adventure",
         "Action/RPG",
@@ -8787,6 +8951,12 @@
         "Action/RPG",
         "Arcade",
         "Platformer",
+        "Puzzle"
+    ],
+    "The Legend of Zelda: Ocarina of Time": [
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
         "Puzzle"
     ],
     "The Light Remake": [
@@ -9044,6 +9214,11 @@
         "Stealth",
         "Steampunk",
         "Third-person"
+    ],
+    "Thief II: The Metal Age": [
+        "Action-adventure",
+        "FPS",
+        "Stealth"
     ],
     "This Is The Police": [
         "Adventure",
@@ -9704,6 +9879,14 @@
         "Puzzle",
         "Quest"
     ],
+    "Wild Arms 2": [
+        "Adventure",
+        "JRPG",
+        "Puzzle",
+        "RPG",
+        "TBS",
+        "Third-person"
+    ],
     "Will Rock": [
         "Action",
         "Arcade",
@@ -9818,6 +10001,16 @@
         "Stealth",
         "Survival"
     ],
+    "World of Warcraft": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "First-person",
+        "MMO",
+        "Open world",
+        "Third-person",
+        "Wargame"
+    ],
     "Worms 2": [
         "Action",
         "Arcade",
@@ -9882,6 +10075,14 @@
         "Shooter",
         "Strategy",
         "Tower defense"
+    ],
+    "XCOM 2": [
+        "RPG",
+        "RTS",
+        "Sci-fi",
+        "Strategy",
+        "TBS",
+        "Wargame"
     ],
     "XCOM: Chimera Squad": [
         "RPG",
@@ -10098,6 +10299,10 @@
     "Ледниковый период 2: Глобальное потепление / Ice Age 2: The Meltdown": [],
     "Ледниковый период 3: Эра динозавров / Ice Age 3: Dawn of the Dinosaurs": [],
     "Лесная братва / Over the Hedge": [],
+    "Магия крови": [
+        "Action-adventure",
+        "Action/RPG"
+    ],
     "Не время для драконов / A Farewell To Dragons": [
         "Action/RPG"
     ],
@@ -10121,188 +10326,5 @@
     "ШХД: ЗИМА / IT'S WINTER": [
         "Casual",
         "Simulation"
-    ],
-    "Choo-Choo Charles": [
-        "Action-adventure",
-        "FPS",
-        "Open world",
-        "Survival horror"
-    ],
-    "Marginalia Hero": [
-        "Action-adventure"
-    ],
-    "Thief II: The Metal Age": [
-        "Action-adventure",
-        "FPS",
-        "Stealth"
-    ],
-    "Deus Ex: Human Revolution": [
-        "Action-adventure",
-        "Action/RPG",
-        "Cyberpunk",
-        "FPS",
-        "Point-and-click",
-        "Sci-fi",
-        "Shoot 'em up",
-        "Stealth",
-        "TPS"
-    ],
-    "Drakensang: The Dark Eye": [
-        "RPG",
-        "TPS"
-    ],
-    "Final Fantasy Tactics": [
-        "Adventure",
-        "Fantasy",
-        "Isometric",
-        "RPG",
-        "Strategy",
-        "TBS",
-        "TRPG"
-    ],
-    "God of War: Ragnarök": [
-        "Action-adventure",
-        "Action/RPG",
-        "Fantasy",
-        "Hack and slash",
-        "Third-person"
-    ],
-    "Might & Magic Heroes VII": [
-        "Adventure",
-        "RPG",
-        "Strategy",
-        "Wargame"
-    ],
-    "No Man’s Sky": [
-        "Action-adventure",
-        "Action/RPG",
-        "FPS",
-        "MMO",
-        "Open world",
-        "Sandbox",
-        "Sci-fi",
-        "Simulation",
-        "Space",
-        "Survival"
-    ],
-    "Risen 2: Dark Waters": [
-        "Action-adventure",
-        "Action/RPG",
-        "Fantasy",
-        "Open world",
-        "Third-person"
-    ],
-    "Tales of Destiny": [
-        "Action-adventure",
-        "Action/RPG",
-        "Fantasy",
-        "JRPG",
-        "Third-person"
-    ],
-    "Tales of Eternia": [
-        "Action-adventure",
-        "Action/RPG",
-        "JRPG"
-    ],
-    "The Legend of Zelda: Ocarina of Time": [
-        "Action-adventure",
-        "Action/RPG",
-        "Arcade",
-        "Puzzle"
-    ],
-    "Wild Arms 2": [
-        "Adventure",
-        "JRPG",
-        "Puzzle",
-        "RPG",
-        "TBS",
-        "Third-person"
-    ],
-    "World of Warcraft": [
-        "Action-adventure",
-        "Action/RPG",
-        "Fantasy",
-        "First-person",
-        "MMO",
-        "Open world",
-        "Third-person",
-        "Wargame"
-    ],
-    "Магия крови": [
-        "Action-adventure",
-        "Action/RPG"
-    ],
-    "One Piece Odyssey": [
-        "Action-adventure",
-        "Action/RPG",
-        "Casual",
-        "JRPG"
-    ],
-    "Red Dead Redemption": [
-        "Action-adventure",
-        "Cardgame",
-        "FPS",
-        "Open world",
-        "TPS",
-        "Western"
-    ],
-    "XCOM 2": [
-        "RPG",
-        "RTS",
-        "Sci-fi",
-        "Strategy",
-        "TBS",
-        "Wargame"
-    ],
-    "Mass Effect 3: Legendary Edition": [],
-    "Mass Effect 3: Legendary Edition - Leviathan (DLC)": [],
-    "Mass Effect 3: Legendary Edition - Omega (DLC)": [],
-    "Mass Effect 3: Legendary Edition - From Ashes (DLC)": [],
-    "Mass Effect 3: Legendary Edition - Citadel (DLC)": [],
-    "Disco Elysium": [
-        "Adventure",
-        "Isometric",
-        "Movie",
-        "RPG"
-    ],
-    "Bendy and the Ink Machine": [
-        "Action-adventure",
-        "First-person",
-        "Puzzle",
-        "Quest",
-        "Strategy",
-        "Survival horror"
-    ],
-    "The House of the Dead: Remake": [
-        "Action",
-        "Arcade",
-        "Beat 'em up",
-        "FPS",
-        "Horror",
-        "Rail shooter"
-    ],
-    "Shadow Warrior 3": [
-        "Action-adventure",
-        "FPS",
-        "Hack and slash",
-        "Humor"
-    ],
-    "Hellbound": [
-        "Action",
-        "FPS",
-        "TPS"
-    ],
-    "Dusk": [
-        "Action",
-        "FPS",
-        "Horror",
-        "Retro"
-    ],
-    "Amid Evil": [
-        "Action-adventure",
-        "FPS",
-        "Fantasy",
-        "Horror",
-        "Retro"
     ]
 }

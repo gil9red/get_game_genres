@@ -84,6 +84,32 @@ def remove_partial_duplicates(genres: list[str], need_log: bool = True) -> list[
     return genres
 
 
+def fill_dlc(game_by_genres: dict):
+    log.info('Заполнение DLC игр')
+
+    not_defined_dlc: list[str] = [
+        name
+        for name, genres in game_by_genres.items()
+        if not genres and re.search(r'\(\w+\)', name)
+    ]
+    log.info(f'Не имеют жанры: {len(not_defined_dlc)}')
+
+    for name_dlc in not_defined_dlc:
+        variants: list[str] = []
+        for name in game_by_genres:
+            if name_dlc == name:
+                continue
+
+            if re.sub(r'\W', '', name_dlc).upper().startswith(re.sub(r'\W', '', name).upper()):
+                variants.append(name)
+
+        if variants:
+            name = max(variants, key=len)  # Выбираем игры с наибольшим количеством символов
+            log.info(f'{name}\n{name_dlc}\n')
+
+            game_by_genres[name_dlc] = game_by_genres[name]
+
+
 def run():
     log.info('Запуск генератора игр.')
 
@@ -148,6 +174,8 @@ def run():
         log.info('')
 
     log.info(f'Завершение поиска игр. Новые игры: {number}.')
+
+    fill_dlc(game_by_genres)
 
     if number:
         log.info(f'Сохранение в {FILE_NAME_GAMES}')
