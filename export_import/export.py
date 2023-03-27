@@ -18,8 +18,12 @@ DIR.mkdir(parents=True, exist_ok=True)
 FILE_NAME_EXPORT_JSON = DIR / 'games.json'
 
 
-if __name__ == '__main__':
+def run():
     items = [model_to_dict(dump) for dump in Dump.select()]
     print(len(items))
 
     save_json(items, FILE_NAME_EXPORT_JSON)
+
+
+if __name__ == '__main__':
+    run()
