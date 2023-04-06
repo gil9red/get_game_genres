@@ -475,5 +475,7 @@
     "MMORPG": [
         "MMO",
         "RPG"
-    ]
+    ],
+    "Экшн": "Action",
+    "Immersive sim": "Immersive sim"
 }
