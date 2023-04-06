@@ -10326,5 +10326,48 @@
     "ШХД: ЗИМА / IT'S WINTER": [
         "Casual",
         "Simulation"
+    ],
+    "Thimbleweed Park": [
+        "Adventure",
+        "Arcade",
+        "Horror",
+        "Point-and-click",
+        "Puzzle",
+        "Quest",
+        "Sci-fi"
+    ],
+    "Postal Redux": [
+        "2D",
+        "Action",
+        "Arcade",
+        "Beat 'em up",
+        "Isometric",
+        "Shooter"
+    ],
+    "OneShot": [
+        "Adventure",
+        "Arcade",
+        "Casual",
+        "Horror",
+        "JRPG",
+        "Logic",
+        "Puzzle"
+    ],
+    "OneShot: Solstice (DLC)": [
+        "Adventure",
+        "Arcade",
+        "Casual",
+        "Horror",
+        "JRPG",
+        "Logic",
+        "Puzzle"
+    ],
+    "Deus Ex: Human Revolution: The Missing Link (DLC)": [
+        "RPG"
+    ],
+    "The Last of Us: Part I": [
+        "Action-adventure",
+        "Shooter",
+        "Survival"
     ]
 }
