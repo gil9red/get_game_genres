@@ -39,6 +39,4 @@ if genre_translate != new_genre_translate:
 FILE_NAME_GAMES.unlink(missing_ok=True)
 run_generate_games()
 
-# Чистим жанры
-FILE_NAME_GENRES.unlink(missing_ok=True)
 run_generate_genres()
