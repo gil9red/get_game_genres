@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'ipetrash'
+__author__ = "ipetrash"
 
 
 from parsers.base_parser import BaseParser
@@ -10,32 +10,32 @@ from parsers.base_parser import BaseParser
 class GamerInfoComParser(BaseParser):
     def _parse(self) -> list[str]:
         headers = {
-            'X-Requested-With': 'XMLHttpRequest',
+            "X-Requested-With": "XMLHttpRequest",
         }
         form_data = {
-            'search-query': self.game_name,
-            'search-obl': 'games',
-            'page': '1',
+            "search-query": self.game_name,
+            "search-obl": "games",
+            "page": "1",
         }
 
-        url = 'https://gamer-info.com/search-q/'
+        url = "https://gamer-info.com/search-q/"
         root = self.send_post(url, headers=headers, data=form_data, return_html=True)
 
-        for game_block in root.select('.games > .c2'):
-            g = game_block.select_one('.g')
-            if 'Жанр:' not in g.text:
+        for game_block in root.select(".games > .c2"):
+            g = game_block.select_one(".g")
+            if "Жанр:" not in g.text:
                 continue
 
-            title = self.get_norm_text(game_block.select_one('.n'))
+            title = self.get_norm_text(game_block.select_one(".n"))
             if not self.is_found_game(title):
                 continue
 
-            genres = g.text.replace('Жанр:', '').strip().split(', ')
+            genres = g.text.replace("Жанр:", "").strip().split(", ")
 
             # Сойдет первый, совпадающий по имени, вариант
             return genres
 
-        self.log_info(f'Not found game {self.game_name!r}')
+        self.log_info(f"Not found game {self.game_name!r}")
         return []
 
 
@@ -43,7 +43,7 @@ def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
     return GamerInfoComParser(*args, **kwargs).get_game_genres(game_name)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from parsers import _common_test
 
     _common_test(get_game_genres)

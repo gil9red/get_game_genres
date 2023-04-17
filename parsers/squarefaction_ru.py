@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'ipetrash'
+__author__ = "ipetrash"
 
 
 from bs4 import BeautifulSoup
@@ -10,35 +10,35 @@ from parsers.base_parser import BaseParser
 
 class SquarefactionRuParser(BaseParser):
     def _parse(self) -> list[str]:
-        url = f'http://squarefaction.ru/main/search/games?q={self.game_name}'
+        url = f"http://squarefaction.ru/main/search/games?q={self.game_name}"
         rs = self.send_get(url)
 
-        root = BeautifulSoup(rs.content, 'html.parser')
+        root = BeautifulSoup(rs.content, "html.parser")
 
         # http://squarefaction.ru/main/search/games?q=dead+space
-        if '/main/search/games' in rs.url:
-            self.log_info(f'Parsing of game list')
+        if "/main/search/games" in rs.url:
+            self.log_info(f"Parsing of game list")
 
-            for game_block in root.select('#games > .entry'):
-                title = self.get_norm_text(game_block.select_one('.name'))
+            for game_block in root.select("#games > .entry"):
+                title = self.get_norm_text(game_block.select_one(".name"))
                 if not self.is_found_game(title):
                     continue
 
                 # <div class="infos">TPS,Survival Horror,Action</div>
-                genres = self.get_norm_text(game_block.select_one('.infos')).split(',')
+                genres = self.get_norm_text(game_block.select_one(".infos")).split(",")
 
                 # Сойдет первый, совпадающий по имени, вариант
                 return genres
 
         # http://squarefaction.ru/game/dead-space
         else:
-            self.log_info(f'Parsing of game page')
+            self.log_info(f"Parsing of game page")
 
-            game_block = root.select_one('#page-info')
+            game_block = root.select_one("#page-info")
             if game_block:
-                title = self.get_norm_text(game_block.select_one('#title'))
+                title = self.get_norm_text(game_block.select_one("#title"))
                 if not self.is_found_game(title):
-                    self.log_warn(f'Not match game title {title!r}')
+                    self.log_warn(f"Not match game title {title!r}")
 
                 # <td class="nowraps-links">
                 #     <a href="/games?genre=tps">TPS</a>,
@@ -46,13 +46,15 @@ class SquarefactionRuParser(BaseParser):
                 #     <a href="/games?genre=action">Action</a>
                 # </td>
                 genres = [
-                    self.get_norm_text(a) for a in game_block.select('a') if '?genre=' in a['href']
+                    self.get_norm_text(a)
+                    for a in game_block.select("a")
+                    if "?genre=" in a["href"]
                 ]
 
                 # Сойдет первый, совпадающий по имени, вариант
                 return genres
 
-        self.log_info(f'Not found game {self.game_name!r}')
+        self.log_info(f"Not found game {self.game_name!r}")
         return []
 
 
@@ -60,7 +62,7 @@ def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
     return SquarefactionRuParser(*args, **kwargs).get_game_genres(game_name)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from parsers import _common_test
 
     _common_test(get_game_genres)

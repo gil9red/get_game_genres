@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'ipetrash'
+__author__ = "ipetrash"
 
 
 from urllib.parse import urljoin
@@ -10,20 +10,20 @@ from parsers.base_parser import BaseParser
 
 class GamefaqsGamespotComParser(BaseParser):
     def _parse(self) -> list[str]:
-        url = f'https://gamefaqs.gamespot.com/search?game={self.game_name}'
+        url = f"https://gamefaqs.gamespot.com/search?game={self.game_name}"
         root = self.send_get(url, return_html=True)
 
-        for game_block_preview in root.select('.search_results_title > .search_result'):
-            a = game_block_preview.select_one('.sr_name > a.log_search')
+        for game_block_preview in root.select(".search_results_title > .search_result"):
+            a = game_block_preview.select_one(".sr_name > a.log_search")
             title = self.get_norm_text(a)
             if not self.is_found_game(title):
                 continue
 
-            url_game = urljoin(url, a['href'])
-            self.log_info(f'Load {url_game!r}')
+            url_game = urljoin(url, a["href"])
+            self.log_info(f"Load {url_game!r}")
 
             game_block = self.send_get(url_game, return_html=True)
-            game_info = game_block.select_one('.pod_gameinfo_left')
+            game_info = game_block.select_one(".pod_gameinfo_left")
             if not game_info:
                 return []
 
@@ -35,13 +35,15 @@ class GamefaqsGamespotComParser(BaseParser):
             # </li>
             genres = [
                 self.get_norm_text(a)
-                for a in game_info.select_one('li > b:contains("Genre:")').find_next_siblings('a')
+                for a in game_info.select_one(
+                    'li > b:contains("Genre:")'
+                ).find_next_siblings("a")
             ]
 
             # Сойдет первый, совпадающий по имени, вариант
             return genres
 
-        self.log_info(f'Not found game {self.game_name!r}')
+        self.log_info(f"Not found game {self.game_name!r}")
         return []
 
 
@@ -49,7 +51,7 @@ def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
     return GamefaqsGamespotComParser(*args, **kwargs).get_game_genres(game_name)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from parsers import _common_test
 
     _common_test(get_game_genres)

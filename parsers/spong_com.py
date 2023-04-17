@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'ipetrash'
+__author__ = "ipetrash"
 
 
 from parsers.base_parser import BaseParser
@@ -9,14 +9,14 @@ from parsers.base_parser import BaseParser
 
 class SpongComParser(BaseParser):
     def _parse(self) -> list[str]:
-        url = f'https://spong.com/search/index.jsp?q={self.game_name}'
+        url = f"https://spong.com/search/index.jsp?q={self.game_name}"
         root = self.send_get(url, return_html=True)
-    
+
         # Первая таблица -- та, что нужна нам
-        result = root.select_one('table.searchResult')
+        result = root.select_one("table.searchResult")
         if result:
-            for game_block in result.select('tr'):
-                tds = game_block.select('td')
+            for game_block in result.select("tr"):
+                tds = game_block.select("td")
                 if len(tds) != 4:  # Например, tr > th
                     continue
 
@@ -32,8 +32,8 @@ class SpongComParser(BaseParser):
 
                 # Сойдет первый, совпадающий по имени, вариант
                 return genres
-    
-        self.log_info(f'Not found game {self.game_name!r}')
+
+        self.log_info(f"Not found game {self.game_name!r}")
         return []
 
 
@@ -41,7 +41,7 @@ def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
     return SpongComParser(*args, **kwargs).get_game_genres(game_name)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from parsers import _common_test
 
     _common_test(get_game_genres)

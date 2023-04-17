@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'ipetrash'
+__author__ = "ipetrash"
 
 
 import re
@@ -11,47 +11,51 @@ from parsers.base_parser import BaseParser
 class AgRuParser(BaseParser):
     def _parse(self) -> list[str]:
         headers = {
-            'Host': 'ag.ru',
-            'Accept-Language': 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
-            'Accept-Encoding': 'gzip, deflate',
+            "Host": "ag.ru",
+            "Accept-Language": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3",
+            "Accept-Encoding": "gzip, deflate",
         }
 
         # Для правдоподобности сделаем запрос на страницу с играми
-        rs = self.send_get('https://ag.ru/games/pc', headers=headers)
+        rs = self.send_get("https://ag.ru/games/pc", headers=headers)
         m = re.search(r'"rawgApiKey"\s*:\s*"(.+?)"', rs.text)
         if not m:
-            raise Exception('Не удалось найти на странице ключ для API (rawgApiKey)!')
+            raise Exception("Не удалось найти на странице ключ для API (rawgApiKey)!")
         key = m.group(1)
 
         # Заголовки, что отправляются вместе с запросом к API
-        headers.update({
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-            'Referer': 'https://ag.ru/games/pc',
-            'X-API-Language': 'ru',
-            'X-API-Referer': '%2Fgames',
-            'X-API-Client': 'website',
-        })
+        headers.update(
+            {
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+                "Referer": "https://ag.ru/games/pc",
+                "X-API-Language": "ru",
+                "X-API-Referer": "%2Fgames",
+                "X-API-Client": "website",
+            }
+        )
 
-        url = 'https://ag.ru/api/games'
+        url = "https://ag.ru/api/games"
         params = dict(
             page_size=20,
             search=self.game_name,
             page=1,
             key=key,
         )
-        rs_json: dict = self.send_get(url, params=params, headers=headers, return_json=True)
-        for item in rs_json['results']:
-            title = item['name']
+        rs_json: dict = self.send_get(
+            url, params=params, headers=headers, return_json=True
+        )
+        for item in rs_json["results"]:
+            title = item["name"]
             if not self.is_found_game(title):
                 continue
 
-            genres = [x['name'] for x in item['genres']]
+            genres = [x["name"] for x in item["genres"]]
 
             # Сойдет первый, совпадающий по имени, вариант
             return genres
 
-        self.log_info(f'Not found game {self.game_name!r}')
+        self.log_info(f"Not found game {self.game_name!r}")
         return []
 
 
@@ -59,7 +63,7 @@ def get_game_genres(game_name: str, *args, **kwargs) -> list[str]:
     return AgRuParser(*args, **kwargs).get_game_genres(game_name)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from parsers import _common_test
 
     _common_test(get_game_genres)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'ipetrash'
+__author__ = "ipetrash"
 
 
 import importlib.util
@@ -10,6 +10,7 @@ import time
 
 from inspect import isclass
 from pathlib import Path
+from types import ModuleType
 
 from config import IGNORE_SITE_NAMES
 from parsers.base_parser import BaseParser
@@ -19,7 +20,7 @@ from parsers.base_parser import BaseParser
 DIR_PARSERS = Path(__file__).parent.resolve()
 
 
-def module_from_file(file_path: Path) -> 'ModuleType':
+def module_from_file(file_path: Path) -> ModuleType:
     module_name = file_path.stem
     spec = importlib.util.spec_from_file_location(module_name, file_path)
     module = importlib.util.module_from_spec(spec)
@@ -34,7 +35,7 @@ def module_from_file(file_path: Path) -> 'ModuleType':
 def get_parsers() -> list[BaseParser]:
     items = []
 
-    for file_name in DIR_PARSERS.glob('*.py'):
+    for file_name in DIR_PARSERS.glob("*.py"):
         module = module_from_file(file_name)
         for attr in dir(module):
             cls = getattr(module, attr)
@@ -50,21 +51,20 @@ def get_parsers() -> list[BaseParser]:
 
 def print_parsers(parsers: list, log=print):
     max_width = len(max([x.get_site_name() for x in parsers], key=len))
-    fmt_str = '    {:<%d} : {}' % max_width
+    fmt_str = "    {:<%d} : {}" % max_width
     items = [
-        fmt_str.format(parser.get_site_name(), parser.__class__)
-        for parser in parsers
+        fmt_str.format(parser.get_site_name(), parser.__class__) for parser in parsers
     ]
 
-    log(f'Парсеры ({len(parsers)}):\n' + "\n".join(items))
+    log(f"Парсеры ({len(parsers)}):\n" + "\n".join(items))
 
 
 TEST_GAMES = [
-    'Hellgate: London',
-    'The Incredible Adventures of Van Helsing',
-    'Dark Souls: Prepare to Die Edition',
-    'Twin Sector',
-    'Call of Cthulhu: Dark Corners of the Earth',
+    "Hellgate: London",
+    "The Incredible Adventures of Van Helsing",
+    "Dark Souls: Prepare to Die Edition",
+    "Twin Sector",
+    "Call of Cthulhu: Dark Corners of the Earth",
 ]
 
 
@@ -73,13 +73,13 @@ def _common_test(get_game_genres, sleep=1, max_number=None):
         max_number = len(TEST_GAMES)
 
     for name in TEST_GAMES[:max_number]:
-        print(f'Search {name!r}...')
-        print(f'    Genres: {get_game_genres(name)}\n')
+        print(f"Search {name!r}...")
+        print(f"    Genres: {get_game_genres(name)}\n")
 
         time.sleep(sleep)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     parsers = get_parsers()
     print_parsers(parsers)
     """
@@ -100,8 +100,8 @@ if __name__ == '__main__':
     """
     print()
 
-    game = 'Dead Space'
-    print(f'Search genres for {game!r}:')
+    game = "Dead Space"
+    print(f"Search genres for {game!r}:")
     for parser in parsers:
         parser._need_logs = False
 
