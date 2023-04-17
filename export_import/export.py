@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'ipetrash'
+__author__ = "ipetrash"
 
 
 from pathlib import Path
@@ -12,10 +12,10 @@ from common import save_json
 from db import Dump
 
 
-DIR = Path(__file__).parent.resolve() / 'data'
+DIR = Path(__file__).parent.resolve() / "data"
 DIR.mkdir(parents=True, exist_ok=True)
 
-FILE_NAME_EXPORT_JSON = DIR / 'games.json'
+FILE_NAME_EXPORT_JSON = DIR / "games.json"
 
 
 def run():
@@ -25,5 +25,5 @@ def run():
     save_json(items, FILE_NAME_EXPORT_JSON)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     run()

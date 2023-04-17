@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'ipetrash'
+__author__ = "ipetrash"
 
 
 from common import load_json, save_json, process_umlauts
@@ -15,7 +15,7 @@ from generate_genres.create import FILE_NAME_GENRES, run as run_generate_genres
 for dump in Dump.select():
     genres = [process_umlauts(genre) for genre in dump.genres]
     if genres != dump.genres:
-        print(f'Обновлен {dump}')
+        print(f"Обновлен {dump}")
         dump.genres = genres
         dump.save()
 
@@ -23,14 +23,16 @@ for dump in Dump.select():
 run_export_games()
 
 # Чистим трансляции жанров
-genre_translate: dict[str, list[str] | str | None] = load_json(FILE_NAME_GENRE_TRANSLATE)
+genre_translate: dict[str, list[str] | str | None] = load_json(
+    FILE_NAME_GENRE_TRANSLATE
+)
 new_genre_translate = {
     process_umlauts(k): v
     for k, v in genre_translate.items()
 }
 if genre_translate != new_genre_translate:
     print(
-        f'Обновление словаря трансляций, замена названий жанров '
+        f"Обновление словаря трансляций, замена названий жанров "
         f'на: {", ".join(new_genre_translate.keys() - genre_translate.keys())}'
     )
     save_json(new_genre_translate, FILE_NAME_GENRE_TRANSLATE)
