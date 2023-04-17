@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'ipetrash'
+__author__ = "ipetrash"
 
 
 import json
@@ -30,7 +30,7 @@ class NotDefinedParameterException(Exception):
         super().__init__(text)
 
 
-def db_create_backup(backup_dir: Path = DIR_BACKUP, date_fmt: str = '%Y-%m-%d'):
+def db_create_backup(backup_dir: Path = DIR_BACKUP, date_fmt: str = "%Y-%m-%d"):
     backup_dir.mkdir(parents=True, exist_ok=True)
 
     zip_name = datetime.today().strftime(date_fmt)
@@ -44,7 +44,7 @@ def db_create_backup(backup_dir: Path = DIR_BACKUP, date_fmt: str = '%Y-%m-%d'):
 
 
 class ListField(Field):
-    field_type = 'TEXT'
+    field_type = "TEXT"
 
     def python_value(self, value: str) -> list:
         return json.loads(value)
@@ -55,7 +55,7 @@ class ListField(Field):
                 return value
 
             if not isinstance(value, list):
-                raise Exception('Type must be a list')
+                raise Exception("Type must be a list")
 
         return json.dumps(value, ensure_ascii=False)
 
@@ -65,9 +65,9 @@ class ListField(Field):
 db = SqliteQueueDatabase(
     DB_FILE_NAME,
     pragmas={
-        'foreign_keys': 1,
-        'journal_mode': 'wal',    # WAL-mode
-        'cache_size': -1024 * 64  # 64MB page-cache
+        "foreign_keys": 1,
+        "journal_mode": "wal",     # WAL-mode
+        "cache_size": -1024 * 64,  # 64MB page-cache
     },
     use_gevent=False,    # Use the standard library "threading" module.
     autostart=True,
@@ -81,7 +81,7 @@ class BaseModel(Model):
         database = db
 
     @classmethod
-    def get_inherited_models(cls) -> list[Type['BaseModel']]:
+    def get_inherited_models(cls) -> list[Type["BaseModel"]]:
         return sorted(cls.__subclasses__(), key=lambda x: x.__name__)
 
     @classmethod
@@ -90,9 +90,9 @@ class BaseModel(Model):
         for sub_cls in cls.get_inherited_models():
             name = sub_cls.__name__
             count = sub_cls.select().count()
-            items.append(f'{name}: {count}')
+            items.append(f"{name}: {count}")
 
-        print(', '.join(items))
+        print(", ".join(items))
 
     @classmethod
     def count(cls, filters: Iterable = None) -> int:
@@ -114,13 +114,13 @@ class BaseModel(Model):
                     v = repr(shorten(v))
 
             elif isinstance(field, ForeignKeyField):
-                k = f'{k}_id'
+                k = f"{k}_id"
                 if v:
                     v = v.id
 
-            fields.append(f'{k}={v}')
+            fields.append(f"{k}={v}")
 
-        return self.__class__.__name__ + '(' + ', '.join(fields) + ')'
+        return self.__class__.__name__ + "(" + ", ".join(fields) + ")"
 
 
 class Dump(BaseModel):
@@ -145,11 +145,11 @@ class Dump(BaseModel):
             cls.create(site=site, name=name, genres=genres)
 
     @classmethod
-    def get(cls) -> list['Dump']:
-        return cls.select().where(cls.genres != '[]').order_by(cls.name)
+    def get(cls) -> list["Dump"]:
+        return cls.select().where(cls.genres != "[]").order_by(cls.name)
 
     @classmethod
-    def get_games_by_site(cls, site: str) -> list['Dump']:
+    def get_games_by_site(cls, site: str) -> list["Dump"]:
         return list(cls.select().where(cls.site == site).order_by(cls.name))
 
     @classmethod
@@ -202,7 +202,7 @@ class Game(BaseModel):
     genres = ListField()
 
     @classmethod
-    def add_or_update(cls, name: str, genres: list[str]) -> 'Game':
+    def add_or_update(cls, name: str, genres: list[str]) -> "Game":
         genres = sorted(set(genres))
 
         obj = cls.get_by(name)
@@ -220,9 +220,9 @@ class Game(BaseModel):
         return obj
 
     @classmethod
-    def get_by(cls, name: str) -> Optional['Game']:
+    def get_by(cls, name: str) -> Optional["Game"]:
         if not name or not name.strip():
-            raise NotDefinedParameterException(parameter_name='name')
+            raise NotDefinedParameterException(parameter_name="name")
 
         return cls.get_or_none(name=name)
 
@@ -230,10 +230,10 @@ class Game(BaseModel):
 class Genre(BaseModel):
     name = TextField(primary_key=True)
     description = TextField()
-    aliases = TextField(default='')
+    aliases = TextField(default="")
 
     @classmethod
-    def add_or_update(cls, name: str, description: str, aliases: str = '') -> 'Genre':
+    def add_or_update(cls, name: str, description: str, aliases: str = "") -> "Genre":
         obj = cls.get_by(name)
         if obj:
             if obj.description != description:
@@ -254,9 +254,9 @@ class Genre(BaseModel):
         return obj
 
     @classmethod
-    def get_by(cls, name: str) -> Optional['Genre']:
+    def get_by(cls, name: str) -> Optional["Genre"]:
         if not name or not name.strip():
-            raise NotDefinedParameterException(parameter_name='name')
+            raise NotDefinedParameterException(parameter_name="name")
 
         return cls.get_or_none(name=name)
 
@@ -269,24 +269,24 @@ db.create_tables(BaseModel.get_inherited_models())
 time.sleep(0.050)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     BaseModel.print_count_of_tables()
     print()
 
-    print('Total:', Dump.select().count())
+    print("Total:", Dump.select().count())
 
     genres = Dump.get_all_genres()
-    print(f'Genres ({len(genres)}): {genres}')
+    print(f"Genres ({len(genres)}): {genres}")
 
     games = Dump.get_all_games()
-    print(f'Games ({len(games)}): {games}')
+    print(f"Games ({len(games)}): {games}")
 
     sites = Dump.get_all_sites()
-    print(f'Sites ({len(sites)}): {sites}')
+    print(f"Sites ({len(sites)}): {sites}")
 
     print()
 
-    print(Dump.get_genres_by_game('Dead Space'))
+    print(Dump.get_genres_by_game("Dead Space"))
     # ['3D', 'Action', 'Adventure: Survival Horror', 'Arcade', 'Sci-Fi', 'Shooter', 'Third-Person', 'action',
     # 'Боевик', 'Боевик от третьего лица', 'Боевик-приключения', 'Космос', 'От третьего лица', 'Ужасы', 'Шутер',
     # 'Шутеры', 'Экшен', 'Экшены', 'ужасы']

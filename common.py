@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'ipetrash'
+__author__ = "ipetrash"
 
 
 import json
@@ -25,13 +25,13 @@ def get_uniques(items: list) -> list:
     return list(set(items))
 
 
-def get_current_datetime_str(fmt='%Y-%m-%d_%H%M%S') -> str:
+def get_current_datetime_str(fmt="%Y-%m-%d_%H%M%S") -> str:
     return datetime.now().strftime(fmt)
 
 
 def load_json(file_name: str | Path) -> dict | list:
     try:
-        return json.load(open(file_name, encoding='utf-8'))
+        return json.load(open(file_name, encoding="utf-8"))
     except:
         return dict()
 
@@ -39,18 +39,18 @@ def load_json(file_name: str | Path) -> dict | list:
 def save_json(data: dict | list, file_name: str | Path):
     json.dump(
         data,
-        open(file_name, 'w', encoding='utf-8'),
+        open(file_name, "w", encoding="utf-8"),
         ensure_ascii=False,
         indent=4
     )
 
 
 def get_games_list() -> list[str]:
-    rs = requests.get('https://gist.github.com/gil9red/2f80a34fb601cd685353')
+    rs = requests.get("https://gist.github.com/gil9red/2f80a34fb601cd685353")
     rs.raise_for_status()
 
-    root = BeautifulSoup(rs.content, 'html.parser')
-    href = root.select_one('.file-actions > a')['href']
+    root = BeautifulSoup(rs.content, "html.parser")
+    href = root.select_one(".file-actions > a")["href"]
 
     raw_url = urljoin(rs.url, href)
 
@@ -67,16 +67,18 @@ def get_games_list() -> list[str]:
     return sorted(set(all_games))
 
 
-def get_logger(name: str = 'dump.txt', dir_logs: Path = DIR_LOGS, encoding='utf-8'):
+def get_logger(name: str = "dump.txt", dir_logs: Path = DIR_LOGS, encoding="utf-8"):
     dir_logs.mkdir(parents=True, exist_ok=True)
     file = dir_logs / name
 
     log = logging.getLogger(name)
     log.setLevel(logging.DEBUG)
 
-    formatter = logging.Formatter('[%(asctime)s] %(levelname)-8s %(message)s')
+    formatter = logging.Formatter("[%(asctime)s] %(levelname)-8s %(message)s")
 
-    fh = RotatingFileHandler(file, maxBytes=10_000_000, backupCount=5, encoding=encoding)
+    fh = RotatingFileHandler(
+        file, maxBytes=10_000_000, backupCount=5, encoding=encoding
+    )
     fh.setFormatter(formatter)
     log.addHandler(fh)
 
@@ -90,14 +92,14 @@ def get_logger(name: str = 'dump.txt', dir_logs: Path = DIR_LOGS, encoding='utf-
 def process_umlauts(text: str) -> str:
     # Замена "и" с умлаутом на один символ "й"
     replace = {
-        'й': 'й',
-        'Й': 'Й',
+        "й": "й",
+        "Й": "Й",
     }
     for k, v in replace.items():
         text = text.replace(k, v)
 
     # Дополнительная чистка умлаутом
-    text = ''.join(c for c in text if unicodedata.category(c) != 'Mn')
+    text = "".join(c for c in text if unicodedata.category(c) != "Mn")
 
     return text
 
@@ -107,4 +109,4 @@ if __name__ == "__main__":
     print(f'Games ({len(items)}): {", ".join(items[:5])}...')
     # Games (743): 35MM, 60 Seconds!, A Bird Story, A Plague Tale: Innocence, A Story About My Uncle...
 
-    assert process_umlauts('Файтинг̆') == 'Файтинг'
+    assert process_umlauts("Файтинг̆") == "Файтинг"

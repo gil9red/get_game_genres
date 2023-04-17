@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'ipetrash'
+__author__ = "ipetrash"
 
 
 import time
@@ -27,32 +27,35 @@ USE_FAKE_PARSER = False
 if USE_FAKE_PARSER:
     class FakeParser(BaseParser):
         @classmethod
-        def get_site_name(cls): return "_test_"
+        def get_site_name(cls):
+            return "_test_"
 
         def _parse(self) -> list[str]:
-            if self.game_name == 'С_умлаутом':
-                return ['Файтинг̆', 'Файтинг']
-            return ['RGB-bar', 'Action-bar']
+            if self.game_name == "С_умлаутом":
+                return ["Файтинг̆", "Файтинг"]
+            return ["RGB-bar", "Action-bar"]
 
     # Monkey Patch
-    def get_parsers(): return [FakeParser()]
+    def get_parsers():
+        return [FakeParser()]
 
     # Monkey Patch
-    def get_games_list(): return ['Foo', 'Bar', 'С_умлаутом']
+    def get_games_list():
+        return ["Foo", "Bar", "С_умлаутом"]
 
 
 log = get_logger()
 counter = AtomicCounter()
 
-MAX_TIMEOUT = 10                  # 10 seconds
-TIMEOUT_EVERY_N_GAMES = 50        # Every 50 games
+MAX_TIMEOUT = 10  # 10 seconds
+TIMEOUT_EVERY_N_GAMES = 50  # Every 50 games
 TIMEOUT_BETWEEN_N_GAMES = 3 * 60  # 3 minutes
 
 PAUSES = [
-    ('15 минут', 15 * 60),
-    ('30 минут', 30 * 60),
-    ('45 минут', 45 * 60),
-    ('1 час',    60 * 60),
+    ("15 минут", 15 * 60),
+    ("30 минут", 30 * 60),
+    ("45 минут", 45 * 60),
+    ("1 час", 60 * 60),
 ]
 
 
@@ -73,13 +76,15 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5):
                 while True:
                     num_request += 1
                     try:
-                        message = f'#{number}. Поиск жанров для {game_name!r} ({site_name})'
+                        message = f"#{number}. Поиск жанров для {game_name!r} ({site_name})"
                         if num_request > 1:
-                            message = f'{message}. Попытки {num_request}/{max_num_request}'
+                            message = f"{message}. Попытки {num_request}/{max_num_request}"
                         log.info(message)
 
                         genres = parser.get_game_genres(game_name)
-                        log.info(f'#{number}. Найдено жанров {game_name!r} ({site_name}): {genres}')
+                        log.info(
+                            f"#{number}. Найдено жанров {game_name!r} ({site_name}): {genres}"
+                        )
 
                         Dump.add(site_name, game_name, genres)
                         counter.inc()
@@ -88,13 +93,17 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5):
                         break
 
                     except:
-                        log.exception(f'#{number}. Ошибка при запросе {num_request}/{max_num_request} ({site_name})')
+                        log.exception(
+                            f"#{number}. Ошибка при запросе {num_request}/{max_num_request} ({site_name})"
+                        )
                         if num_request >= max_num_request:
-                            log.info(f'#{number}. Попытки закончились для {game_name!r} ({site_name})')
+                            log.info(
+                                f"#{number}. Попытки закончились для {game_name!r} ({site_name})"
+                            )
                             break
 
                         pause_text, pause_secs = PAUSES[num_request - 1]
-                        log.info(f'#{number}. Пауза на {pause_text}')
+                        log.info(f"#{number}. Пауза на {pause_text}")
                         time.sleep(pause_secs)
 
                         timeout += 1
@@ -103,15 +112,15 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5):
 
                 if number % TIMEOUT_EVERY_N_GAMES == 0:
                     log.info(
-                        f'#{number}. Пауза за каждые {TIMEOUT_EVERY_N_GAMES} игр: {TIMEOUT_BETWEEN_N_GAMES} секунд'
+                        f"#{number}. Пауза за каждые {TIMEOUT_EVERY_N_GAMES} игр: {TIMEOUT_BETWEEN_N_GAMES} секунд"
                     )
                     time.sleep(TIMEOUT_BETWEEN_N_GAMES)
 
             except:
-                log.exception(f'#{number}. Ошибка с игрой {game_name!r} ({site_name})')
+                log.exception(f"#{number}. Ошибка с игрой {game_name!r} ({site_name})")
 
     except:
-        log.exception(f'Ошибка:')
+        log.exception(f"Ошибка:")
 
 
 if __name__ == "__main__":
@@ -120,21 +129,23 @@ if __name__ == "__main__":
 
     while True:
         try:
-            log.info(f'Запуск')
+            log.info(f"Запуск")
             t = default_timer()
 
             db_create_backup()
 
             games = get_games_list()
-            log.info(f'Всего игр: {len(games)}')
+            log.info(f"Всего игр: {len(games)}")
 
             threads = []
             for parser in parsers:
                 threads.append(
                     Thread(target=run_parser, args=[parser, games])
                 )
-            log.info(f'Всего парсеров/потоков: {len(threads)}')
-            log.info(f'Ignore parsers ({len(IGNORE_SITE_NAMES)}): {", ".join(IGNORE_SITE_NAMES)}')
+            log.info(f"Всего парсеров/потоков: {len(threads)}")
+            log.info(
+                f'Не использовались парсеры ({len(IGNORE_SITE_NAMES)}): {", ".join(IGNORE_SITE_NAMES)}'
+            )
 
             counter.value = 0
 
@@ -145,10 +156,10 @@ if __name__ == "__main__":
                 thread.join()
 
             log.info(
-                f'Добавлено игр: {counter.value}. Игр в базе: {Dump.select().count()}. '
-                f'Пройдено времени: {seconds_to_str(default_timer() - t)}'
+                f"Добавлено игр: {counter.value}. Игр в базе: {Dump.select().count()}. "
+                f"Пройдено времени: {seconds_to_str(default_timer() - t)}"
             )
-            log.info(f'Завершено.\n')
+            log.info(f"Завершено.\n")
 
             create_genre_translate.run()
             create_generate_genres.run()
@@ -157,8 +168,8 @@ if __name__ == "__main__":
             wait(hours=1)
 
         except:
-            log.exception('')
+            log.exception("")
             wait(minutes=15)
 
         finally:
-            log.info('')
+            log.info("")

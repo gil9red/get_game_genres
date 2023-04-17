@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'ipetrash'
+__author__ = "ipetrash"
 
 
 from flask import Flask, jsonify
@@ -11,7 +11,7 @@ from db import Game, Genre
 
 
 app = Flask(__name__)
-app.config['JSON_SORT_KEYS'] = False
+app.config["JSON_SORT_KEYS"] = False
 
 
 @app.route("/api/games")
@@ -36,5 +36,5 @@ def get_genre(name: str):
     return jsonify(genre.to_dict() if genre else None)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(port=PORT)
