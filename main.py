@@ -9,6 +9,9 @@ import time
 from timeit import default_timer
 from threading import Thread
 
+# pip install simple-wait
+from simple_wait import wait
+
 from config import IGNORE_SITE_NAMES
 from common import get_logger, get_games_list
 from db import db_create_backup, Dump
@@ -19,7 +22,6 @@ from parsers import get_parsers, print_parsers
 from parsers.base_parser import BaseParser
 from third_party.atomic_counter import AtomicCounter
 from third_party.seconds_to_str import seconds_to_str
-from third_party.wait import wait
 
 
 # Test
