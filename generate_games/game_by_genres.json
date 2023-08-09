@@ -10369,5 +10369,173 @@
         "Action-adventure",
         "Shooter",
         "Survival"
+    ],
+    "The Last of Us: Part I - Left Behind (DLC)": [
+        "Action-adventure",
+        "Shooter",
+        "Survival"
+    ],
+    "Kujlevka": [
+        "Adventure",
+        "First-person"
+    ],
+    "Trials Evolution": [
+        "Arcade",
+        "Logic",
+        "Motorcycle",
+        "Platformer",
+        "Racing",
+        "Simulation"
+    ],
+    "Fallout: A Post Nuclear Role Playing Game": [
+        "Open world",
+        "Post apocalypse",
+        "RPG",
+        "TBS"
+    ],
+    "Fallout 2: A Post Nuclear Role Playing Game": [
+        "RPG"
+    ],
+    "Full Throttle Remastered": [
+        "Adventure",
+        "Point-and-click",
+        "Quest",
+        "Sci-fi"
+    ],
+    "Fallout: Brotherhood of Steel": [
+        "Action/RPG",
+        "Post apocalypse",
+        "Sci-fi",
+        "Shooter",
+        "Wargame"
+    ],
+    "Tiny Tina's Wonderlands": [
+        "Action-adventure",
+        "Action/RPG",
+        "FPS",
+        "Fantasy"
+    ],
+    "Tiny Tina's Wonderlands: Shattering Spectreglass (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "FPS",
+        "Fantasy"
+    ],
+    "Tiny Tina's Wonderlands: Coiled Captors (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "FPS",
+        "Fantasy"
+    ],
+    "Tiny Tina's Wonderlands: Glutton's Gamble (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "FPS",
+        "Fantasy"
+    ],
+    "Tiny Tina's Wonderlands: Molten Mirrors (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "FPS",
+        "Fantasy"
+    ],
+    "Assassin's Creed III": [
+        "Action-adventure",
+        "Stealth"
+    ],
+    "Crimsonland": [
+        "2D",
+        "Action/RPG",
+        "Arcade",
+        "FPS",
+        "Isometric",
+        "Post apocalypse",
+        "Sci-fi",
+        "Shoot 'em up"
+    ],
+    "Heretic": [
+        "Action",
+        "FPS",
+        "Fantasy"
+    ],
+    "Heretic: Shadow of the Serpent Riders (DLC)": [
+        "Action",
+        "Shooter"
+    ],
+    "Assassin's Creed III: The Hidden Secrets Pack (DLC)": [
+        "Action"
+    ],
+    "Hexen: Beyond Heretic": [
+        "Action-adventure",
+        "FPS",
+        "Fantasy",
+        "Shoot 'em up"
+    ],
+    "Tom Clancy's Splinter Cell: Chaos Theory": [
+        "Action-adventure",
+        "Stealth",
+        "Third-person"
+    ],
+    "The Sims 3": [
+        "Casual",
+        "God game",
+        "Isometric",
+        "Management",
+        "RTS",
+        "Sandbox",
+        "Simulation",
+        "Strategy"
+    ],
+    "Metal Gear Solid": [
+        "Action-adventure",
+        "Sci-fi",
+        "Stealth",
+        "Strategy",
+        "TPS",
+        "Wargame"
+    ],
+    "Assassin's Creed IV: Black Flag": [
+        "Action-adventure"
+    ],
+    "Fight Crab": [
+        "Action",
+        "Fighting",
+        "First-person",
+        "Simulation",
+        "Sport",
+        "Third-person"
+    ],
+    "Магия крови: Время теней (DLC)": [
+        "Action/RPG"
+    ],
+    "Only Up!": [
+        "Action-adventure",
+        "Casual",
+        "Platformer",
+        "Roguelike",
+        "Simulation",
+        "Third-person"
+    ],
+    "Pokemon Yellow Version - Special Pikachu Edition": [
+        "RPG"
+    ],
+    "Maneater": [
+        "Action-adventure",
+        "Action/RPG",
+        "Open world",
+        "Third-person"
+    ],
+    "Maneater: Truth Quest (DLC)": [
+        "Action/RPG"
+    ],
+    "Hot Lava": [
+        "Action-adventure",
+        "Arcade",
+        "First-person",
+        "Platformer",
+        "Racing"
+    ],
+    "Shipwreck": [
+        "Action-adventure"
     ]
 }
