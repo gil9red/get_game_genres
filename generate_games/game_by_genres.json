@@ -10537,5 +10537,452 @@
     ],
     "Shipwreck": [
         "Action-adventure"
+    ],
+    "Refunct": [
+        "Action-adventure",
+        "Arcade",
+        "Casual",
+        "First-person",
+        "Open world",
+        "Platformer"
+    ],
+    "World Of Warcraft: The Burning Crusade (DLC)": [
+        "Adventure",
+        "MMO",
+        "RPG",
+        "Wargame"
+    ],
+    "Submerged": [
+        "Action-adventure",
+        "Open world",
+        "Post apocalypse",
+        "Quest",
+        "Third-person"
+    ],
+    "Metal Gear Solid 3: Snake Eater": [
+        "Action-adventure",
+        "FPS",
+        "Stealth",
+        "TPS",
+        "Wargame"
+    ],
+    "Submerged: Hidden Depths": [
+        "Action-adventure",
+        "Open world",
+        "Survival",
+        "Third-person"
+    ],
+    "Mortal Kombat: Special Forces": [
+        "Action",
+        "Beat 'em up",
+        "Fighting",
+        "Third-person"
+    ],
+    "Mortal Kombat Mythologies: Sub-Zero": [
+        "2D",
+        "Action-adventure",
+        "Arcade",
+        "Beat 'em up",
+        "Fighting",
+        "Platformer",
+        "Sci-fi"
+    ],
+    "Trepang2": [
+        "Action-adventure",
+        "FPS",
+        "Horror"
+    ],
+    "Risen 2: Dark Waters - Treasure Isle (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Open world",
+        "Third-person"
+    ],
+    "Risen 2: Dark Waters - Air Temple (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Open world",
+        "Third-person"
+    ],
+    "World of Warcraft: Wrath of the Lich King (DLC)": [
+        "Adventure",
+        "MMO",
+        "RPG",
+        "Wargame"
+    ],
+    "Quake": [
+        "Action-adventure",
+        "FPS",
+        "Fantasy",
+        "Sci-fi",
+        "Shoot 'em up"
+    ],
+    "Quake: Scourge of Armagon (DLC)": [
+        "Action-adventure",
+        "FPS",
+        "Fantasy",
+        "Sci-fi",
+        "Shoot 'em up"
+    ],
+    "Quake: Dissolution of Eternity (DLC)": [
+        "Action-adventure",
+        "FPS",
+        "Fantasy",
+        "Sci-fi",
+        "Shoot 'em up"
+    ],
+    "Quake: Dimension of the Machine (DLC)": [
+        "Action"
+    ],
+    "Quake: Dimension of the Past (DLC)": [
+        "Action"
+    ],
+    "A Plague Tale: Requiem": [
+        "Action-adventure",
+        "Stealth",
+        "Third-person"
+    ],
+    "Forgive Me Father": [
+        "Action",
+        "FPS",
+        "Horror"
+    ],
+    "Viscera Cleanup Detail": [
+        "Action",
+        "First-person",
+        "Horror",
+        "Sci-fi",
+        "Simulation",
+        "Space"
+    ],
+    "Viscera Cleanup Detail: Santa's Rampage": [
+        "Action-adventure",
+        "First-person",
+        "Simulation"
+    ],
+    "Viscera Cleanup Detail: Shadow Warrior": [
+        "Action",
+        "Simulation"
+    ],
+    "Live A Live": [
+        "Adventure",
+        "Fantasy",
+        "JRPG",
+        "RPG",
+        "Retro",
+        "Sci-fi",
+        "TBS"
+    ],
+    "[Chilla's Art] The Closing Shift": [
+        "Horror"
+    ],
+    "[Chilla's Art] Night Security": [
+        "Horror"
+    ],
+    "[Chilla's Art] Stigmatized Property": [
+        "Horror"
+    ],
+    "[Chilla's Art] The Caregiver": [
+        "Horror"
+    ],
+    "[Chilla's Art] Night Delivery": [
+        "Horror"
+    ],
+    "[Chilla's Art] The Convenience Store": [
+        "Horror"
+    ],
+    "[Chilla's Art] Parasocial": [
+        "Horror"
+    ],
+    "Happy Game": [
+        "Adventure",
+        "Arcade",
+        "Casual",
+        "Horror"
+    ],
+    "Now You See - A Hand Painted Horror Adventure": [
+        "Adventure"
+    ],
+    "Nightmare of Decay": [
+        "Action-adventure",
+        "FPS",
+        "Horror",
+        "Retro",
+        "Zombie"
+    ],
+    "The Beast Inside": [
+        "Action-adventure",
+        "First-person",
+        "Survival horror"
+    ],
+    "Forgotten Hill Tales": [
+        "Adventure",
+        "Arcade",
+        "Horror",
+        "Logic",
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Forgotten Hill First Steps": [
+        "Adventure",
+        "Puzzle"
+    ],
+    "The Quarry": [
+        "Action-adventure",
+        "Horror",
+        "Movie",
+        "Strategy",
+        "Third-person"
+    ],
+    "Quake III Arena": [
+        "Action",
+        "FPS",
+        "MMO",
+        "Shoot 'em up"
+    ],
+    "The Mortuary Assistant": [
+        "Adventure",
+        "First-person",
+        "Horror",
+        "Quest",
+        "Simulation"
+    ],
+    "Bramble: The Mountain King": [
+        "Action-adventure",
+        "Arcade",
+        "Fantasy",
+        "Horror",
+        "Platformer",
+        "Quest"
+    ],
+    "Inscryption": [
+        "Adventure",
+        "Cardgame",
+        "First-person",
+        "Horror",
+        "Puzzle",
+        "Roguelike",
+        "Strategy"
+    ],
+    "Kena: Bridge of Spirits": [
+        "Action-adventure",
+        "Fantasy",
+        "Third-person"
+    ],
+    "The Hex": [
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Horror",
+        "Logic",
+        "Platformer",
+        "Puzzle"
+    ],
+    "Undead Horde": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "RTS",
+        "Strategy"
+    ],
+    "Undead Horde 2: Necropolis": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Isometric",
+        "RTS",
+        "Strategy"
+    ],
+    "Trine 5: A Clockwork Conspiracy": [
+        "2D",
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Fantasy",
+        "Platformer",
+        "Puzzle"
+    ],
+    "The Messenger": [
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Metroidvania",
+        "Platformer",
+        "Retro"
+    ],
+    "Sea of Stars": [
+        "Action-adventure",
+        "Action/RPG",
+        "JRPG",
+        "TBS"
+    ],
+    "Lifeless Planet": [
+        "Action-adventure",
+        "Platformer",
+        "Point-and-click",
+        "Puzzle",
+        "Sci-fi",
+        "Third-person"
+    ],
+    "Lifeless Moon": [
+        "Action-adventure",
+        "Arcade",
+        "Platformer",
+        "Quest",
+        "Sci-fi",
+        "Third-person"
+    ],
+    "Alan Wake II": [
+        "Action-adventure",
+        "Survival horror"
+    ],
+    "Resident Evil 8: Village - Shadow of Rose (DLC)": [
+        "Action",
+        "Horror"
+    ],
+    "Mortal Kombat 1": [
+        "2D",
+        "Action",
+        "Arcade",
+        "Fantasy",
+        "Fighting",
+        "Sci-fi"
+    ],
+    "Five Nights at Freddy's: Security Breach": [
+        "Action-adventure",
+        "First-person",
+        "Quest",
+        "Stealth",
+        "Survival horror"
+    ],
+    "Please, Forgive Me": [
+        "Adventure",
+        "First-person"
+    ],
+    "Call of Duty: Black Ops Cold War": [
+        "Action",
+        "FPS",
+        "MMO",
+        "Strategy"
+    ],
+    "Resident Evil 4 (2023)": [
+        "Action"
+    ],
+    "DON'T SCREAM": [
+        "Action-adventure",
+        "First-person",
+        "Survival horror"
+    ],
+    "Resident Evil 4 (2023) - Separate Ways (DLC)": [
+        "Action"
+    ],
+    "Return to Castle Wolfenstein": [
+        "Action-adventure",
+        "FPS",
+        "Horror",
+        "Shoot 'em up"
+    ],
+    "Air Twister": [
+        "Action-adventure",
+        "Arcade",
+        "Fantasy",
+        "TPS"
+    ],
+    "Just Cause 3": [
+        "Action-adventure",
+        "Open world",
+        "Racing",
+        "Sandbox",
+        "TPS"
+    ],
+    "[Chilla's Art] The Karaoke": [
+        "Horror"
+    ],
+    "Fears to Fathom: Ironbark Lookout": [
+        "Adventure",
+        "Casual",
+        "First-person",
+        "Horror"
+    ],
+    "Apartament 1406: Horror": [
+        "Action-adventure",
+        "Casual",
+        "Survival"
+    ],
+    "[Chilla's Art] The Kidnap": [
+        "Horror"
+    ],
+    "Just Cause 3: Bavarium Sea Heist (DLC)": [
+        "Action"
+    ],
+    "Cannibals": [
+        "Action-adventure",
+        "Survival"
+    ],
+    "Just Cause 3: Sky Fortress (DLC)": [
+        "Action",
+        "Racing",
+        "TPS"
+    ],
+    "Just Cause 3: Mech Land Assault (DLC)": [
+        "Action",
+        "Racing",
+        "Shooter"
+    ],
+    "Contraband Police": [
+        "Action-adventure",
+        "FPS",
+        "Open world",
+        "Sandbox",
+        "Simulation"
+    ],
+    "Monster Hunter: World": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Open world",
+        "Third-person"
+    ],
+    "Lost in Play": [
+        "Adventure",
+        "Casual",
+        "Fantasy",
+        "Logic",
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "There Is No Game: Wrong Dimension": [
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Casual",
+        "Humor",
+        "Isometric",
+        "Point-and-click",
+        "Puzzle",
+        "Simulation"
+    ],
+    "Ghostrunner": [
+        "Action-adventure",
+        "Cyberpunk",
+        "First-person",
+        "Platformer",
+        "Sci-fi"
+    ],
+    "Final Fantasy Mystic Quest": [
+        "Fantasy",
+        "JRPG",
+        "RPG",
+        "TBS",
+        "Third-person"
+    ],
+    "The Legend of Zelda: Breath of the Wild": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Open world",
+        "Third-person"
     ]
 }
