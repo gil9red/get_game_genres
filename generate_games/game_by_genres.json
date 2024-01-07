@@ -10984,5 +10984,57 @@
         "Fantasy",
         "Open world",
         "Third-person"
+    ],
+    "The Henry Stickmin Collection": [
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Casual",
+        "Humor",
+        "Platformer",
+        "Point-and-click"
+    ],
+    "Warhammer 40.000: Boltgun": [
+        "Action",
+        "FPS",
+        "Fantasy",
+        "Sci-fi"
+    ],
+    "Loop Hero": [
+        "Action/RPG",
+        "Adventure",
+        "Cardgame",
+        "City building",
+        "Fantasy",
+        "Retro",
+        "Roguelike",
+        "Simulation",
+        "Strategy"
+    ],
+    "Prodeus": [
+        "Action-adventure",
+        "Casual",
+        "FPS",
+        "Retro",
+        "Sci-fi"
+    ],
+    "Forspoken": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Open world",
+        "Sci-fi",
+        "Third-person"
+    ],
+    "Forspoken: In Tanta We Trust (DLC)": [
+        "Action/RPG"
+    ],
+    "Brotato": [
+        "2D",
+        "Action/RPG",
+        "Casual",
+        "Humor",
+        "Roguelike",
+        "Shooter"
     ]
 }
