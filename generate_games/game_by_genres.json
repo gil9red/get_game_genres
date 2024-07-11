@@ -11036,5 +11036,434 @@
         "Humor",
         "Roguelike",
         "Shooter"
+    ],
+    "Neon White": [
+        "Action-adventure",
+        "FPS",
+        "Platformer"
+    ],
+    "SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated": [
+        "Action-adventure",
+        "Arcade",
+        "Casual",
+        "Humor",
+        "Platformer",
+        "Third-person"
+    ],
+    "SpongeBob SquarePants: The Cosmic Shake": [
+        "Action-adventure",
+        "Arcade",
+        "Humor",
+        "Platformer",
+        "Third-person"
+    ],
+    "Stranger of Paradise: Final Fantasy Origin": [
+        "Action/RPG",
+        "Fantasy",
+        "Hack and slash",
+        "RTS",
+        "Sci-fi",
+        "Strategy",
+        "Third-person"
+    ],
+    "Evil West": [
+        "Action-adventure",
+        "Action/RPG",
+        "Beat 'em up",
+        "Hack and slash",
+        "TPS",
+        "Western"
+    ],
+    "Katana Zero": [
+        "2D",
+        "Action",
+        "Arcade",
+        "Cyberpunk",
+        "Platformer",
+        "Retro",
+        "Sci-fi"
+    ],
+    "Mad Max": [
+        "Action-adventure",
+        "Arcade",
+        "Open world",
+        "Post apocalypse",
+        "Racing",
+        "Robot war",
+        "Sci-fi",
+        "TPS"
+    ],
+    "Turbo Overkill": [
+        "Action",
+        "Cyberpunk",
+        "FPS",
+        "Sci-fi"
+    ],
+    "The Dark Half": [
+        "Adventure",
+        "Quest"
+    ],
+    "Bright Memory: Infinite": [
+        "Action-adventure",
+        "FPS",
+        "Hack and slash",
+        "Sci-fi",
+        "Shoot 'em up"
+    ],
+    "Pizza Tower": [
+        "2D",
+        "Action",
+        "Arcade",
+        "Humor",
+        "Platformer"
+    ],
+    "Severed Steel": [
+        "Action",
+        "FPS"
+    ],
+    "NieR Replicant ver.1.22474487139...": [
+        "Action/RPG",
+        "Fantasy",
+        "Isometric",
+        "Third-person"
+    ],
+    "NieR Replicant ver.1.22474487139... - The World of Recycled Vessel (DLC)": [
+        "Action/RPG",
+        "Fantasy",
+        "Isometric",
+        "Third-person"
+    ],
+    "Psychonauts 2": [
+        "Action-adventure",
+        "Arcade",
+        "Platformer",
+        "Sci-fi",
+        "Third-person"
+    ],
+    "Far Cry 6": [
+        "Action-adventure",
+        "FPS",
+        "Open world",
+        "Stealth"
+    ],
+    "The Binding of Isaac: Afterbirth + (DLC)": [
+        "Action/RPG"
+    ],
+    "The Binding of Isaac: Repentance (DLC)": [
+        "Action",
+        "Arcade"
+    ],
+    "Marvel's Guardians of the Galaxy": [
+        "Action-adventure",
+        "Comics",
+        "Sci-fi",
+        "TPS"
+    ],
+    "Gears 5": [
+        "Action-adventure",
+        "Sci-fi",
+        "TPS"
+    ],
+    "Gears 5: Hivebusters (DLC)": [
+        "Action",
+        "Shooter"
+    ],
+    "Forza Horizon 5": [
+        "Action-adventure",
+        "Arcade",
+        "First-person",
+        "Open world",
+        "Racing",
+        "Simulation",
+        "Sport",
+        "Third-person"
+    ],
+    "Forza Horizon 5: Hot Wheels (DLC)": [
+        "Racing"
+    ],
+    "Forza Horizon 5: Rally Adventure (DLC)": [
+        "Racing"
+    ],
+    "Alone in the Dark (2024)": [
+        "Action-adventure"
+    ],
+    "The Callisto Protocol": [
+        "Action-adventure",
+        "Sci-fi",
+        "Stealth",
+        "Survival horror",
+        "Third-person"
+    ],
+    "Psalm 5:9—13": [
+        "Adventure",
+        "First-person"
+    ],
+    "Super Mario RPG: Legend of the Seven Stars": [
+        "Action-adventure",
+        "Action/RPG",
+        "Isometric",
+        "JRPG",
+        "TBS"
+    ],
+    "The Callisto Protocol - Final Transmission (DLC)": [
+        "Action"
+    ],
+    "Dave the Diver": [
+        "Action-adventure",
+        "Action/RPG",
+        "Management",
+        "Simulation",
+        "Sport"
+    ],
+    "Elderborn": [
+        "Action-adventure",
+        "Action/RPG",
+        "Dungeon",
+        "FPS",
+        "Fantasy",
+        "Hack and slash",
+        "Logic"
+    ],
+    "Valfaris": [
+        "2D",
+        "Action",
+        "Arcade",
+        "Platformer",
+        "Sci-fi",
+        "Shooter"
+    ],
+    "Star Wars: Battlefront": [
+        "Action-adventure",
+        "FPS",
+        "MMO",
+        "Robot war",
+        "Sci-fi",
+        "Shoot 'em up",
+        "Space",
+        "Strategy",
+        "TPS",
+        "Wargame"
+    ],
+    "DARQ": [
+        "Action-adventure",
+        "Arcade",
+        "Horror",
+        "Logic",
+        "Platformer",
+        "Puzzle",
+        "Quest"
+    ],
+    "DARQ: The Crypt (DLC)": [
+        "Action-adventure",
+        "Arcade",
+        "Horror",
+        "Logic",
+        "Platformer",
+        "Puzzle",
+        "Quest"
+    ],
+    "DARQ: The Tower (DLC)": [
+        "Action-adventure",
+        "Arcade",
+        "Horror",
+        "Logic",
+        "Platformer",
+        "Puzzle",
+        "Quest"
+    ],
+    "Kingdom Come: Deliverance": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "First-person",
+        "Open world"
+    ],
+    "My Friend Pedro": [
+        "2D",
+        "Action-adventure",
+        "Arcade",
+        "Platformer",
+        "Shooter"
+    ],
+    "Sea of Solitude": [
+        "Action-adventure",
+        "Open world",
+        "Third-person"
+    ],
+    "Kingdom Come: Deliverance - Treasures of The Past (DLC)": [
+        "Action-adventure",
+        "Action/RPG"
+    ],
+    "Kingdom Come: Deliverance - A Woman's Lot (DLC)": [
+        "Action-adventure",
+        "Action/RPG"
+    ],
+    "Kingdom Come: Deliverance - Band of Bastards (DLC)": [
+        "Action-adventure",
+        "Action/RPG"
+    ],
+    "Kingdom Come: Deliverance - From the Ashes (DLC)": [
+        "Action-adventure",
+        "Action/RPG"
+    ],
+    "Kingdom Come: Deliverance - The Amorous Adventures of Bold Sir Hans Capon (DLC)": [
+        "Action-adventure",
+        "Action/RPG"
+    ],
+    "Torchlight: Infinite": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Hack and slash",
+        "Isometric"
+    ],
+    "E.T. Armies": [
+        "Action",
+        "FPS",
+        "Sci-fi",
+        "Shoot 'em up"
+    ],
+    "The Dishwasher: Vampire Smile": [
+        "2D",
+        "Action",
+        "Arcade",
+        "Beat 'em up",
+        "Fighting",
+        "Hack and slash",
+        "Platformer"
+    ],
+    "Heavy Storm Shadow": [
+        "2D",
+        "Action",
+        "Isometric",
+        "Roguelike",
+        "Sci-fi",
+        "Shooter"
+    ],
+    "DEEEER Simulator": [
+        "Action-adventure",
+        "Casual",
+        "Simulation",
+        "TPS"
+    ],
+    "Instruments of Destruction": [
+        "Action",
+        "Arcade",
+        "Casual",
+        "Isometric",
+        "Sandbox",
+        "Simulation",
+        "Strategy"
+    ],
+    "Scarlet Tower": [
+        "2D",
+        "Action/RPG",
+        "Casual",
+        "Shooter"
+    ],
+    "Indika": [
+        "Action-adventure",
+        "Horror",
+        "Third-person"
+    ],
+    "Yet Another Zombie Survivors v0.6": [],
+    "Death Must Die v0.7": [],
+    "20 Minutes Till Dawn": [
+        "2D",
+        "Action-adventure",
+        "Action/RPG",
+        "Casual",
+        "Fantasy",
+        "Roguelike",
+        "Shooter",
+        "Strategy"
+    ],
+    "Nordic Ashes: Survivors of Ragnarok": [
+        "2D",
+        "Action-adventure",
+        "Action/RPG",
+        "Casual",
+        "Fantasy",
+        "Roguelike",
+        "Shooter",
+        "Strategy"
+    ],
+    "Daymare: 1998": [
+        "Action-adventure",
+        "Survival horror",
+        "TPS",
+        "Zombie"
+    ],
+    "Daymare: 1994 Sandcastle": [
+        "Action-adventure",
+        "Survival horror",
+        "TPS",
+        "Zombie"
+    ],
+    "Rage 2": [
+        "Action-adventure",
+        "FPS",
+        "Open world",
+        "Post apocalypse",
+        "Racing"
+    ],
+    "Spirit Hunters: Infinite Horde": [
+        "2D",
+        "Action",
+        "Fantasy",
+        "Roguelike",
+        "Shooter"
+    ],
+    "Project Lazarus": [
+        "Action",
+        "Casual",
+        "Sci-fi",
+        "Shooter"
+    ],
+    "Army of Ruin": [
+        "2D",
+        "Action",
+        "Casual",
+        "Fantasy",
+        "Roguelike",
+        "Shooter"
+    ],
+    "Boneraiser Minions": [
+        "2D",
+        "Action/RPG",
+        "Arcade",
+        "Casual",
+        "Shooter"
+    ],
+    "Bounty of One": [
+        "2D",
+        "Action/RPG",
+        "Casual",
+        "Shooter",
+        "Western"
+    ],
+    "UnEpic": [
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Fantasy",
+        "Platformer"
+    ],
+    "WorldBox - God Simulator v0.22.9": [],
+    "Swarm the City: Zombie Evolved": [
+        "Casual",
+        "RPG",
+        "RTS",
+        "Simulation",
+        "Strategy",
+        "Zombie"
+    ],
+    "Shredders": [
+        "Action",
+        "Arcade",
+        "Racing",
+        "Simulation",
+        "Sport",
+        "Third-person"
     ]
 }
