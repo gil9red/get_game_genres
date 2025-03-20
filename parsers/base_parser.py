@@ -162,7 +162,7 @@ class BaseParser(metaclass=Singleton):
 
         try:
             genres = self._parse()
-            genres = [process_umlauts(x.strip()) for x in genres]
+            genres = [process_umlauts(x.strip()) for x in genres if x]
             genres = get_uniques(genres)
             genres.sort()
 
