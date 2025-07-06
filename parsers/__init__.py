@@ -12,7 +12,6 @@ from inspect import isclass
 from pathlib import Path
 from types import ModuleType
 
-from config import IGNORE_SITE_NAMES
 from parsers.base_parser import BaseParser
 
 
@@ -43,8 +42,7 @@ def get_parsers() -> list[BaseParser]:
                 continue
 
             parser: BaseParser = cls.instance()
-            if parser.get_site_name() not in IGNORE_SITE_NAMES:
-                items.append(parser)
+            items.append(parser)
 
     return items
 

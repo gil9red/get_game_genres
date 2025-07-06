@@ -25,9 +25,4 @@ DB_FILE_NAME = str(DB_DIR_NAME / "games.sqlite")
 NEED_LOGS = True
 LOG_FORMAT = "[%(asctime)s] %(levelname)-8s %(message)s"
 
-# TODO: Перенести в parsers/.deprecated
-IGNORE_SITE_NAMES = [
-    "metacritic_com",  # NOTE: Не работает то ли, из-за версии HTTP/2, то ли из-за российского IP
-]
-
 PORT = 5501

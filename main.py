@@ -12,7 +12,6 @@ from threading import Thread
 # pip install simple-wait
 from simple_wait import wait
 
-from config import IGNORE_SITE_NAMES
 from common import get_logger, get_games_list
 from db import db_create_backup, Dump
 from generate_games import generate_games as create_generate_games
@@ -145,9 +144,6 @@ if __name__ == "__main__":
                     Thread(target=run_parser, args=[parser, games])
                 )
             log.info(f"Всего парсеров/потоков: {len(threads)}")
-            log.info(
-                f'Не использовались парсеры ({len(IGNORE_SITE_NAMES)}): {", ".join(IGNORE_SITE_NAMES)}'
-            )
 
             counter.value = 0
 
