@@ -29,8 +29,10 @@ class IgromaniaRuParser(BaseParser):
         #       {'id': 7, 'name': 'Экшен', 'slug': 'ekshen', 'position': 0},
         #       {'id': 3, 'name': 'Приключение', 'slug': 'prikliuchenie', 'position': 28}
         #   ],
-        #   'platforms': [{'id': 58, 'name': 'PC', 'slug': 'pc', 'position': 1},
-        #   {'id': 96, 'name': 'Xbox', 'slug': 'xbox', 'position': 46}], 'favorite': False}
+        #   'platforms': [
+        #       {'id': 58, 'name': 'PC', 'slug': 'pc', 'position': 1},
+        #       {'id': 96, 'name': 'Xbox', 'slug': 'xbox', 'position': 46}],
+        #   'favorite': False}
         # ]}
 
         for game in data["results"]:
@@ -55,16 +57,16 @@ if __name__ == "__main__":
     _common_test(get_game_genres)
 
     # Search 'Hellgate: London'...
-    #     Genres: ['Боевик', 'Боевик от первого лица', 'Боевик от третьего лица', 'Ролевая игра']
+    #     Genres: ['Ролевая игра', 'Экшен']
     #
     # Search 'The Incredible Adventures of Van Helsing'...
-    #     Genres: ['Ролевая игра', 'Боевик', 'Боевик от третьего лица']
+    #     Genres: ['Ролевая игра', 'Экшен']
     #
     # Search 'Dark Souls: Prepare to Die Edition'...
-    #     Genres: []
+    #     Genres: ['Ролевая игра', 'Экшен']
     #
     # Search 'Twin Sector'...
-    #     Genres: ['Боевик', 'Боевик от первого лица']
+    #     Genres: ['Приключение', 'Экшен']
     #
     # Search 'Call of Cthulhu: Dark Corners of the Earth'...
-    #     Genres: ['Боевик', 'Ужасы', 'Боевик от первого лица', 'Приключение']
+    #     Genres: ['Приключение', 'Хоррор (ужасы)', 'Экшен']
