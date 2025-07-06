@@ -4,34 +4,26 @@
 __author__ = "ipetrash"
 
 
-from urllib.parse import urljoin
+import re
 from parsers.base_parser import BaseParser
+
+
+PATTERN_GAME = re.compile(',type:"game-title",.+?,title:"(?P<title>.+?)",.+?,genres:\[(?P<genres>.+?)],')
+PATTERN_GAME_GENRES = re.compile('name:"(?P<title>.+?)"')
 
 
 class MetacriticComParser(BaseParser):
     def _parse(self) -> list[str]:
-        url = f"https://www.metacritic.com/search/game/{self.game_name}/results"
-        root = self.send_get(url, return_html=True)
+        url = f"https://www.metacritic.com/search/{self.game_name}/"
+        rs = self.send_get(url)
 
-        for game_block_preview in root.select(".result"):
-            a = game_block_preview.select_one(".product_title > a")
-            title = self.get_norm_text(a)
+        for m in PATTERN_GAME.finditer(rs.text):
+            title: str = m.group("title")
             if not self.is_found_game(title):
                 continue
 
-            url_game = urljoin(url, a["href"])
-            self.log_info(f"Load {url_game!r}")
-
-            game_block = self.send_get(url_game, return_html=True)
-            # <li class="summary_detail product_genre">
-            #     <span class="label">Genre(s): </span>
-            #     <span class="data">Role-Playing</span>,
-            #     <span class="data">Action RPG</span>
-            # </li>
-            genres = [
-                self.get_norm_text(a)
-                for a in game_block.select(".summary_detail.product_genre > .data")
-            ]
+            genres_value: str = m.group("genres")
+            genres: list[str] = PATTERN_GAME_GENRES.findall(genres_value)
 
             # Сойдет первый, совпадающий по имени, вариант
             return genres
@@ -50,16 +42,16 @@ if __name__ == "__main__":
     _common_test(get_game_genres)
 
     # Search 'Hellgate: London'...
-    #     Genres: ['Role-Playing', 'First-Person', 'First-Person', 'Western-Style']
+    #     Genres: ['Western RPG']
     #
     # Search 'The Incredible Adventures of Van Helsing'...
-    #     Genres: ['Role-Playing', 'Action RPG', 'Action RPG']
+    #     Genres: ['Action RPG']
     #
     # Search 'Dark Souls: Prepare to Die Edition'...
-    #     Genres: ['Role-Playing', 'Action RPG', 'Action RPG']
+    #     Genres: ['Action RPG']
     #
     # Search 'Twin Sector'...
-    #     Genres: ['Action Adventure', 'Modern', 'General', 'Modern', 'Linear']
+    #     Genres: ['Linear Action Adventure']
     #
     # Search 'Call of Cthulhu: Dark Corners of the Earth'...
-    #     Genres: ['Action Adventure', 'Horror', 'Survival']
+    #     Genres: ['Survival']
