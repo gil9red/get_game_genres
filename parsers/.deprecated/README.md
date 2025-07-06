@@ -1,3 +1,4 @@
 - [gamefaqs_gamespot_com.py](gamefaqs_gamespot_com.py) - проверяет на ботов, дает доступ на разрешение не парсить :)
 - [gamer_info_com.py](gamer_info_com.py) - не работает то ли, из-за версии HTTP/2, то ли из-за российского IP
 - [iwgs_games.py](iwgs_games.py) - истек срок годности сайта
+- [mobygames_com.py](mobygames_com.py) - Cloudflare
