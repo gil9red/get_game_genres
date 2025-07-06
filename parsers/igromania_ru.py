@@ -36,8 +36,7 @@ class IgromaniaRuParser(BaseParser):
         # ]}
 
         for game in data["results"]:
-            title = game["name"]
-            if not self.is_found_game(title):
+            if not self.is_found_game(game["name"]):
                 continue
 
             # Сойдет первый, совпадающий по имени, вариант
