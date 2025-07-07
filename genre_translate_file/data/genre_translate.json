@@ -498,5 +498,60 @@
     "Для взрослых (18+)": "",
     "Победи их всех": "Beat 'em up",
     "Рыбалка": "Sport",
-    "Детектив": ""
+    "Детектив": "",
+    "2D Beat-'Em-Up": [
+        "2D",
+        "Beat 'em up"
+    ],
+    "2D Fighting": [
+        "2D",
+        "Fighting"
+    ],
+    "2D Platformer": [
+        "2D",
+        "Platformer"
+    ],
+    "3D Beat-'Em-Up": "Beat 'em up",
+    "3D Fighting": "Fighting",
+    "3D Platformer": "Platformer",
+    "Aircraft Combat Sim": "Flight",
+    "Arcade Racing": "Racing",
+    "Artillery": "",
+    "Auto Racing": "Racing",
+    "Auto Racing Sim": "Racing",
+    "Board": "Board game",
+    "Command RTS": "RTS",
+    "First-Person Adventure": [
+        "FPS",
+        "Adventure"
+    ],
+    "Future Racing": "Racing",
+    "Hunting": "Sport",
+    "Linear Action Adventure": "Action-adventure",
+    "Open-World Action": "Open world",
+    "Real-Time Strategy": "RTS",
+    "Skating": "Sport",
+    "Skiing": "Snowboarding",
+    "Space Sim": [
+        "Space",
+        "Simulation"
+    ],
+    "Stacking Puzzle": "Puzzle",
+    "Tactical Third Person Shooter": "TPS",
+    "Third Person Shooter": "TPS",
+    "Third-Person Adventure": [
+        "Third-person",
+        "Adventure"
+    ],
+    "Top-Down Shoot-'Em-Up": "Shoot 'em up",
+    "Turn-Based Strategy": "TBS",
+    "Turn-Based Tactics": "TBS",
+    "Tycoon": "Management",
+    "Vehicle Combat Sim": "",
+    "Vehicle Sim": "",
+    "Virtual Career": "Management",
+    "Western RPG": [
+        "Western",
+        "RPG"
+    ]
 }
