@@ -114,7 +114,8 @@ def fill_dlc(game_by_genres: dict):
                 variants.append(name)
 
         if variants:
-            name = max(variants, key=len)  # Выбираем игры с наибольшим количеством символов
+            # Выбираем игры с наибольшим количеством символов
+            name = max(variants, key=len)
             log.info(f'{name}\n{name_dlc}\n')
 
             game_by_genres[name_dlc] = game_by_genres[name]
