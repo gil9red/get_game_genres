@@ -49,10 +49,10 @@ def run():
     log.info("Запуск генератора жанров.")
 
     current_genres: dict = load_json(FILE_NAME_GENRES)
-    log.info(f"Жанров: {len(current_genres)}")
+    log.info(f"Жанры: {len(current_genres)}")
 
     all_genres = get_genres_with_aliases()
-    log.info(f"Жанров из файла трансляции: {len(all_genres)}")
+    log.info(f"Жанры из файла трансляции: {len(all_genres)}")
 
     genres = dict()
     for genre in sorted(all_genres):
@@ -64,7 +64,7 @@ def run():
 
     number = len(genres) - len(current_genres)
     if number:
-        log.info(f"Добавлено жанров: {number}")
+        log.info(f"Добавлены жанры: {number}")
 
         log.info(f"Сохранение в {FILE_NAME_GENRES}")
         save_json(genres, FILE_NAME_GENRES)

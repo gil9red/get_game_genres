@@ -36,7 +36,7 @@ log.info("Загрузка жанров")
 
 genre_translate: dict = load_json(FILE_NAME_GENRE_TRANSLATE)
 log.info(
-    f"Жанров: {len(genre_translate)}. "
+    f"Жанры: {len(genre_translate)}. "
     f"Не заданных жанров: {sum(1 for v in genre_translate.values() if v is None)}"
 )
 

@@ -35,7 +35,7 @@ def run(need_notify=True):
     )
     is_first_run = not genre_translate
 
-    log.info(f"Жанров: {len(genre_translate)}")
+    log.info(f"Жанры: {len(genre_translate)}")
 
     new_genres: dict[str, list[str] | str | None] = dict()
     for genre in Dump.get_all_genres():

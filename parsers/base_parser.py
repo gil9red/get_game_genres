@@ -173,7 +173,7 @@ class BaseParser(metaclass=Singleton):
             self.log_exception("Ошибка при парсинге:")
             raise e
 
-        self.log_info(f"Жанров: {genres}")
+        self.log_info(f"Жанры: {genres}")
         return genres
 
     def _get_logger(self, log_format: str, encoding: str = "utf-8"):
