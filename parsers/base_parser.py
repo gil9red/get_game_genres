@@ -215,3 +215,52 @@ class BaseParser(metaclass=Singleton):
         # https://ru.wikipedia.org/wiki/Юникод#NFKD
         # unicodedata.normalize для удаления \xa0 и подобных символов-заменителей
         return unicodedata.normalize("NFKD", text)
+
+
+if __name__ == "__main__":
+    from parsers import get_parsers
+
+    game_name = "Dark Souls III"
+    for parser in get_parsers():
+        parser._need_logs = False
+
+        print(parser.get_site_name())
+        print(parser.get_game_genres(game_name))
+        print()
+    """
+    ag_ru
+    ['Ролевые', 'Экшены']
+    
+    gamebomb_ru
+    []
+    
+    gameguru_ru
+    []
+    
+    gamespot_com
+    ['Action', 'Role-Playing']
+    
+    igromania_ru
+    []
+    
+    metacritic_com
+    ['Action RPG']
+    
+    playground_ru
+    []
+    
+    spong_com
+    []
+    
+    squarefaction_ru
+    ['Action RPG']
+    
+    stopgame_ru
+    ["Hack & Slash/Beat 'em up", 'Кооперативная', 'Мультиплеер', 'Одиночная', 'От третьего лица', 'Ролевая', 'Фэнтези', 'Экшн']
+    
+    store_steampowered_com
+    ['Action']
+    
+    vgtimes_ru
+    []
+    """
