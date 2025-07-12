@@ -11234,7 +11234,9 @@
         "Strategy"
     ],
     "Resident Evil 4 (2023)": [
-        "Action"
+        "Action-adventure",
+        "Survival horror",
+        "TPS"
     ],
     "DON'T SCREAM": [
         "Action-adventure",
@@ -11242,7 +11244,9 @@
         "Survival horror"
     ],
     "Resident Evil 4 (2023) - Separate Ways (DLC)": [
-        "Action"
+        "Action-adventure",
+        "Survival horror",
+        "TPS"
     ],
     "Return to Castle Wolfenstein": [
         "Action-adventure",
