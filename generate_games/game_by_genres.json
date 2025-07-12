@@ -150,8 +150,7 @@
     ],
     "Alien Hallway 2": [
         "Action",
-        "RTS",
-        "Strategy"
+        "RTS"
     ],
     "Alien Isolation: Crew Expendable (DLC)": [
         "Action-adventure",
@@ -207,7 +206,6 @@
         "Isometric",
         "RTS",
         "Sci-fi",
-        "Strategy",
         "Tower defense"
     ],
     "Alien Shooter: Fight for Life": [
@@ -425,8 +423,7 @@
         "God game",
         "Management",
         "RTS",
-        "Simulation",
-        "Strategy"
+        "Simulation"
     ],
     "Anna": [
         "Adventure",
@@ -640,8 +637,7 @@
         "Fantasy",
         "Isometric",
         "RPG",
-        "RTS",
-        "Strategy"
+        "RTS"
     ],
     "Barbie: Explorer": [
         "Action-adventure",
@@ -708,7 +704,6 @@
         "Action/RPG",
         "Isometric",
         "JRPG",
-        "Strategy",
         "TBS"
     ],
     "Battle: Los Angeles": [
@@ -882,7 +877,6 @@
         "RTS",
         "Sandbox",
         "Simulation",
-        "Strategy",
         "Wargame"
     ],
     "Beyond Good and Evil": [
@@ -899,8 +893,7 @@
     ],
     "Bio Inc. Redemption": [
         "RTS",
-        "Simulation",
-        "Strategy"
+        "Simulation"
     ],
     "BioShock": [
         "Action-adventure",
@@ -965,7 +958,6 @@
         "Fantasy",
         "Puzzle",
         "RPG",
-        "Strategy",
         "TBS"
     ],
     "Black Mesa": [
@@ -1315,7 +1307,6 @@
         "RPG"
     ],
     "Brigandine": [
-        "Strategy",
         "TBS",
         "TRPG"
     ],
@@ -1364,8 +1355,7 @@
         "Fantasy",
         "Hack and slash",
         "Open world",
-        "RTS",
-        "Strategy"
+        "RTS"
     ],
     "Bud Spencer & Terence Hill - Slaps And Beans": [
         "2D",
@@ -1602,7 +1592,6 @@
         "Arcade",
         "Humor",
         "RTS",
-        "Strategy",
         "Tower defense"
     ],
     "Castlevania: Lords of Shadow": [
@@ -1787,8 +1776,7 @@
     ],
     "Command & Conquer: Red Alert": [
         "RTS",
-        "Sci-fi",
-        "Strategy"
+        "Sci-fi"
     ],
     "Command & Conquer: Renegade": [
         "Action",
@@ -1881,8 +1869,7 @@
         "RPG",
         "RTS",
         "Sandbox",
-        "Simulation",
-        "Strategy"
+        "Simulation"
     ],
     "Crash Bandicoot": [
         "Action-adventure",
@@ -2428,14 +2415,12 @@
         "Action/RPG",
         "Fantasy",
         "Isometric",
-        "RTS",
-        "Strategy"
+        "RTS"
     ],
     "Defender's Quest: Valley of the Forgotten": [
         "Fantasy",
         "RPG",
         "RTS",
-        "Strategy",
         "Tower defense"
     ],
     "Defunct": [
@@ -2459,7 +2444,6 @@
         "Fantasy",
         "MOBA",
         "RTS",
-        "Strategy",
         "Third-person"
     ],
     "Demon's Souls": [
@@ -2641,8 +2625,7 @@
         "Platformer",
         "RTS",
         "Sandbox",
-        "Simulation",
-        "Strategy"
+        "Simulation"
     ],
     "Dino Crisis": [
         "Action-adventure",
@@ -2685,20 +2668,17 @@
         "Adventure",
         "Fantasy",
         "RPG",
-        "Strategy",
         "TBS"
     ],
     "Disciples III: Renaissance": [
         "Adventure",
         "Fantasy",
         "RPG",
-        "Strategy",
         "TBS",
         "Wargame"
     ],
     "Disciples: Sacred Lands": [
         "Fantasy",
-        "Strategy",
         "TBS"
     ],
     "Disco Elysium": [
@@ -2888,7 +2868,6 @@
         "MMO",
         "MOBA",
         "RTS",
-        "Strategy",
         "Wargame"
     ],
     "Double Dragon Neon": [
@@ -3059,8 +3038,7 @@
         "TPS"
     ],
     "Dune II: Battle For Arrakis": [
-        "RTS",
-        "Strategy"
+        "RTS"
     ],
     "Dungeon Nightmares": [
         "Action-adventure",
@@ -3116,7 +3094,6 @@
         "Adventure",
         "Isometric",
         "RPG",
-        "Strategy",
         "TBS",
         "Third-person"
     ],
@@ -3210,7 +3187,6 @@
         "Fantasy",
         "Isometric",
         "RTS",
-        "Strategy",
         "Tower defense"
     ],
     "Evoland": [
@@ -3602,7 +3578,6 @@
         "Fantasy",
         "Isometric",
         "RPG",
-        "Strategy",
         "TBS",
         "TRPG"
     ],
@@ -3624,7 +3599,6 @@
         "Isometric",
         "JRPG",
         "RPG",
-        "Strategy",
         "TBS"
     ],
     "Final Fantasy VII": [
@@ -3884,7 +3858,6 @@
         "RPG",
         "Robot war",
         "Sci-fi",
-        "Strategy",
         "TBS",
         "TRPG",
         "Third-person"
@@ -4436,7 +4409,6 @@
         "Open world",
         "RTS",
         "Shooter",
-        "Strategy",
         "TBS",
         "Western"
     ],
@@ -4447,7 +4419,6 @@
         "Open world",
         "RTS",
         "Shooter",
-        "Strategy",
         "TBS",
         "Western"
     ],
@@ -4544,13 +4515,11 @@
     "Hero Academy": [
         "Board game",
         "Fantasy",
-        "Strategy",
         "TBS",
         "TRPG"
     ],
     "Heroes of Might and Magic III": [
         "Adventure",
-        "Strategy",
         "TBS",
         "Wargame"
     ],
@@ -4558,7 +4527,6 @@
         "Adventure",
         "Fantasy",
         "RPG",
-        "Strategy",
         "TBS",
         "TRPG"
     ],
@@ -4566,21 +4534,18 @@
         "Adventure",
         "Fantasy",
         "RPG",
-        "Strategy",
         "TBS"
     ],
     "Heroes of Might and Magic V: Hammers of Fate": [
         "Adventure",
         "Fantasy",
         "RPG",
-        "Strategy",
         "TBS"
     ],
     "Heroes of Might and Magic V: Tribes of the East": [
         "Fantasy",
         "God game",
         "RPG",
-        "Strategy",
         "TBS"
     ],
     "Hogs of War": [
@@ -4588,7 +4553,6 @@
         "Humor",
         "Logic",
         "Shoot 'em up",
-        "Strategy",
         "TBS",
         "Third-person",
         "Wargame"
@@ -4765,8 +4729,7 @@
         "Isometric",
         "Point-and-click",
         "RPG",
-        "RTS",
-        "Strategy"
+        "RTS"
     ],
     "Icewind Dale: Enhanced Edition": [
         "Adventure",
@@ -4827,7 +4790,6 @@
         "Roguelike",
         "Sci-fi",
         "Simulation",
-        "Strategy",
         "TBS"
     ],
     "Inversion": [
@@ -4965,7 +4927,6 @@
         "Fantasy",
         "RPG",
         "RTS",
-        "Strategy",
         "TBS",
         "Third-person"
     ],
@@ -4975,7 +4936,6 @@
         "RPG",
         "RTS",
         "Sandbox",
-        "Strategy",
         "TBS",
         "Third-person"
     ],
@@ -4985,7 +4945,6 @@
         "Isometric",
         "RPG",
         "RTS",
-        "Strategy",
         "TBS",
         "Wargame"
     ],
@@ -4994,7 +4953,6 @@
         "Fantasy",
         "RPG",
         "RTS",
-        "Strategy",
         "TBS",
         "Third-person"
     ],
@@ -5003,7 +4961,6 @@
         "Beat 'em up",
         "Fantasy",
         "RPG",
-        "Strategy",
         "TBS",
         "Third-person"
     ],
@@ -5012,7 +4969,6 @@
         "Beat 'em up",
         "Fantasy",
         "RPG",
-        "Strategy",
         "TBS",
         "Third-person"
     ],
@@ -5028,7 +4984,6 @@
         "Arcade",
         "Fantasy",
         "RTS",
-        "Strategy",
         "Tower defense"
     ],
     "Kingdom: Classic": [
@@ -5139,7 +5094,6 @@
         "MMO",
         "MOBA",
         "RTS",
-        "Strategy",
         "Third-person",
         "Wargame"
     ],
@@ -5682,8 +5636,7 @@
         "Fantasy",
         "Isometric",
         "MOBA",
-        "RTS",
-        "Strategy"
+        "RTS"
     ],
     "Max Payne": [
         "Action-adventure",
@@ -5968,14 +5921,12 @@
         "Adventure",
         "Fantasy",
         "RPG",
-        "Strategy",
         "TBS",
         "Wargame"
     ],
     "Might & Magic Heroes VII": [
         "Adventure",
         "RPG",
-        "Strategy",
         "TBS",
         "Wargame"
     ],
@@ -6115,7 +6066,6 @@
         "Platformer",
         "Puzzle",
         "Sci-fi",
-        "Strategy",
         "TBS",
         "Third-person"
     ],
@@ -6447,7 +6397,6 @@
         "Action/RPG",
         "Fantasy",
         "RTS",
-        "Strategy",
         "Third-person",
         "Tower defense",
         "Wargame"
@@ -6457,7 +6406,6 @@
         "Action/RPG",
         "Fantasy",
         "RTS",
-        "Strategy",
         "Third-person",
         "Tower defense",
         "Wargame"
@@ -6511,7 +6459,6 @@
         "Action/RPG",
         "Fantasy",
         "Quest",
-        "Strategy",
         "TBS"
     ],
     "Overlord: Raising Hell": [
@@ -6724,7 +6671,6 @@
         "Isometric",
         "RPG",
         "RTS",
-        "Strategy",
         "Third-person"
     ],
     "Pillars of Eternity II: Deadfire": [
@@ -6745,7 +6691,6 @@
         "Isometric",
         "RPG",
         "RTS",
-        "Strategy",
         "Third-person"
     ],
     "Pillars of Eternity: The White March Part I (DLC)": [
@@ -6754,7 +6699,6 @@
         "Isometric",
         "RPG",
         "RTS",
-        "Strategy",
         "Third-person"
     ],
     "Pillars of Eternity: The White March Part II (DLC)": [
@@ -6763,7 +6707,6 @@
         "Isometric",
         "RPG",
         "RTS",
-        "Strategy",
         "Third-person"
     ],
     "Pineview Drive": [
@@ -6802,7 +6745,6 @@
         "RTS",
         "Sci-fi",
         "Simulation",
-        "Strategy",
         "TBS"
     ],
     "Plants vs. Zombies": [
@@ -6811,7 +6753,6 @@
         "Fantasy",
         "Puzzle",
         "RTS",
-        "Strategy",
         "Tower defense",
         "Wargame",
         "Zombie"
@@ -7181,8 +7122,7 @@
         "Quest",
         "RPG",
         "RTS",
-        "Simulation",
-        "Strategy"
+        "Simulation"
     ],
     "Reigns: Her Majesty": [
         "Adventure",
@@ -7196,7 +7136,6 @@
         "RPG",
         "RTS",
         "Simulation",
-        "Strategy",
         "Visual novel"
     ],
     "Remember Me": [
@@ -7436,8 +7375,7 @@
         "Management",
         "RTS",
         "Sandbox",
-        "Simulation",
-        "Strategy"
+        "Simulation"
     ],
     "Rezrog": [
         "Adventure",
@@ -7445,7 +7383,6 @@
         "Logic",
         "RPG",
         "Roguelike",
-        "Strategy",
         "TBS"
     ],
     "Rhapsody: A Musical Adventure": [
@@ -7538,7 +7475,6 @@
         "Arcade",
         "Platformer",
         "Racing",
-        "Strategy",
         "TBS",
         "Third-person"
     ],
@@ -7556,7 +7492,6 @@
         "Humor",
         "RTS",
         "Racing",
-        "Strategy",
         "Tower defense"
     ],
     "Rocket League": [
@@ -8098,8 +8033,7 @@
         "Isometric",
         "Management",
         "RTS",
-        "Simulation",
-        "Strategy"
+        "Simulation"
     ],
     "Simple 1500 Series Vol.056: The Sniper": [
         "FPS"
@@ -8128,7 +8062,6 @@
         "Fantasy",
         "Logic",
         "Roguelike",
-        "Strategy",
         "TBS"
     ],
     "Sled Storm": [
@@ -8440,26 +8373,22 @@
         "Sandbox",
         "Sci-fi",
         "Space",
-        "Strategy",
         "Wargame"
     ],
     "StarCraft II: Heart of the Swarm": [
         "RTS",
         "Sci-fi",
         "Space",
-        "Strategy",
         "Wargame"
     ],
     "StarCraft II: Legacy of the Void": [
         "RTS",
-        "Sci-fi",
-        "Strategy"
+        "Sci-fi"
     ],
     "StarCraft II: Wings of Liberty": [
         "RTS",
         "Sci-fi",
         "Space",
-        "Strategy",
         "Wargame"
     ],
     "StarCraft: Brood War (DLC)": [
@@ -8469,7 +8398,6 @@
         "Sandbox",
         "Sci-fi",
         "Space",
-        "Strategy",
         "Wargame"
     ],
     "SteamWorld Dig": [
@@ -8496,13 +8424,11 @@
         "Platformer",
         "Robot war",
         "Sci-fi",
-        "Strategy",
         "TBS"
     ],
     "Steampunk Tower": [
         "Action",
         "RTS",
-        "Strategy",
         "Tower defense"
     ],
     "Steampunk Tower 2": [
@@ -8510,7 +8436,6 @@
         "Arcade",
         "RTS",
         "Steampunk",
-        "Strategy",
         "Tower defense"
     ],
     "Steel Rats": [
@@ -8975,14 +8900,12 @@
     ],
     "The Banner Saga": [
         "RPG",
-        "Strategy",
         "TBS",
         "TRPG"
     ],
     "The Banner Saga 2": [
         "Adventure",
         "RPG",
-        "Strategy",
         "TBS",
         "TRPG"
     ],
@@ -8996,7 +8919,7 @@
     ],
     "The Binding of Isaac: Afterbirth (DLC)": [
         "Action/RPG",
-        "Arcade"
+        "Shoot 'em up"
     ],
     "The Binding of Isaac: Rebirth": [
         "Action-adventure",
@@ -9633,7 +9556,6 @@
         "Quest",
         "RTS",
         "Simulation",
-        "Strategy",
         "TBS"
     ],
     "This Is the Police": [
@@ -9643,7 +9565,6 @@
         "Quest",
         "RTS",
         "Simulation",
-        "Strategy",
         "TBS"
     ],
     "TimeShift": [
@@ -9755,8 +9676,7 @@
         "Beat 'em up",
         "RTS",
         "Retro",
-        "Shoot 'em up",
-        "Strategy"
+        "Shoot 'em up"
     ],
     "Tony Hawk's Pro Skater 2": [
         "Arcade",
@@ -9825,7 +9745,6 @@
         "Action/RPG",
         "Isometric",
         "Sci-fi",
-        "Strategy",
         "TBS",
         "Third-person"
     ],
@@ -9980,8 +9899,7 @@
         "Action-adventure",
         "Isometric",
         "RTS",
-        "Simulation",
-        "Strategy"
+        "Simulation"
     ],
     "Ultimate Mortal Kombat 3": [
         "2D",
@@ -10132,7 +10050,6 @@
         "RPG",
         "RTS",
         "Robot war",
-        "Strategy",
         "TBS",
         "TRPG"
     ],
@@ -10199,7 +10116,6 @@
     "Warcraft III: Reign of Chaos": [
         "Fantasy",
         "RTS",
-        "Strategy",
         "Wargame"
     ],
     "Warcraft III: The Frozen Throne": [
@@ -10207,7 +10123,6 @@
         "Fantasy",
         "RPG",
         "RTS",
-        "Strategy",
         "Wargame"
     ],
     "Warhammer 40.000: Space Marine": [
@@ -10240,7 +10155,6 @@
     "Warzone 2100": [
         "Post apocalypse",
         "RTS",
-        "Strategy",
         "Third-person",
         "Wargame"
     ],
@@ -10325,7 +10239,6 @@
         "Action/RPG",
         "Adventure",
         "Fantasy",
-        "Strategy",
         "TBS",
         "TRPG"
     ],
@@ -10444,7 +10357,6 @@
         "Fighting",
         "Logic",
         "Shoot 'em up",
-        "Strategy",
         "TBS",
         "Wargame"
     ],
@@ -10454,7 +10366,6 @@
         "Logic",
         "Shoot 'em up",
         "Shooter",
-        "Strategy",
         "TBS",
         "Wargame"
     ],
@@ -10467,7 +10378,6 @@
     ],
     "Worms United": [
         "Fighting",
-        "Strategy",
         "TBS",
         "Wargame"
     ],
@@ -10500,14 +10410,12 @@
         "Sci-fi",
         "Shoot 'em up",
         "Shooter",
-        "Strategy",
         "Tower defense"
     ],
     "XCOM 2": [
         "RPG",
         "RTS",
         "Sci-fi",
-        "Strategy",
         "TBS",
         "Wargame"
     ],
@@ -10515,7 +10423,6 @@
         "RPG",
         "RTS",
         "Sci-fi",
-        "Strategy",
         "TBS"
     ],
     "Xena: Warrior Princess": [
@@ -10564,8 +10471,7 @@
     "Z": [
         "Action",
         "RTS",
-        "Sci-fi",
-        "Strategy"
+        "Sci-fi"
     ],
     "ZOMBI": [
         "Action-adventure",
@@ -10924,8 +10830,7 @@
         "Management",
         "RTS",
         "Sandbox",
-        "Simulation",
-        "Strategy"
+        "Simulation"
     ],
     "Metal Gear Solid": [
         "Action-adventure",
@@ -11175,8 +11080,8 @@
     "Nightmare of Decay": [
         "Action-adventure",
         "FPS",
-        "Horror",
         "Retro",
+        "Survival horror",
         "Zombie"
     ],
     "The Beast Inside": [
@@ -11251,16 +11156,14 @@
         "Action-adventure",
         "Action/RPG",
         "Fantasy",
-        "RTS",
-        "Strategy"
+        "RTS"
     ],
     "Undead Horde 2: Necropolis": [
         "Action-adventure",
         "Action/RPG",
         "Fantasy",
         "Isometric",
-        "RTS",
-        "Strategy"
+        "RTS"
     ],
     "Trine 5: A Clockwork Conspiracy": [
         "2D",
@@ -11547,7 +11450,6 @@
         "Hack and slash",
         "RTS",
         "Sci-fi",
-        "Strategy",
         "Third-person"
     ],
     "Evil West": [
@@ -11987,7 +11889,6 @@
         "RPG",
         "RTS",
         "Simulation",
-        "Strategy",
         "Zombie"
     ],
     "Shredders": [
@@ -12114,7 +12015,6 @@
     "SteamWorld Heist II": [
         "Action-adventure",
         "Action/RPG",
-        "Strategy",
         "TBS"
     ],
     "Death Park": [
@@ -12215,7 +12115,6 @@
         "Fantasy",
         "Isometric",
         "RTS",
-        "Strategy",
         "TBS",
         "Western"
     ],
@@ -12719,7 +12618,6 @@
         "Puzzle",
         "Sandbox",
         "Shooter",
-        "Strategy",
         "TBS"
     ],
     "Kirby and the Forgotten Land": [
@@ -13002,7 +12900,6 @@
         "Action/RPG",
         "Fantasy",
         "Roguelike",
-        "Strategy",
         "TBS",
         "TRPG"
     ],
@@ -13184,8 +13081,7 @@
         "Puzzle",
         "RTS",
         "Sandbox",
-        "Simulation",
-        "Strategy"
+        "Simulation"
     ],
     "Silent Hill: Shattered Memories": [
         "Action-adventure",
@@ -13289,7 +13185,6 @@
         "Action/RPG",
         "Fantasy",
         "Roguelike",
-        "Strategy",
         "TBS",
         "TRPG"
     ],
@@ -13347,14 +13242,12 @@
         "Fantasy",
         "JRPG",
         "Platformer",
-        "Strategy",
         "TBS"
     ],
     "VED: Purification": [
         "Adventure",
         "Fantasy",
         "RPG",
-        "Strategy",
         "TBS"
     ],
     "EBOLA": [
@@ -13386,7 +13279,6 @@
         "Isometric",
         "Puzzle",
         "RTS",
-        "Strategy",
         "Tower defense"
     ],
     "Dead Island 2": [
