@@ -20,6 +20,7 @@ log = get_logger("generate_games.txt")
 DIR = Path(__file__).parent.resolve()
 
 FILE_NAME_GAMES = DIR / "game_by_genres.json"
+FILE_NAME_GAMES_HARDCORED = DIR / "game_by_genres__hardcored.json"
 
 FILE_NAME_BACKUP = DIR / "backup"
 FILE_NAME_BACKUP.mkdir(parents=True, exist_ok=True)
@@ -35,6 +36,8 @@ GENRE_COMPRESSION = [
     ("Third-person", "TPS", "TPS"),
     ("Shooter", "TPS", "TPS"),
     ("Survival", "Horror", "Survival horror"),
+    ("RTS", "Strategy", "RTS"),
+    ("TBS", "Strategy", "TBS"),
 ]
 
 
@@ -96,7 +99,7 @@ def fill_dlc(game_by_genres: dict):
     not_defined_dlc: list[str] = [
         name
         for name, genres in game_by_genres.items()
-        if not genres and re.search(r"\(\w+\)", name)
+        if re.search(r"\(\w+\)", name)
     ]
     log.info(f"Не имеют жанры: {len(not_defined_dlc)}")
 
@@ -124,6 +127,9 @@ def fill_dlc(game_by_genres: dict):
 def run():
     log.info("Запуск генератора игр.")
 
+    game_by_genres_hardcored: dict = load_json(FILE_NAME_GAMES_HARDCORED)
+    log.info(f"Явно заданные игры из файла: {len(game_by_genres_hardcored)}")
+
     if FILE_NAME_GAMES.exists():
         backup_file_name = str(
             FILE_NAME_BACKUP / f"{get_current_datetime_str()}_{FILE_NAME_GAMES.name}"
@@ -148,44 +154,54 @@ def run():
 
     log.info("Поиск игр...")
 
-    number = 0
+    created: int = 0
+    updated: int = 0
+    total: int = len(new_game_by_genres)
 
     for game, genres in new_game_by_genres.items():
         if game in game_by_genres:
-            continue
+            log.info(f"Обработка игры {game!r} с жанрами ({len(genres)}): {genres}")
+        else:
+            log.info(f"Добавлена игра {game!r} с жанрами ({len(genres)}): {genres}")
+            created += 1
 
-        log.info(f"Добавлена игра {game!r} с жанрами ({len(genres)}): {genres}")
-        number += 1
+        if game not in game_by_genres_hardcored:
+            new_genres: list[str] = []
+            for x in genres:
+                tr_genres = genre_translate.get(x)
+                if not tr_genres:  # null, [], ""
+                    continue
 
-        new_genres = []
+                if isinstance(tr_genres, str):
+                    new_genres.append(tr_genres)
+                elif isinstance(tr_genres, list):
+                    new_genres.extend(tr_genres)
+                else:
+                    log.warning(f"Неподдерживаемый тип жанров {tr_genres} из {x!r}")
 
-        for x in genres:
-            tr_genres = genre_translate.get(x)
-            if not tr_genres:  # null, [], ""
-                continue
+            new_genres = do_genres_compression(new_genres)
+            new_genres = remove_partial_duplicates(new_genres)
 
-            if isinstance(tr_genres, str):
-                new_genres.append(tr_genres)
+            log.info(f"Завершение трансляции жанров ({len(new_genres)}): {new_genres}")
+        else:
+            new_genres: list[str] = game_by_genres_hardcored[game]
+            log.info(f"Жанры из явно заданного списка ({len(new_genres)}): {new_genres}")
 
-            elif isinstance(tr_genres, list):
-                new_genres.extend(tr_genres)
+        if game_by_genres[game] != new_genres:
+            updated += 1
 
-            else:
-                log.warning(f"Неподдерживаемый тип жанров {tr_genres} из {x!r}")
-
-        new_genres = do_genres_compression(new_genres)
-        new_genres = remove_partial_duplicates(new_genres)
-
-        log.info(f"Завершение трансляции жанров ({len(new_genres)}): {new_genres}")
         game_by_genres[game] = new_genres
 
         log.info("")
 
-    log.info(f"Завершение поиска игр. Новые игры: {number}.")
+    log.info(
+        f"Завершение поиска игр. Всего игр: {total}, "
+        f"новые: {created}, обновлено: {updated}."
+    )
 
     fill_dlc(game_by_genres)
 
-    if number:
+    if created or updated:
         log.info(f"Сохранение в {FILE_NAME_GAMES}")
         save_json(game_by_genres, FILE_NAME_GAMES)
     else:
