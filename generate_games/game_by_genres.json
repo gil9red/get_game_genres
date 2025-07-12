@@ -12724,5 +12724,62 @@
         "Post apocalypse",
         "Strategy",
         "TPS"
+    ],
+    "VED": [
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Fantasy",
+        "JRPG",
+        "Platformer",
+        "Strategy",
+        "TBS"
+    ],
+    "VED: Purification": [
+        "Adventure",
+        "Fantasy",
+        "RPG",
+        "Strategy",
+        "TBS"
+    ],
+    "EBOLA": [
+        "Action-adventure",
+        "FPS",
+        "Logic",
+        "Survival horror",
+        "Zombie"
+    ],
+    "EBOLA 3": [
+        "Action-adventure",
+        "FPS",
+        "Puzzle",
+        "Survival horror",
+        "Zombie"
+    ],
+    "EBOLA VILLAGE": [
+        "Action-adventure",
+        "Action/RPG",
+        "First-person",
+        "Puzzle",
+        "Survival horror",
+        "Third-person",
+        "Zombie"
+    ],
+    "Bloons TD 6": [
+        "Action",
+        "Arcade",
+        "Puzzle",
+        "RTS",
+        "Strategy",
+        "Tower defense"
+    ],
+    "Dead Island 2": [
+        "Action-adventure",
+        "Action/RPG",
+        "FPS",
+        "Open world",
+        "Post apocalypse",
+        "Survival horror",
+        "Zombie"
     ]
 }
