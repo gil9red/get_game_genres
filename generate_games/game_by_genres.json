@@ -6786,13 +6786,13 @@
     ],
     "Poppy Playtime": [
         "Action-adventure",
-        "Horror",
-        "Puzzle"
+        "Puzzle",
+        "Survival horror"
     ],
     "Poppy Playtime: Chapter 2 (DLC)": [
         "Action-adventure",
-        "Horror",
-        "Puzzle"
+        "Puzzle",
+        "Survival horror"
     ],
     "Portal": [
         "Action-adventure",
@@ -6889,11 +6889,7 @@
     "Prince of Persia (2008)": [
         "Action-adventure",
         "Arcade",
-        "Fantasy",
-        "First-person",
-        "Open world",
-        "Platformer",
-        "Third-person"
+        "Platformer"
     ],
     "Prince of Persia: The Sands of Time": [
         "Action-adventure",
