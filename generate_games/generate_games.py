@@ -187,7 +187,7 @@ def run():
             new_genres: list[str] = game_by_genres_hardcored[game]
             log.info(f"Жанры из явно заданного списка ({len(new_genres)}): {new_genres}")
 
-        if game_by_genres[game] != new_genres:
+        if game_by_genres.get(game) != new_genres:
             updated += 1
 
         game_by_genres[game] = new_genres
