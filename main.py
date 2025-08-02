@@ -52,11 +52,11 @@ MAX_TIMEOUT = 10  # 10 seconds
 TIMEOUT_EVERY_N_GAMES = 50  # Every 50 games
 TIMEOUT_BETWEEN_N_GAMES = 3 * 60  # 3 minutes
 
-PAUSES = [
+PAUSES: list[tuple[str, int]] = [
+    ("1 минута", 60),
+    ("5 минут", 5 * 60),
+    ("10 минут", 10 * 60),
     ("15 минут", 15 * 60),
-    ("30 минут", 30 * 60),
-    ("45 минут", 45 * 60),
-    ("1 час", 60 * 60),
 ]
 
 
