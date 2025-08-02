@@ -13,12 +13,13 @@ class PlaygroundRuParser(BaseParser):
 
     def _parse(self) -> list[str]:
         url = f"{self.base_url}/api/game.search?query={self.game_name}&include_addons=1"
-        data: dict = self.send_get(url, return_json=True)
+        data: dict | list = self.send_get(url, return_json=True)
 
-        message: str | None = data.get("message")
-        if message:
-            self.log_warn(f"Ошибка: {data}")
-            return []
+        if isinstance(data, dict):
+            message: str | None = data.get("message")
+            if message:
+                self.log_warn(f"Ошибка: {data}")
+                return []
 
         for game in data:
             title = game["name"]
