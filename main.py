@@ -48,9 +48,9 @@ if USE_FAKE_PARSER:
 log = get_logger()
 counter = AtomicCounter()
 
-MAX_TIMEOUT = 10  # 10 seconds
-TIMEOUT_EVERY_N_GAMES = 50  # Every 50 games
-TIMEOUT_BETWEEN_N_GAMES = 3 * 60  # 3 minutes
+MAX_TIMEOUT: int = 10  # 10 seconds
+TIMEOUT_EVERY_N_GAMES: int = 50  # Every 50 games
+TIMEOUT_BETWEEN_N_GAMES: int = 3 * 60  # 3 minutes
 
 PAUSES: list[tuple[str, int]] = [
     ("1 минута", 60),
@@ -62,9 +62,9 @@ PAUSES: list[tuple[str, int]] = [
 
 def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5):
     try:
-        site_name = parser.get_site_name()
-        timeout = 3  # 3 seconds
-        number = 0
+        site_name: str = parser.get_site_name()
+        timeout: int = 3  # 3 seconds
+        number: int = 0
 
         for game_name in games:
             if Dump.exists(site_name, game_name):
@@ -72,7 +72,7 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5):
 
             try:
                 number += 1
-                num_request = 0
+                num_request: int = 0
 
                 while True:
                     num_request += 1
@@ -131,18 +131,17 @@ if __name__ == "__main__":
     while True:
         try:
             log.info(f"Запуск")
-            t = default_timer()
+            t: float = default_timer()
 
             db_create_backup()
 
-            games = get_games_list()
+            games: list[str] = get_games_list()
             log.info(f"Всего игр: {len(games)}")
 
-            threads = []
-            for parser in parsers:
-                threads.append(
-                    Thread(target=run_parser, args=[parser, games])
-                )
+            threads: list[Thread] = [
+                Thread(target=run_parser, args=[parser, games])
+                for parser in parsers
+            ]
             log.info(f"Всего парсеров/потоков: {len(threads)}")
 
             counter.value = 0
