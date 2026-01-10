@@ -101,6 +101,8 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5):
                             log.info(
                                 f"#{number}. Попытки закончились для {game_name!r} ({site_name})"
                             )
+                            # Добавляем пустой список жанров, для пропуска игры
+                            Dump.add(site_name, game_name, genres=[])
                             break
 
                         pause_text, pause_secs = PAUSES[num_request - 1]
