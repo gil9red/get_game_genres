@@ -19,6 +19,8 @@ from generate_genres import create as create_generate_genres
 from genre_translate_file import create as create_genre_translate
 from parsers import get_parsers, print_parsers
 from parsers.base_parser import BaseParser
+
+from third_party.add_notify_telegram import add_notify
 from third_party.atomic_counter import AtomicCounter
 from third_party.seconds_to_str import seconds_to_str
 
@@ -98,11 +100,14 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5):
                             f"#{number}. Ошибка при запросе {num_request}/{max_num_request} ({site_name})"
                         )
                         if num_request >= max_num_request:
-                            log.info(
-                                f"#{number}. Попытки закончились для {game_name!r} ({site_name})"
-                            )
+                            text: str = f"Попытки закончились для {game_name!r} ({site_name})"
+                            log.info(f"#{number}. {text}")
+
                             # Добавляем пустой список жанров, для пропуска игры
                             Dump.add(site_name, game_name, genres=[])
+
+                            # Отправка сообщения в telegram
+                            add_notify(log.name, text)
                             break
 
                         pause_text, pause_secs = PAUSES[num_request - 1]
