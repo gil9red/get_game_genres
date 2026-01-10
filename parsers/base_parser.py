@@ -156,6 +156,7 @@ class BaseParser(metaclass=Singleton):
     def get_site_name(cls) -> str:
         if not cls._site_name:
             import inspect
+
             cls._site_name = Path(inspect.getfile(cls)).stem
         return cls._site_name
 
