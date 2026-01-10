@@ -5,6 +5,8 @@ __author__ = "ipetrash"
 
 
 import logging
+from typing import Any
+
 import unicodedata
 import sys
 
@@ -76,13 +78,19 @@ class BaseParser(metaclass=Singleton):
 
         return rs
 
+    @staticmethod
+    def _process_session_kwargs(kwargs: dict[str, Any]):
+        kwargs.setdefault("timeout", 60)
+
     def send_get(
-            self,
-            url: str,
-            return_html: bool = False,
-            return_json: bool = False,
-            **kwargs
+        self,
+        url: str,
+        return_html: bool = False,
+        return_json: bool = False,
+        **kwargs,
     ) -> requests.Response | BeautifulSoup | dict | list:
+        self._process_session_kwargs(kwargs)
+
         rs = self.session.get(url, **kwargs)
         self._on_check_response(rs)
         return self.process_response(
@@ -98,6 +106,8 @@ class BaseParser(metaclass=Singleton):
         return_json: bool = False,
         **kwargs,
     ) -> requests.Response | BeautifulSoup:
+        self._process_session_kwargs(kwargs)
+
         rs = self.session.post(url, data=data, json=json, **kwargs)
         self._on_check_response(rs)
         return self.process_response(
@@ -225,7 +235,10 @@ if __name__ == "__main__":
         parser._need_logs = False
 
         print(parser.get_site_name())
-        print(parser.get_game_genres(game_name))
+        try:
+            print(parser.get_game_genres(game_name))
+        except Exception as e:
+            print("Ошибка:", e)
         print()
     """
     ag_ru
@@ -243,17 +256,11 @@ if __name__ == "__main__":
     igromania_ru
     []
     
-    metacritic_com
-    ['Action RPG']
-    
     playground_ru
     []
     
-    spong_com
-    []
-    
     squarefaction_ru
-    ['Action RPG']
+    Ошибка: HTTPConnectionPool(host='squarefaction.ru', port=80): Read timed out.
     
     stopgame_ru
     ["Hack & Slash/Beat 'em up", 'Кооперативная', 'Мультиплеер', 'Одиночная', 'От третьего лица', 'Ролевая', 'Фэнтези', 'Экшн']
