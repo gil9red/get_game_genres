@@ -82,7 +82,7 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5):
                             message = f"{message}. Попытки {num_request}/{max_num_request}"
                         log.info(message)
 
-                        genres = parser.get_game_genres(game_name)
+                        genres: list[str] = parser.get_game_genres(game_name)
                         log.info(
                             f"#{number}. Найдено жанров {game_name!r} ({site_name}): {genres}"
                         )
