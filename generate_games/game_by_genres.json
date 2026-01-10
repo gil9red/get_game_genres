@@ -13320,5 +13320,601 @@
     "WILD SEX: WET GIRLS": [
         "Action-adventure",
         "TPS"
+    ],
+    "Monument Valley 2": [
+        "Adventure",
+        "Casual",
+        "Isometric",
+        "Logic",
+        "Puzzle",
+        "Strategy"
+    ],
+    "The Mr. Rabbit Magic Show": [
+        "Adventure",
+        "Point-and-click",
+        "Puzzle",
+        "Quest"
+    ],
+    "Monument Valley 3": [
+        "Adventure",
+        "Casual",
+        "Isometric",
+        "Logic",
+        "Puzzle",
+        "Strategy"
+    ],
+    "Assemble with Care": [
+        "Adventure",
+        "Arcade",
+        "Casual",
+        "Logic",
+        "Puzzle"
+    ],
+    "Silent Hill 2 (2024)": [
+        "Action-adventure",
+        "Survival horror",
+        "TPS"
+    ],
+    "Desta: The Memories Between": [
+        "Action/RPG",
+        "Casual",
+        "Isometric",
+        "Puzzle",
+        "Sport",
+        "TBS",
+        "Visual novel"
+    ],
+    "Alba: A Wildlife Adventure": [
+        "Adventure",
+        "Arcade",
+        "Casual",
+        "Humor",
+        "Quest",
+        "Third-person"
+    ],
+    "The King is Watching": [
+        "Cardgame",
+        "Fantasy",
+        "Isometric",
+        "RTS"
+    ],
+    "Ghostbusters: The Video Game Remastered": [
+        "Action-adventure",
+        "Comedy",
+        "Horror",
+        "Sci-fi",
+        "TPS"
+    ],
+    "Warhammer 000": [],
+    "Warhammer 40": [],
+    "Warhammer 40.000: Space Marine 2": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Sci-fi",
+        "Space",
+        "TPS"
+    ],
+    "I Am Legion: Stand Survivors": [
+        "2D",
+        "Action-adventure",
+        "Shoot 'em up",
+        "Shooter"
+    ],
+    "Looking Up I See Only A Ceiling": [
+        "Adventure",
+        "Horror",
+        "Text",
+        "Visual novel"
+    ],
+    "Iron Core: Mech Survivor": [
+        "2D",
+        "Action-adventure",
+        "Casual",
+        "Shoot 'em up",
+        "Shooter",
+        "Strategy"
+    ],
+    "Lego Horizon Adventures": [
+        "Action-adventure",
+        "Casual",
+        "Comedy",
+        "Isometric",
+        "Post apocalypse",
+        "Sci-fi",
+        "Third-person"
+    ],
+    "The Dark Queen of Mortholme": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Fighting",
+        "Platformer",
+        "Simulation"
+    ],
+    "Abyss Eschaton Survivors": [
+        "2D",
+        "Action-adventure",
+        "Action/RPG",
+        "Casual",
+        "Shoot 'em up",
+        "Shooter",
+        "Strategy"
+    ],
+    "Soulstone Survivors": [
+        "2D",
+        "Action/RPG",
+        "Arcade",
+        "Beat 'em up",
+        "Crafting",
+        "Fantasy",
+        "Hack and slash",
+        "Isometric",
+        "Roguelike",
+        "Shoot 'em up",
+        "Shooter",
+        "Survival"
+    ],
+    "Tales of Phantasia": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Isometric",
+        "JRPG"
+    ],
+    "Frostpunk": [
+        "Action",
+        "Isometric",
+        "Management",
+        "Post apocalypse",
+        "RTS",
+        "Simulation",
+        "Steampunk",
+        "Survival"
+    ],
+    "Five Nights at Freddy's: Secret of the Mimic": [
+        "Action-adventure",
+        "First-person",
+        "Puzzle",
+        "Survival horror"
+    ],
+    "Jotunnslayer: Hordes of Hel": [
+        "Action/RPG",
+        "Fantasy",
+        "Isometric",
+        "Roguelike",
+        "Survival"
+    ],
+    "Hollow Survivors": [
+        "2D",
+        "Action-adventure",
+        "Action/RPG",
+        "Casual",
+        "Shoot 'em up",
+        "Shooter"
+    ],
+    "Achilles: Survivor": [
+        "2D",
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Isometric",
+        "Roguelike",
+        "Shooter",
+        "Survival"
+    ],
+    "Magic Rune Stone v0.9.20": [],
+    "FatalZone": [
+        "2D",
+        "Action/RPG",
+        "Arcade",
+        "Casual",
+        "Crafting",
+        "Isometric",
+        "Post apocalypse",
+        "Roguelike",
+        "Shoot 'em up",
+        "Shooter",
+        "Survival",
+        "Zombie"
+    ],
+    "Astro Looter: Survivor": [
+        "2D",
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "Casual",
+        "Isometric",
+        "Sci-fi",
+        "Shooter",
+        "Strategy"
+    ],
+    "Bright Lights of Svetlov": [
+        "Adventure",
+        "First-person",
+        "Horror",
+        "Puzzle",
+        "Quest",
+        "Simulation"
+    ],
+    "Machick": [
+        "2D",
+        "Action/RPG",
+        "Shoot 'em up",
+        "Shooter"
+    ],
+    "Machick 2": [
+        "2D",
+        "Action/RPG",
+        "Arcade",
+        "Shoot 'em up",
+        "Shooter"
+    ],
+    "Greedland": [
+        "2D",
+        "Action-adventure",
+        "Arcade",
+        "Casual",
+        "Isometric",
+        "Robot war",
+        "Roguelike",
+        "Sci-fi",
+        "Shoot 'em up",
+        "Shooter"
+    ],
+    "Tales of Arise": [
+        "Action-adventure",
+        "Action/RPG",
+        "Beat 'em up",
+        "Fantasy",
+        "Hack and slash",
+        "JRPG",
+        "Third-person"
+    ],
+    "Мемасики": [],
+    "That's not my Neighbor": [
+        "Adventure",
+        "Casual",
+        "Logic",
+        "Puzzle",
+        "Simulation"
+    ],
+    "Лихо одноглазое": [
+        "Adventure",
+        "Fantasy",
+        "First-person",
+        "Horror",
+        "Logic",
+        "Movie",
+        "Quest"
+    ],
+    "Little Nightmares III": [
+        "2D",
+        "Action-adventure",
+        "Horror",
+        "Platformer",
+        "Puzzle",
+        "Stealth"
+    ],
+    "Metal Garden": [
+        "Action-adventure",
+        "FPS",
+        "Sci-fi"
+    ],
+    "True Fear: Forsaken Souls Part 3": [
+        "Adventure",
+        "Casual",
+        "First-person",
+        "Hidden object",
+        "Horror",
+        "Logic",
+        "Point-and-click",
+        "Puzzle",
+        "Quest"
+    ],
+    "Mars Survivors": [
+        "2D",
+        "Action",
+        "Arcade",
+        "Isometric",
+        "Roguelike",
+        "Sci-fi",
+        "Shoot 'em up",
+        "Shooter"
+    ],
+    "Wandness: WandCraft Survivor": [
+        "2D",
+        "Action-adventure",
+        "Shoot 'em up",
+        "Shooter"
+    ],
+    "FAR: Lone Sails": [
+        "Action-adventure",
+        "Fantasy",
+        "Platformer",
+        "Post apocalypse",
+        "Puzzle",
+        "Quest",
+        "Racing",
+        "Simulation",
+        "Survival"
+    ],
+    "Mining Survivors": [
+        "2D",
+        "Action/RPG",
+        "Casual",
+        "Shoot 'em up",
+        "Shooter",
+        "Simulation",
+        "Strategy"
+    ],
+    "Rocket Rats": [
+        "2D",
+        "Action/RPG",
+        "Casual",
+        "Shoot 'em up",
+        "Shooter"
+    ],
+    "Gunbot Diplomacy": [
+        "2D",
+        "Action",
+        "Casual",
+        "Post apocalypse",
+        "Shoot 'em up",
+        "Shooter"
+    ],
+    "BALL x PIT": [
+        "2D",
+        "Action/RPG",
+        "Arcade",
+        "Fantasy",
+        "Isometric",
+        "Roguelike",
+        "Shoot 'em up"
+    ],
+    "Plants vs. Zombies: Replanted": [
+        "Arcade",
+        "Casual",
+        "Humor",
+        "Isometric",
+        "RTS",
+        "Tower defense",
+        "Zombie"
+    ],
+    "Karate Survivor": [
+        "2D",
+        "Action",
+        "Beat 'em up",
+        "Casual",
+        "Hack and slash",
+        "Isometric",
+        "Roguelike"
+    ],
+    "Slitterhead": [
+        "Action-adventure",
+        "Survival horror",
+        "Third-person"
+    ],
+    "Deep Rock Galactic: Survivor": [
+        "2D",
+        "Action",
+        "Arcade",
+        "Isometric",
+        "Roguelike",
+        "Sci-fi",
+        "Shoot 'em up",
+        "Shooter",
+        "Strategy",
+        "Survival"
+    ],
+    "Pesticide Not Required": [
+        "2D",
+        "Action",
+        "Isometric",
+        "Roguelike",
+        "Shoot 'em up",
+        "Shooter"
+    ],
+    "Geometry Survivor": [
+        "2D",
+        "Action",
+        "Shoot 'em up",
+        "Shooter"
+    ],
+    "Herdling": [
+        "Action-adventure",
+        "Casual",
+        "Open world",
+        "Third-person"
+    ],
+    "Final Fantasy (Pixel Remaster)": [
+        "Fantasy",
+        "JRPG",
+        "RPG",
+        "TBS"
+    ],
+    "Final Fantasy II (Pixel Remaster)": [
+        "Fantasy",
+        "Isometric",
+        "JRPG",
+        "Open world",
+        "RPG",
+        "TBS"
+    ],
+    "Final Fantasy III (Pixel Remaster)": [
+        "Fantasy",
+        "Isometric",
+        "JRPG",
+        "RPG",
+        "TBS"
+    ],
+    "Final Fantasy IV (Pixel Remaster)": [
+        "Fantasy",
+        "Isometric",
+        "RPG",
+        "TBS"
+    ],
+    "Serious Sam Advance": [
+        "Action",
+        "Comedy",
+        "FPS",
+        "Sci-fi",
+        "Shoot 'em up"
+    ],
+    "CRABS MUST DIE!": [
+        "Action-adventure",
+        "Action/RPG",
+        "FPS",
+        "Open world",
+        "Sci-fi"
+    ],
+    "Estranged: The Departure": [
+        "Action-adventure",
+        "Arcade",
+        "Casual",
+        "FPS",
+        "Horror",
+        "Puzzle"
+    ],
+    "Final Fantasy V (Pixel Remaster)": [
+        "Fantasy",
+        "Isometric",
+        "RPG",
+        "TBS"
+    ],
+    "High Hell": [
+        "Action",
+        "Comedy",
+        "FPS"
+    ],
+    "I Hate Running Backwards": [
+        "2D",
+        "Action",
+        "Arcade",
+        "Beat 'em up",
+        "Isometric",
+        "Roguelike",
+        "Shoot 'em up",
+        "TPS"
+    ],
+    "Killzone 2": [
+        "Action",
+        "FPS",
+        "Sci-fi",
+        "Wargame"
+    ],
+    "Killzone 3": [
+        "Action",
+        "FPS",
+        "RTS",
+        "Sci-fi",
+        "Wargame"
+    ],
+    "Killzone HD": [
+        "Action",
+        "Shooter"
+    ],
+    "Killzone: Liberation": [
+        "2D",
+        "Action",
+        "Arcade",
+        "Isometric",
+        "Sci-fi",
+        "Strategy",
+        "TPS",
+        "Tank",
+        "Wargame"
+    ],
+    "Killzone: Mercenary": [
+        "Action",
+        "FPS",
+        "Sci-fi",
+        "Wargame"
+    ],
+    "PATHOGEN X": [
+        "Action-adventure",
+        "Casual",
+        "FPS",
+        "Survival horror",
+        "Zombie"
+    ],
+    "Painkiller (2025)": [
+        "Action-adventure",
+        "Arcade",
+        "FPS",
+        "Fantasy",
+        "Shoot 'em up",
+        "Survival horror"
+    ],
+    "Serious Sam Double D XXL": [
+        "Action",
+        "Arcade",
+        "Beat 'em up",
+        "Platformer",
+        "Shooter"
+    ],
+    "Serious Sam HD: The First Encounter": [
+        "Action",
+        "FPS"
+    ],
+    "Serious Sam HD: The Second Encounter": [
+        "Action",
+        "FPS"
+    ],
+    "Serious Sam HD: The Second Encounter - Legend of the Beast (DLC)": [
+        "Action",
+        "FPS"
+    ],
+    "Serious Sam: Greek Encounter": [],
+    "Serious Sam: Kamikaze Attack!": [
+        "Action",
+        "Arcade",
+        "Casual",
+        "Platformer",
+        "Runner"
+    ],
+    "Serious Sam: Next Encounter": [
+        "Action",
+        "Arcade",
+        "Comedy",
+        "FPS",
+        "Sci-fi"
+    ],
+    "Serious Sam: The Random Encounter": [
+        "Action/RPG",
+        "Arcade",
+        "Comedy",
+        "Puzzle",
+        "Sci-fi",
+        "TBS",
+        "TPS"
+    ],
+    "Serious Sam: Tormental": [
+        "2D",
+        "Action",
+        "Arcade",
+        "Isometric",
+        "Roguelike",
+        "Sci-fi",
+        "Shoot 'em up",
+        "Shooter"
+    ],
+    "Spec Ops: Airborne Commando": [
+        "Action",
+        "Strategy",
+        "TPS"
+    ],
+    "Spec Ops: The Line": [
+        "Action-adventure",
+        "Strategy",
+        "TPS",
+        "Wargame"
+    ],
+    "SpongeBob SquarePants: Titans of the Tide": [
+        "Action-adventure",
+        "Arcade",
+        "Humor",
+        "Platformer",
+        "Third-person"
     ]
 }
