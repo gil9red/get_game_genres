@@ -133,3 +133,5 @@ backup/
 database/
 errors/
 logs/
+.gigaide/
+.idea/
