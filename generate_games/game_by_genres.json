@@ -13916,5 +13916,40 @@
         "Humor",
         "Platformer",
         "Third-person"
+    ],
+    "Nightmares from the Deep: The Cursed Heart (Collector's Edition)": [
+        "Adventure",
+        "Puzzle"
+    ],
+    "Nightmares from the Deep 2: The Sirens Call (Collector's Edition)": [],
+    "Cut the Rope": [
+        "Action",
+        "Arcade",
+        "Casual",
+        "Logic",
+        "Puzzle",
+        "Strategy",
+        "Third-person"
+    ],
+    "Nightmares from the Deep 3: Davy Jones (Collector's Edition)": [],
+    "The House of the Dead 2: Remake": [
+        "Action",
+        "Arcade",
+        "Casual",
+        "FPS",
+        "Rail shooter",
+        "Shoot 'em up",
+        "Zombie"
+    ],
+    "Gal*Gun: Double Peace": [
+        "Action-adventure",
+        "Action/RPG",
+        "Arcade",
+        "FPS",
+        "Fantasy",
+        "Humor",
+        "Rail shooter",
+        "Shoot 'em up",
+        "Visual novel"
     ]
 }
