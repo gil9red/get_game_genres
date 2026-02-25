@@ -93,7 +93,7 @@ def remove_partial_duplicates(genres: list[str], need_log: bool = True) -> list[
     return genres
 
 
-def fill_dlc(game_by_genres: dict):
+def fill_dlc(game_by_genres: dict) -> None:
     log.info("Заполнение DLC игр")
 
     not_defined_dlc: list[str] = [
@@ -124,7 +124,7 @@ def fill_dlc(game_by_genres: dict):
             game_by_genres[name_dlc] = game_by_genres[name]
 
 
-def run():
+def run() -> None:
     log.info("Запуск генератора игр.")
 
     game_by_genres_hardcored: dict = load_json(FILE_NAME_GAMES_HARDCORED)

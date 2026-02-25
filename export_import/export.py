@@ -18,7 +18,7 @@ DIR.mkdir(parents=True, exist_ok=True)
 FILE_NAME_EXPORT_JSON = DIR / "games.json"
 
 
-def run():
+def run() -> None:
     items = [model_to_dict(dump) for dump in Dump.select()]
     print(len(items))
 

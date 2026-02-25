@@ -27,7 +27,7 @@ class TestCase(unittest.TestCase):
     def compare_name_func(x: dict) -> str:
         return x["name"]
 
-    def test_api_games(self):
+    def test_api_games(self) -> None:
         rs = requests.get(URL_GAMES)
         rs_json: list[dict] = rs.json()
         rs_json.sort(key=self.compare_name_func)
@@ -57,13 +57,13 @@ class TestCase(unittest.TestCase):
                 game, rs_json, f"Ошибка с {name!r} результат с сервера: {rs.text!r}"
             )
 
-    def test_api_game_is_not_found(self):
+    def test_api_game_is_not_found(self) -> None:
         name = uuid.uuid4().hex
         url = f"{URL_GAME}/{quote(name)}"
         rs = requests.get(url)
         self.assertIsNone(rs.json())
 
-    def test_api_genres(self):
+    def test_api_genres(self) -> None:
         rs = requests.get(URL_GENRES)
         rs_json: list[dict] = rs.json()
         rs_json.sort(key=self.compare_name_func)
@@ -93,7 +93,7 @@ class TestCase(unittest.TestCase):
                 genre, rs_json, f"Ошибка с {name!r} результат с сервера: {rs.text!r}"
             )
 
-    def test_api_genre_is_not_found(self):
+    def test_api_genre_is_not_found(self) -> None:
         name = uuid.uuid4().hex
         url = f"{URL_GENRE}/{quote(name)}"
         rs = requests.get(url)

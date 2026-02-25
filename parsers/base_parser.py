@@ -43,7 +43,7 @@ class BaseParser(metaclass=Singleton):
         dir_errors: Path = DIR_ERRORS,
         dir_logs: Path = DIR_LOGS,
         log_format: str = LOG_FORMAT,
-    ):
+    ) -> None:
         self.session = requests.session()
         self.session.headers["User-Agent"] = USER_AGENT
 
@@ -79,7 +79,7 @@ class BaseParser(metaclass=Singleton):
         return rs
 
     @staticmethod
-    def _process_session_kwargs(kwargs: dict[str, Any]):
+    def _process_session_kwargs(kwargs: dict[str, Any]) -> None:
         kwargs.setdefault("timeout", 60)
 
     def send_get(
@@ -114,7 +114,7 @@ class BaseParser(metaclass=Singleton):
             rs, return_html=return_html, return_json=return_json
         )
 
-    def _save_error_response(self, rs: requests.Response):
+    def _save_error_response(self, rs: requests.Response) -> None:
         self._dir_errors.mkdir(parents=True, exist_ok=True)
 
         safe_name = get_valid_filename(self.game_name)
@@ -128,7 +128,7 @@ class BaseParser(metaclass=Singleton):
         with open(file_name, "wb") as f:
             f.write(data)
 
-    def _on_check_response(self, rs: requests.Response):
+    def _on_check_response(self, rs: requests.Response) -> None:
         if rs.ok:
             return
 
@@ -137,19 +137,19 @@ class BaseParser(metaclass=Singleton):
         )
         self._save_error_response(rs)
 
-    def log_debug(self, msg, *args, **kwargs):
+    def log_debug(self, msg, *args, **kwargs) -> None:
         self._need_logs and self._log.debug(msg, *args, **kwargs)
 
-    def log_info(self, msg, *args, **kwargs):
+    def log_info(self, msg, *args, **kwargs) -> None:
         self._need_logs and self._log.info(msg, *args, **kwargs)
 
-    def log_warn(self, msg, *args, **kwargs):
+    def log_warn(self, msg, *args, **kwargs) -> None:
         self._need_logs and self._log.warning(msg, *args, **kwargs)
 
-    def log_error(self, msg, *args, **kwargs):
+    def log_error(self, msg, *args, **kwargs) -> None:
         self._need_logs and self._log.error(msg, *args, **kwargs)
 
-    def log_exception(self, msg, *args, **kwargs):
+    def log_exception(self, msg, *args, **kwargs) -> None:
         self._need_logs and self._log.exception(msg, *args, **kwargs)
 
     @classmethod

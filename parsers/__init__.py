@@ -47,7 +47,7 @@ def get_parsers() -> list[BaseParser]:
     return items
 
 
-def print_parsers(parsers: list, log=print):
+def print_parsers(parsers: list, log=print) -> None:
     max_width = len(max([x.get_site_name() for x in parsers], key=len))
     fmt_str = "    {:<%d} : {}" % max_width
     items = [
@@ -66,7 +66,7 @@ TEST_GAMES = [
 ]
 
 
-def _common_test(get_game_genres, sleep=1, max_number=None):
+def _common_test(get_game_genres, sleep=1, max_number=None) -> None:
     if max_number is None:
         max_number = len(TEST_GAMES)
 

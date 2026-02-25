@@ -36,7 +36,7 @@ def load_json(file_name: str | Path) -> dict | list:
         return dict()
 
 
-def save_json(data: dict | list, file_name: str | Path):
+def save_json(data: dict | list, file_name: str | Path) -> None:
     json.dump(
         data,
         open(file_name, "w", encoding="utf-8"),

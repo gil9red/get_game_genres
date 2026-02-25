@@ -45,7 +45,7 @@ def get_genres_with_aliases() -> dict[str, set[str]]:
     return all_genres
 
 
-def run():
+def run() -> None:
     log.info("Запуск генератора жанров.")
 
     current_genres: dict = load_json(FILE_NAME_GENRES)

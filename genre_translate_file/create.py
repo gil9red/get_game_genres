@@ -27,7 +27,7 @@ def get_similar_genre(genre: str, genre_translate: dict) -> list[str] | str | No
 log = get_logger("genre_translate.txt")
 
 
-def run(need_notify=True):
+def run(need_notify=True) -> None:
     log.info("Запуск трансляции жанров.")
 
     genre_translate: dict[str, list[str] | str | None] = load_json(

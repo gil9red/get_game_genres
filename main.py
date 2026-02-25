@@ -30,7 +30,7 @@ USE_FAKE_PARSER = False
 if USE_FAKE_PARSER:
     class FakeParser(BaseParser):
         @classmethod
-        def get_site_name(cls):
+        def get_site_name(cls) -> str:
             return "_test_"
 
         def _parse(self) -> list[str]:
@@ -62,7 +62,7 @@ PAUSES: list[tuple[str, int]] = [
 ]
 
 
-def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5):
+def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5) -> None:
     try:
         site_name: str = parser.get_site_name()
         timeout: int = 3  # 3 seconds
