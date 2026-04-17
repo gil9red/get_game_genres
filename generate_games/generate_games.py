@@ -15,13 +15,13 @@ from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
 log = get_logger("generate_games.txt")
 
 
-DIR = Path(__file__).parent.resolve()
+DIR: Path = Path(__file__).parent.resolve()
 
-FILE_NAME_GAMES = DIR / "game_by_genres.json"
-FILE_NAME_GAMES_HARDCORED = DIR / "game_by_genres__hardcored.json"
+FILE_NAME_GAMES: Path = DIR / "game_by_genres.json"
+FILE_NAME_GAMES_HARDCORED: Path = DIR / "game_by_genres__hardcored.json"
 
 # Example: "Action", "Adventure" -> "Action-adventure"
-GENRE_COMPRESSION = [
+GENRE_COMPRESSION: list[tuple[str, str, str]] = [
     ("Action", "Adventure", "Action-adventure"),
     ("Action", "RPG", "Action/RPG"),
     ("First-person", "Shooter", "FPS"),
