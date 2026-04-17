@@ -5,6 +5,7 @@ __author__ = "ipetrash"
 
 
 import time
+import sys
 
 from timeit import default_timer
 from threading import Thread
@@ -24,10 +25,12 @@ from third_party.add_notify_telegram import add_notify
 from third_party.atomic_counter import AtomicCounter
 from third_party.seconds_to_str import seconds_to_str
 
+IS_LOOP: bool = "--loop" in sys.argv
 
 # Test
-USE_FAKE_PARSER = False
+USE_FAKE_PARSER: bool = False
 if USE_FAKE_PARSER:
+
     class FakeParser(BaseParser):
         @classmethod
         def get_site_name(cls) -> str:
@@ -79,9 +82,13 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5) -
                 while True:
                     num_request += 1
                     try:
-                        message = f"#{number}. Поиск жанров для {game_name!r} ({site_name})"
+                        message = (
+                            f"#{number}. Поиск жанров для {game_name!r} ({site_name})"
+                        )
                         if num_request > 1:
-                            message = f"{message}. Попытки {num_request}/{max_num_request}"
+                            message = (
+                                f"{message}. Попытки {num_request}/{max_num_request}"
+                            )
                         log.info(message)
 
                         genres: list[str] = parser.get_game_genres(game_name)
@@ -100,7 +107,9 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5) -
                             f"#{number}. Ошибка при запросе {num_request}/{max_num_request} ({site_name})"
                         )
                         if num_request >= max_num_request:
-                            text: str = f"Попытки закончились для {game_name!r} ({site_name})"
+                            text: str = (
+                                f"Попытки закончились для {game_name!r} ({site_name})"
+                            )
                             log.info(f"#{number}. {text}")
 
                             # Добавляем пустой список жанров, для пропуска игры
@@ -131,50 +140,78 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5) -
         log.exception(f"Ошибка:")
 
 
-if __name__ == "__main__":
-    parsers = get_parsers()
-    print_parsers(parsers, log=lambda *args, **kwargs: log.info(*args, **kwargs))
+def run(parsers: list[BaseParser]):
+    log.info(f"Запуск")
+    t: float = default_timer()
 
+    db_create_backup()
+
+    games: list[str] = get_games_list()
+    log.info(f"Всего игр: {len(games)}")
+
+    threads: list[Thread] = [
+        Thread(target=run_parser, args=[parser, games]) for parser in parsers
+    ]
+    log.info(f"Всего парсеров/потоков: {len(threads)}")
+
+    counter.value = 0
+
+    # TODO: Проверить работу параллельного выполнения
+    for thread in threads:
+        thread.start()
+
+    for thread in threads:
+        thread.join()
+
+    log.info(
+        f"Добавлено игр: {counter.value}. Игр в базе: {Dump.select().count()}. "
+        f"Пройдено времени: {seconds_to_str(default_timer() - t)}"
+    )
+    log.info(f"Завершено.\n")
+
+    create_genre_translate.run()
+    create_generate_genres.run()
+    create_generate_games.run()
+
+
+def run_loop(parsers: list[BaseParser]):
     while True:
         try:
-            log.info(f"Запуск")
-            t: float = default_timer()
-
-            db_create_backup()
-
-            games: list[str] = get_games_list()
-            log.info(f"Всего игр: {len(games)}")
-
-            threads: list[Thread] = [
-                Thread(target=run_parser, args=[parser, games])
-                for parser in parsers
-            ]
-            log.info(f"Всего парсеров/потоков: {len(threads)}")
-
-            counter.value = 0
-
-            # TODO: Проверить работу параллельного выполнения
-            for thread in threads:
-                thread.start()
-
-            for thread in threads:
-                thread.join()
-
-            log.info(
-                f"Добавлено игр: {counter.value}. Игр в базе: {Dump.select().count()}. "
-                f"Пройдено времени: {seconds_to_str(default_timer() - t)}"
-            )
-            log.info(f"Завершено.\n")
-
-            create_genre_translate.run()
-            create_generate_genres.run()
-            create_generate_games.run()
-
+            run(parsers)
             wait(hours=1)
 
-        except:
+        except Exception:
             log.exception("")
             wait(minutes=15)
 
         finally:
             log.info("")
+
+
+def main() -> None:
+    parsers: list[BaseParser] = get_parsers()
+    print_parsers(parsers, log=lambda *args, **kwargs: log.info(*args, **kwargs))
+
+    if IS_LOOP:
+        run_loop(parsers)
+        return
+
+    last_error: Exception | None = None
+    for _ in range(5):
+        try:
+            run(parsers)
+            return
+        except Exception as e:
+            last_error = e
+
+            log.exception("Ошибка:")
+            log.debug("Через 1 минуту попробую снова...")
+            #  NOTE: Тут без wait, т.к. оно пишет в консоль обратный отсчет
+            #        Что в некоторых случаях может быть неудобно
+            time.sleep(60)
+
+    raise last_error
+
+
+if __name__ == "__main__":
+    main()
