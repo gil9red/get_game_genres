@@ -86,43 +86,32 @@ def remove_partial_duplicates(genres: list[str], need_log: bool = True) -> list[
     return genres
 
 
-def fill_dlc(game_by_genres: dict[str, list[str]]) -> None:
-    log.info("Заполнение жанров DLC игр")
+def process_genres(
+    genres: list[str],
+    genre_translate: dict[str, str | list[str] | None],
+) -> list[str]:
+    lower_genre_translate: dict[str, str | list[str] | None] = {
+        k.lower(): v for k, v in genre_translate.items()
+    }
 
-    not_defined_dlc: list[str] = [
-        name
-        for name, genres in game_by_genres.items()
-        if (
-            # Поиск игр с названием типа (DLC)
-            re.search(r"\(\w+\)", name)
-            # Игры нет в БД
-            and not Game.get_by(name)
-            # У игры нет жанра
-            and not genres
-        )
-    ]
-    log.info(f"Не имеют жанры: {len(not_defined_dlc)}")
+    new_genres: list[str] = []
+    for genre in genres:
+        tr_genres = lower_genre_translate.get(genre.lower())
+        if not tr_genres:  # Example: null, [], ""
+            continue
 
-    for name_dlc in not_defined_dlc:
-        variants: list[str] = []
-        for name in game_by_genres:
-            if name_dlc == name:
-                continue
+        if isinstance(tr_genres, str):
+            new_genres.append(tr_genres)
+        elif isinstance(tr_genres, list):
+            new_genres.extend(tr_genres)
+        else:
+            log.warning(f"Неподдерживаемый тип жанров {tr_genres} из {genre!r}")
 
-            if (
-                re.sub(r"\W", "", name_dlc)
-                .upper()
-                .startswith(re.sub(r"\W", "", name).upper())
-            ):
-                variants.append(name)
+    new_genres = do_genres_compression(new_genres, need_log=False)
+    new_genres = remove_partial_duplicates(new_genres, need_log=False)
+    new_genres = process_list(new_genres)
 
-        if variants:
-            # Выбираем игры с наибольшим количеством символов
-            name = max(variants, key=len)
-            genres: list[str] = game_by_genres[name]
-            if genres:  # Если у игры есть жанры, то добавляем их в DLC
-                log.info(f"{name!r} -> {name_dlc!r} = {genres}")
-                game_by_genres[name_dlc] = game_by_genres[name]
+    return new_genres
 
 
 def run() -> None:
@@ -154,85 +143,84 @@ def run() -> None:
 
     log.info("Поиск игр...")
 
-    created: int = 0
-    updated: int = 0
-    total: int = len(db_dump_game_by_genres)
+    game_by_genres: dict[str, list[str]] = dict()
 
     for db_dump_game, db_dump_genres in db_dump_game_by_genres.items():
-        is_new_in_db: bool = db_dump_game not in db_game_by_genres
-        if is_new_in_db:
-            log.info("")
-            log.info(
-                f"Добавлена игра {db_dump_game!r} с жанрами ({len(db_dump_genres)}): {db_dump_genres}"
-            )
-            created += 1
-
-        need_log: bool = is_new_in_db  # NOTE: Меньше логов для существующих игр
-
-        # Заполнение жанров из файла захаркоденных жанров или высчитывается из жанров дампа
-        if db_dump_game not in file_game_by_genres_hardcored:
-            new_genres: list[str] = []
-            for x in db_dump_genres:
-                tr_genres = genre_translate.get(x)
-                if not tr_genres:  # null, [], ""
-                    continue
-
-                if isinstance(tr_genres, str):
-                    new_genres.append(tr_genres)
-                elif isinstance(tr_genres, list):
-                    new_genres.extend(tr_genres)
-                else:
-                    if need_log:
-                        log.warning(f"Неподдерживаемый тип жанров {tr_genres} из {x!r}")
-
-            new_genres = do_genres_compression(new_genres, need_log=need_log)
-            new_genres = remove_partial_duplicates(new_genres, need_log=need_log)
-
-            if need_log:
-                log.info(
-                    f"Завершение трансляции жанров ({len(new_genres)}): {new_genres}"
-                )
+        new_genres: list[str]
+        # Заполнение жанров из файла захаркоденных жанров
+        if db_dump_game in file_game_by_genres_hardcored:
+            new_genres = file_game_by_genres_hardcored[db_dump_game]
         else:
-            new_genres: list[str] = file_game_by_genres_hardcored[db_dump_game]
-            if need_log:
-                log.info(
-                    f"Жанры из явно заданного списка ({len(new_genres)}): {new_genres}"
+            # Получение жанров из дампа
+            new_genres = process_genres(db_dump_genres, genre_translate)
+
+            if any(tag in db_dump_game.upper() for tag in ["(DLC)", "(MOD)"]):
+                variant_names: list[str] = []
+                for other_name in game_by_genres:
+                    if (
+                        re.sub(r"\W", "", db_dump_game)
+                        .upper()
+                        .startswith(re.sub(r"\W", "", other_name).upper())
+                    ):
+                        variant_names.append(other_name)
+
+                if variant_names:
+                    # Выбираем игры с наибольшим количеством символов
+                    other_name: str = max(variant_names, key=len)
+                    genres: list[str] = game_by_genres[other_name]
+                    if genres:  # Если у игры есть жанры, то добавляем их в DLC
+                        new_genres = game_by_genres[other_name]
+
+            if not new_genres:
+                # TODO: В уведомление тг
+                # TODO: Самостоятельно добавить в файл
+                #       file_game_by_genres_hardcored[db_dump_game] = []
+                #       save_json(file_game_by_genres_hardcored, FILE_NAME_GAMES_HARDCORED)
+                log.warning(
+                    f"Не найдены жанры для {db_dump_game!r}. "
+                    f"Можно добавить игру в файл: {FILE_NAME_GAMES_HARDCORED.name!r}"
                 )
 
-        new_genres = process_list(new_genres)
+        game_by_genres[db_dump_game] = new_genres
 
-        # Текущие игры в базе данных таблицы Game
-        # NOTE: В db_game_genres список жанров уже обработаны через process_list
-        db_game_genres: list[str] = db_game_by_genres.get(db_dump_game, [])
+    # Считаем разницу
+    new_games: set[str] = set(game_by_genres) - set(file_game_by_genres)
+    changed_values: dict[str, tuple[list[str], list[str]]] = {
+        game: (file_game_by_genres[game], game_by_genres[game])
+        for game in set(file_game_by_genres) & set(game_by_genres)
+        if file_game_by_genres[game] != game_by_genres[game]
+    }
 
-        if not is_new_in_db and new_genres and db_game_genres != new_genres:
-            log.info(
-                f"Изменение жанров игры {db_dump_game!r} ({len(db_game_genres)}):"
-                f" {db_game_genres} -> {new_genres}"
-            )
-            updated += 1
+    # Вывод информации
+    for game in new_games:
+        genres: list[str] = game_by_genres[game]
+        log.info(f"Добавлена игра {game!r} с жанрами ({len(genres)}): {genres}")
 
-        # Если новая игра в файле, или если она уже была создана, но появились новые жанры
-        if (
-            db_dump_game not in file_game_by_genres
-            or (db_dump_game in file_game_by_genres and new_genres)
-        ):
-            file_game_by_genres[db_dump_game] = new_genres
+    for game, (old, new) in changed_values.items():
+        log.info(
+            f"Изменение жанров игры {game!r}:"
+            f" {old} ({len(old)}) -> {new} ({len(new)})"
+        )
 
+    # Статистика
+    created: int = len(new_games)
+    updated: int = len(changed_values)
+    total: int = len(game_by_genres)
+
+    log.info("")
     log.info(
         f"Завершение поиска игр. Всего игр: {total}, "
         f"новые: {created}, обновлено: {updated}."
     )
 
-    fill_dlc(file_game_by_genres)
-
     if created or updated:
         log.info(f"Сохранение в {FILE_NAME_GAMES}")
-        save_json(file_game_by_genres, FILE_NAME_GAMES)
+        save_json(game_by_genres, FILE_NAME_GAMES)
     else:
         log.info("Сохранять нет необходимости")
 
-    for db_dump_game, db_dump_genres in file_game_by_genres.items():
+    # Лишним не будет синхронизация из файла в БД
+    for db_dump_game, db_dump_genres in game_by_genres.items():
         Game.add_or_update(db_dump_game, db_dump_genres)
 
     log.info("Завершено!\n")
