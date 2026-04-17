@@ -11,8 +11,9 @@ from pathlib import Path
 from get_game_genres.common import load_json, save_json, get_logger, process_list
 from get_game_genres.db import Dump, Game
 from get_game_genres.genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
+from get_game_genres.third_party.add_notify_telegram import add_notify
 
-log = get_logger("generate_games.txt")
+log = get_logger("generate_games.py.txt")
 
 
 DIR: Path = Path(__file__).parent.resolve()
@@ -144,6 +145,7 @@ def run() -> None:
     log.info("Поиск игр...")
 
     game_by_genres: dict[str, list[str]] = dict()
+    games_not_found_genres: list[str] = []
 
     for db_dump_game, db_dump_genres in db_dump_game_by_genres.items():
         new_genres: list[str]
@@ -172,16 +174,28 @@ def run() -> None:
                         new_genres = game_by_genres[other_name]
 
             if not new_genres:
-                # TODO: В уведомление тг
-                # TODO: Самостоятельно добавить в файл
-                #       file_game_by_genres_hardcored[db_dump_game] = []
-                #       save_json(file_game_by_genres_hardcored, FILE_NAME_GAMES_HARDCORED)
-                log.warning(
-                    f"Не найдены жанры для {db_dump_game!r}. "
-                    f"Можно добавить игру в файл: {FILE_NAME_GAMES_HARDCORED.name!r}"
-                )
+                games_not_found_genres.append(db_dump_game)
+                log.warning(f"Не найдены жанры в {db_dump_game!r}")
 
         game_by_genres[db_dump_game] = new_genres
+
+    if games_not_found_genres:
+        lines: list[str] = ["Не найдены жанры в:"]
+        for game in games_not_found_genres:
+            lines.append(game)
+            file_game_by_genres_hardcored[game] = []
+        lines.append(
+            f"\nИнформация добавлена в файл: {FILE_NAME_GAMES_HARDCORED.name!r}"
+        )
+        text: str = "\n".join(lines)
+
+        log.info(f"Отправка уведомления:\n{text}")
+        add_notify(name="get_game_genres [generate_games]", message=text)
+
+        file_game_by_genres_hardcored: dict = {
+            k: file_game_by_genres_hardcored[k] for k in sorted(file_game_by_genres_hardcored)
+        }
+        save_json(file_game_by_genres_hardcored, FILE_NAME_GAMES_HARDCORED)
 
     # Считаем разницу
     new_games: set[str] = set(game_by_genres) - set(file_game_by_genres)
