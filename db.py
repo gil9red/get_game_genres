@@ -216,6 +216,18 @@ class Game(BaseModel):
 
         return cls.get_or_none(name=name)
 
+    @classmethod
+    def dump(cls) -> dict[str, list[str]]:  # TODO: Дублирует Dump.dump()
+        game_by_genres = defaultdict(list)
+
+        for dump in cls.select().order_by(cls.name):
+            game_by_genres[dump.name] += dump.genres
+
+        for k, v in game_by_genres.items():
+            game_by_genres[k] = sorted(set(v))
+
+        return game_by_genres
+
 
 class Genre(BaseModel):
     name = TextField(primary_key=True)
@@ -265,14 +277,14 @@ if __name__ == "__main__":
 
     print("Total:", Dump.select().count())
 
-    genres = Dump.get_all_genres()
-    print(f"Genres ({len(genres)}): {genres}")
+    dump_genres = Dump.get_all_genres()
+    print(f"Dump genres ({len(dump_genres)}): {dump_genres}")
 
-    games = Dump.get_all_games()
-    print(f"Games ({len(games)}): {games}")
+    dump_games = Dump.get_all_games()
+    print(f"Dump games ({len(dump_games)}): {dump_games}")
 
-    sites = Dump.get_all_sites()
-    print(f"Sites ({len(sites)}): {sites}")
+    dump_sites = Dump.get_all_sites()
+    print(f"Dump sites ({len(dump_sites)}): {dump_sites}")
 
     print()
 
@@ -280,6 +292,15 @@ if __name__ == "__main__":
     # ['3D', 'Action', 'Adventure: Survival Horror', 'Arcade', 'Sci-Fi', 'Shooter', 'Third-Person', 'action',
     # 'Боевик', 'Боевик от третьего лица', 'Боевик-приключения', 'Космос', 'От третьего лица', 'Ужасы', 'Шутер',
     # 'Шутеры', 'Экшен', 'Экшены', 'ужасы']
+
+    print()
+
+    print(Game.dump()["Dead Space"])
+    print(Game.get_by("Dead Space"))
+    # ['Action-adventure', 'Arcade', 'Sci-fi', 'Space', 'Survival horror', 'TPS']
+    # Game(name='Dead Space', genres=['Action-adventure', 'Arcade', 'Sci-fi', 'Space', 'Survival horror', 'TPS'])
+
+    print()
 
     # print()
     #
