@@ -153,6 +153,7 @@ if __name__ == "__main__":
 
             counter.value = 0
 
+            # TODO: Проверить работу параллельного выполнения
             for thread in threads:
                 thread.start()
 

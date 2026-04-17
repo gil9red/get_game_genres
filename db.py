@@ -36,11 +36,7 @@ def db_create_backup(backup_dir: Path = DIR_BACKUP, date_fmt: str = "%Y-%m-%d") 
     zip_name = datetime.today().strftime(date_fmt)
     zip_name = backup_dir / zip_name
 
-    shutil.make_archive(
-        zip_name,
-        'zip',
-        DB_DIR_NAME
-    )
+    shutil.make_archive(zip_name, "zip", DB_DIR_NAME)
 
 
 class ListField(Field):
@@ -66,13 +62,13 @@ db = SqliteQueueDatabase(
     DB_FILE_NAME,
     pragmas={
         "foreign_keys": 1,
-        "journal_mode": "wal",     # WAL-mode
+        "journal_mode": "wal",  # WAL-mode
         "cache_size": -1024 * 64,  # 64MB page-cache
     },
-    use_gevent=False,    # Use the standard library "threading" module.
+    use_gevent=False,  # Use the standard library "threading" module.
     autostart=True,
-    queue_max_size=64,   # Max. # of pending writes that can accumulate.
-    results_timeout=5.0  # Max. time to wait for query to be executed.
+    queue_max_size=64,  # Max. # of pending writes that can accumulate.
+    results_timeout=5.0,  # Max. time to wait for query to be executed.
 )
 
 
@@ -129,15 +125,11 @@ class Dump(BaseModel):
     genres = ListField()
 
     class Meta:
-        indexes = (
-            (("name", "site"), True),
-        )
+        indexes = ((("name", "site"), True),)
 
     @classmethod
     def exists(cls, site: str, name: str) -> bool:
-        return cls.select().where(
-            cls.site == site, cls.name == name
-        ).exists()
+        return cls.select().where(cls.site == site, cls.name == name).exists()
 
     @classmethod
     def add(cls, site: str, name: str, genres: list[str]) -> None:
@@ -173,15 +165,13 @@ class Dump(BaseModel):
     @classmethod
     def get_all_games(cls) -> list[str]:
         return [
-            dump.name
-            for dump in cls.select(cls.name).order_by(cls.name).distinct()
+            dump.name for dump in cls.select(cls.name).order_by(cls.name).distinct()
         ]
 
     @classmethod
     def get_all_sites(cls) -> list[str]:
         return [
-            dump.site
-            for dump in cls.select(cls.site).order_by(cls.site).distinct()
+            dump.site for dump in cls.select(cls.site).order_by(cls.site).distinct()
         ]
 
     @classmethod

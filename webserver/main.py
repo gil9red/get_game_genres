@@ -4,13 +4,17 @@
 __author__ = "ipetrash"
 
 
+from pathlib import Path
+
 from flask import Flask, jsonify
 
 from config import PORT
 from db import Game, Genre
 
-
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    root_path=str(Path(__file__).resolve().parent),
+)
 app.config["JSON_SORT_KEYS"] = False
 
 

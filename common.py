@@ -41,7 +41,7 @@ def save_json(data: dict | list, file_name: str | Path) -> None:
         data,
         open(file_name, "w", encoding="utf-8"),
         ensure_ascii=False,
-        indent=4
+        indent=4,
     )
 
 
