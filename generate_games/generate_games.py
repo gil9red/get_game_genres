@@ -118,18 +118,18 @@ def fill_dlc(game_by_genres: dict) -> None:
 def run() -> None:
     log.info("Запуск генератора игр.")
 
-    game_by_genres_hardcored: dict = load_json(FILE_NAME_GAMES_HARDCORED)
+    game_by_genres_hardcored: dict[str, list[str]] = load_json(FILE_NAME_GAMES_HARDCORED)
     log.info(f"Явно заданные игры из файла: {len(game_by_genres_hardcored)}")
 
     log.info("Загрузка кэша...")
 
-    game_by_genres: dict = load_json(FILE_NAME_GAMES)
+    game_by_genres: dict[str, list[str]] = load_json(FILE_NAME_GAMES)
     log.info(f"Данных из файла игр: {len(game_by_genres)}")
 
-    new_game_by_genres = Dump.dump()
+    new_game_by_genres: dict[str, list[str]] = Dump.dump()
     log.info(f"Данных из базы: {len(new_game_by_genres)}")
 
-    genre_translate: dict = load_json(FILE_NAME_GENRE_TRANSLATE)
+    genre_translate: dict[str, str | list[str]] = load_json(FILE_NAME_GENRE_TRANSLATE)
     log.info(f"Данных из файла трансляций: {len(genre_translate)}")
 
     log.info("Завершение загрузки кэша.")
