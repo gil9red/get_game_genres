@@ -22,6 +22,7 @@ URL_GENRES = f"{URL_BASE}/api/genres"
 URL_GENRE = f"{URL_BASE}/api/genre"
 
 
+# TODO: Переписать на использование без запуска сервера
 class TestCase(unittest.TestCase):
     @staticmethod
     def compare_name_func(x: dict) -> str:
