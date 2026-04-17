@@ -5,6 +5,8 @@ __author__ = "ipetrash"
 
 
 from collections import defaultdict
+
+from common import process_list
 from db import Dump
 
 
@@ -24,7 +26,7 @@ for x in Dump.get():
     site_by_genres[x.site] += x.genres
 
 for k, v in site_by_genres.items():
-    site_by_genres[k] = sorted(set(v))
+    site_by_genres[k] = process_list(v)
 
 print(f"Total {len(site_by_genres)}:")
 

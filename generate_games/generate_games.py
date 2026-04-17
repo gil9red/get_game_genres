@@ -8,7 +8,7 @@ import re
 
 from pathlib import Path
 
-from common import load_json, save_json, get_logger
+from common import load_json, save_json, get_logger, process_list
 from db import Dump, Game
 from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
 
@@ -37,7 +37,7 @@ GENRE_COMPRESSION: list[tuple[str, str, str]] = [
 
 
 def do_genres_compression(genres: list[str], need_log: bool = True) -> list[str]:
-    genres = sorted(set(genres))
+    genres = process_list(genres)
     to_remove = set()
 
     for src_1, src_2, target in GENRE_COMPRESSION:
@@ -52,7 +52,7 @@ def do_genres_compression(genres: list[str], need_log: bool = True) -> list[str]
     for x in to_remove:
         genres.remove(x)
 
-    return sorted(set(genres))
+    return process_list(genres)
 
 
 def remove_partial_duplicates(genres: list[str], need_log: bool = True) -> list[str]:

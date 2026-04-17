@@ -19,6 +19,7 @@ from playhouse.shortcuts import model_to_dict
 from playhouse.sqliteq import SqliteQueueDatabase
 
 from config import DB_DIR_NAME, DB_FILE_NAME, DIR_BACKUP
+from common import process_list
 from third_party.shorten import shorten
 
 
@@ -151,7 +152,7 @@ class Dump(BaseModel):
         for dump in cls.select().where(cls.name == game_name):
             items += dump.genres
 
-        return sorted(set(items))
+        return process_list(items)
 
     @classmethod
     def get_all_genres(cls) -> list[str]:
@@ -160,7 +161,7 @@ class Dump(BaseModel):
         for dump in cls.select():
             items += dump.genres
 
-        return sorted(set(items))
+        return process_list(items)
 
     @classmethod
     def get_all_games(cls) -> list[str]:
@@ -182,7 +183,7 @@ class Dump(BaseModel):
             game_by_genres[dump.name] += dump.genres
 
         for k, v in game_by_genres.items():
-            game_by_genres[k] = sorted(set(v))
+            game_by_genres[k] = process_list(v)
 
         return game_by_genres
 
@@ -193,7 +194,7 @@ class Game(BaseModel):
 
     @classmethod
     def add_or_update(cls, name: str, genres: list[str]) -> "Game":
-        genres = sorted(set(genres))
+        genres = process_list(genres)
 
         obj = cls.get_by(name)
         if obj:
@@ -224,7 +225,7 @@ class Game(BaseModel):
             game_by_genres[dump.name] += dump.genres
 
         for k, v in game_by_genres.items():
-            game_by_genres[k] = sorted(set(v))
+            game_by_genres[k] = process_list(v)
 
         return game_by_genres
 

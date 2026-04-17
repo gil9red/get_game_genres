@@ -45,6 +45,10 @@ def save_json(data: dict | list, file_name: str | Path) -> None:
     )
 
 
+def process_list(items: list) -> list:
+    return sorted(set(items))
+
+
 def get_games_list() -> list[str]:
     rs = requests.get("https://gist.github.com/gil9red/2f80a34fb601cd685353")
     rs.raise_for_status()
@@ -64,7 +68,7 @@ def get_games_list() -> list[str]:
         for games in categories.values():
             all_games += games
 
-    return sorted(set(all_games))
+    return process_list(all_games)
 
 
 def get_logger(name: str = "dump.txt", dir_logs: Path = DIR_LOGS, encoding="utf-8"):
