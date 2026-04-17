@@ -14394,5 +14394,11 @@
         "Platformer",
         "Puzzle",
         "Quest"
+    ],
+    "The Inn-Sanity": [
+        "Adventure",
+        "First-person",
+        "Horror",
+        "Sci-fi"
     ]
 }
