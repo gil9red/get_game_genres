@@ -13952,5 +13952,447 @@
         "Romance",
         "Shoot 'em up",
         "Visual novel"
+    ],
+    "Killzone: Shadow Fall": [
+        "Action",
+        "FPS",
+        "Sci-fi",
+        "Wargame"
+    ],
+    "Gal*Gun 2": [
+        "Action-adventure",
+        "Arcade",
+        "FPS",
+        "Humor",
+        "Rail shooter"
+    ],
+    "Gal*Gun Returns": [
+        "Action-adventure",
+        "TPS"
+    ],
+    "Terminator 2D: No Fate": [
+        "Action-adventure",
+        "Arcade",
+        "Platformer",
+        "Retro",
+        "Sci-fi",
+        "Shooter"
+    ],
+    "Final Fantasy VI (Pixel Remaster)": [
+        "Fantasy",
+        "RPG",
+        "TBS",
+        "Third-person"
+    ],
+    "Paranormal Files: Fellow Traveler (Collector's Edition)": [
+        "Adventure"
+    ],
+    "Paranormal Files: The Tall Man (Collector's Edition)": [
+        "Adventure"
+    ],
+    "Paranormal Files: Enjoy the Shopping (Collector's Edition)": [
+        "Adventure"
+    ],
+    "Paranormal Files: Hook Man's Legend (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
+    "Paranormal Files: Trials of Worth (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
+    "Paranormal Files: The Trap of Truth (Collector's Edition)": [],
+    "Paranormal Files: Ghost Chapter (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
+    "Paranormal Files: Price of a Secret (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
+    "Paranormal Files: Silent Willow (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
+    "Paranormal Files: Counterpart (Collector's Edition)": [],
+    "Heroes of Might and Magic": [
+        "Fantasy",
+        "RPG",
+        "TBS",
+        "Third-person"
+    ],
+    "Heroes of Might and Magic: A Strategic Quest": [
+        "Fantasy",
+        "Isometric",
+        "RPG",
+        "TBS",
+        "Wargame"
+    ],
+    "Heroes of Might and Magic II: The Succession Wars": [
+        "Fantasy",
+        "Isometric",
+        "RPG",
+        "TBS",
+        "Wargame"
+    ],
+    "Black": [
+        "Action",
+        "FPS"
+    ],
+    "Might & Magic: Clash of Heroes": [
+        "Adventure",
+        "Fantasy",
+        "Isometric",
+        "Logic",
+        "Puzzle",
+        "RPG",
+        "TBS"
+    ],
+    "Paranormal Files: Sacrifice to Shadows (Collector's Edition)": [],
+    "Dragon Age: The Veilguard": [
+        "Action-adventure",
+        "Action/RPG",
+        "Beat 'em up",
+        "Dungeon",
+        "Fantasy",
+        "Hack and slash",
+        "Third-person"
+    ],
+    "Paranormal Files: Fatal Flaw (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
+    "Paranormal Files: Chaos Weekend (Collector's Edition)": [],
+    "Poppy Playtime: Chapter 5 (DLC)": [
+        "Action-adventure",
+        "Puzzle",
+        "Survival horror"
+    ],
+    "Chinese Train Trip": [
+        "Adventure",
+        "First-person",
+        "Simulation"
+    ],
+    "Train Travel Simulator": [
+        "Simulation"
+    ],
+    "Russian Train Trip": [
+        "Adventure",
+        "First-person",
+        "Management",
+        "Simulation"
+    ],
+    "Russian Train Trip 2": [
+        "Adventure",
+        "First-person",
+        "Simulation"
+    ],
+    "Red Passport: Ticket to Russia": [
+        "Adventure"
+    ],
+    "Russian Train Trip 3": [
+        "Adventure",
+        "Simulation"
+    ],
+    "Hell is Us": [
+        "Action-adventure",
+        "Action/RPG",
+        "Horror",
+        "Post apocalypse",
+        "Sci-fi",
+        "Third-person",
+        "Wargame"
+    ],
+    "Secrets of Salem: Shadow of the Witch (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
+    "Secrets of Salem: The Phantom Cab (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
+    "Tales of Graces f Remastered": [
+        "Action-adventure",
+        "Action/RPG",
+        "Beat 'em up",
+        "Fantasy",
+        "Hack and slash",
+        "JRPG",
+        "Third-person"
+    ],
+    "DateBoy": [
+        "Adventure",
+        "Casual",
+        "Comedy",
+        "First-person",
+        "Humor",
+        "Platformer",
+        "Romance",
+        "Simulation"
+    ],
+    "TREE": [
+        "Casual"
+    ],
+    "My Lovely Pets (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
+    "Loading Story": [
+        "Adventure",
+        "Casual"
+    ],
+    "My Lovely Pets 2 (Collector's Edition)": [
+        "Casual"
+    ],
+    "Door Game Deluxe": [
+        "RPG"
+    ],
+    "Metamorphabet": [
+        "Arcade",
+        "Casual"
+    ],
+    "Windosill": [
+        "Action-adventure",
+        "Casual",
+        "Puzzle",
+        "Quest",
+        "Strategy",
+        "Third-person"
+    ],
+    "Pluviophile": [],
+    "Reigns: The Witcher": [
+        "Adventure",
+        "Cardgame",
+        "Casual",
+        "Fantasy",
+        "Humor",
+        "Logic",
+        "RPG",
+        "Strategy",
+        "Visual novel"
+    ],
+    "Gynophobia": [
+        "Action-adventure",
+        "FPS",
+        "Horror"
+    ],
+    "As Long As You're Here": [
+        "Adventure",
+        "First-person",
+        "Logic"
+    ],
+    "Ms. Holmes: The Monster of the Baskervilles (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
+    "Tales of Graces f Remastered: Lineage & Legacies (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Beat 'em up",
+        "Fantasy",
+        "Hack and slash",
+        "JRPG",
+        "Third-person"
+    ],
+    "Tales of Graces f Remastered: Lineage and Legacies (DLC)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Beat 'em up",
+        "Fantasy",
+        "Hack and slash",
+        "JRPG",
+        "Third-person"
+    ],
+    "Millennium Dream": [
+        "Action-adventure",
+        "Casual",
+        "First-person",
+        "Horror",
+        "Simulation"
+    ],
+    "Brothers: A Tale of Two Sons Remake": [
+        "Action-adventure",
+        "Casual",
+        "Fantasy",
+        "Puzzle",
+        "Stealth",
+        "Third-person"
+    ],
+    "Ms. Holmes: Five Orange Pips (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
+    "I Am Jesus Christ": [
+        "Action-adventure",
+        "Casual",
+        "Fantasy",
+        "First-person",
+        "Quest",
+        "Simulation"
+    ],
+    "Legacy of Kain: Defiance Remastered": [
+        "Action-adventure",
+        "Beat 'em up",
+        "Fantasy",
+        "Hack and slash",
+        "Horror",
+        "Third-person"
+    ],
+    "Legacy of Kain: Ascendance": [
+        "Action-adventure",
+        "Arcade",
+        "Beat 'em up",
+        "Fantasy",
+        "Hack and slash",
+        "Platformer"
+    ],
+    "Dodd Goes to the Museum": [
+        "Casual"
+    ],
+    "The Old Tree": [
+        "Adventure",
+        "Casual",
+        "Platformer",
+        "Puzzle",
+        "Quest"
+    ],
+    "Bottle Can Float": [
+        "Casual",
+        "Simulation"
+    ],
+    "Pineapple on pizza": [
+        "Adventure",
+        "Casual",
+        "First-person",
+        "Humor"
+    ],
+    "Undusted: Letters from the Past": [
+        "Adventure",
+        "Arcade",
+        "Casual",
+        "Simulation"
+    ],
+    "Leaf it Alone": [
+        "Casual",
+        "Comedy",
+        "First-person",
+        "Simulation"
+    ],
+    "NEDRA": [
+        "Action-adventure",
+        "FPS",
+        "Stealth",
+        "Survival horror"
+    ],
+    "DLC Quest": [
+        "Action-adventure",
+        "Arcade",
+        "Comedy",
+        "Platformer",
+        "Third-person"
+    ],
+    "Gorogoa": [
+        "Adventure",
+        "Casual",
+        "Fantasy",
+        "Logic",
+        "Puzzle",
+        "Quest"
+    ],
+    "9.03m": [
+        "Adventure",
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Carpe Diem": [
+        "Adventure",
+        "Casual",
+        "Visual novel"
+    ],
+    "Little Man Has a Day": [
+        "Casual"
+    ],
+    "Mushroom Cats": [
+        "Adventure",
+        "Arcade",
+        "Casual",
+        "Point-and-click"
+    ],
+    "I Frog-ot": [
+        "Adventure",
+        "Casual",
+        "Comedy",
+        "First-person",
+        "Horror",
+        "Humor",
+        "Puzzle"
+    ],
+    "MANDAGON": [
+        "Adventure",
+        "Arcade",
+        "Platformer"
+    ],
+    "The Berlin Apartment": [
+        "Adventure",
+        "First-person"
+    ],
+    "Resident Evil 9: Requiem": [],
+    "Ms. Holmes: The Adventure of the McKirk Ritual (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
+    "DOGWALK": [
+        "Adventure",
+        "Casual",
+        "Isometric",
+        "Puzzle",
+        "Simulation"
+    ],
+    "Poco": [
+        "Adventure",
+        "Casual",
+        "Comedy",
+        "Humor",
+        "Logic",
+        "Puzzle",
+        "Quest"
+    ],
+    "The White Door": [
+        "Adventure",
+        "Logic",
+        "Movie",
+        "Point-and-click",
+        "Puzzle",
+        "Quest",
+        "Visual novel"
+    ],
+    "Creepy Shift: Roadside Diner": [
+        "Action-adventure",
+        "First-person",
+        "Horror",
+        "Simulation"
+    ],
+    "Hypogea": [
+        "Adventure",
+        "Platformer",
+        "Post apocalypse",
+        "Puzzle",
+        "Third-person"
+    ],
+    "Ms. Holmes: The Case of the Dancing Men (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
+    "Храм Зеленой Луны": [
+        "Adventure",
+        "First-person",
+        "Horror"
+    ],
+    "The Mooseman": [
+        "Action-adventure",
+        "Fantasy",
+        "Platformer",
+        "Puzzle",
+        "Quest"
     ]
 }
