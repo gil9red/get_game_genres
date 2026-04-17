@@ -1,241 +1,29 @@
 {
-    "Mortal Kombat IX": [
-        "2D",
-        "Action",
-        "Arcade",
-        "Fighting"
-    ],
-    "Obscure II: The Aftermath": [
-        "Action-adventure",
-        "Action/RPG",
-        "Survival horror",
-        "Third-person"
-    ],
-    "Resident Evil 2 Remake / Biohazard RE:2": [
-        "Action-adventure",
-        "Survival horror",
-        "Zombie",
-        "Puzzle",
-        "Shoot 'em up",
-        "Third-person"
-    ],
-    "Resident Evil 2 Remake / Biohazard RE:2 - The 4th Survivor (DLC)": [
-        "Action-adventure",
-        "Survival horror",
-        "Zombie",
-        "Puzzle",
-        "Shoot 'em up",
-        "Third-person"
-    ],
-    "Resident Evil 2 Remake / Biohazard RE:2 - The Ghost Survivors (DLC)": [
-        "Action-adventure",
-        "Survival horror",
-        "Zombie",
-        "Puzzle",
-        "Shoot 'em up",
-        "Third-person"
-    ],
-    "Sable Maze: Nightmare Shadows (Collector's Edition)": [
-        "Adventure",
-        "Casual",
-        "Puzzle",
-        "Hidden object",
-        "Point-and-click"
-    ],
-    "Sable Maze: Soul Catcher (Collector's Edition)": [
-        "Adventure",
-        "Casual",
-        "Puzzle",
-        "Hidden object",
-        "Point-and-click"
-    ],
-    "Sable Maze: Norwich Caves (Collector's Edition)": [
-        "Adventure",
-        "Casual",
-        "Puzzle",
-        "Hidden object",
-        "Point-and-click"
-    ],
-    "Sable Maze: Sinister Knowledge (Collector's Edition)": [
-        "Adventure",
-        "Casual",
-        "Puzzle",
-        "Hidden object",
-        "Point-and-click"
-    ],
-    "Sable Maze: Sullivan River (Collector's Edition)": [
-        "Adventure",
-        "Casual",
-        "Puzzle",
-        "Hidden object",
-        "Point-and-click"
-    ],
-    "Sable Maze: Twelve Fears (Collector's Edition)": [
-        "Adventure",
-        "Casual",
-        "Puzzle",
-        "Hidden object",
-        "Point-and-click"
-    ],
-    "Sacred 2: Fallen Angel (Ice & Blood)": [
+    "AMDM / Алмазный меч, Деревянный меч": [
         "Action-adventure",
         "Action/RPG",
         "Fantasy",
         "Isometric",
-        "Open world",
+        "Stealth"
+    ],
+    "Abzû": [
+        "Action-adventure",
+        "Simulation",
         "Third-person"
     ],
-    "Saga of the Nine Worlds: The Four Stags (Collector's Edition)": [
-        "Adventure",
-        "Casual",
-        "Puzzle",
-        "Hidden object",
-        "Point-and-click"
-    ],
-    "Saga of the Nine Worlds: The Gathering (Collector's Edition)": [
-        "Adventure",
-        "Casual",
-        "Puzzle",
-        "Hidden object",
-        "Point-and-click"
-    ],
-    "Saga of the Nine Worlds: The Hunt (Collector's Edition)": [
-        "Adventure",
-        "Casual",
-        "Puzzle",
-        "Hidden object",
-        "Point-and-click"
-    ],
-    "Silent Hill: Alchemilla": [
+    "Alien Isolation: Crew Expendable (DLC)": [
         "Action-adventure",
-        "Survival horror",
-        "TPS"
+        "FPS",
+        "Sci-fi",
+        "Shoot 'em up",
+        "Survival horror"
     ],
-    "Silent Hill: Alchemilla (MOD)": [
+    "Alien Isolation: Last Survivor (DLC)": [
         "Action-adventure",
-        "Survival horror",
-        "TPS"
-    ],
-    "Spirits of Mystery: The Fifth Kingdom (Collector's Edition)": [
-        "Adventure",
-        "Casual",
-        "Puzzle",
-        "Hidden object",
-        "Point-and-click"
-    ],
-    "Spirits of Mystery: The Last Fire Queen (Collector's Edition)": [
-        "Adventure",
-        "Casual",
-        "Puzzle",
-        "Hidden object",
-        "Point-and-click"
-    ],
-    "Spirits of Mystery: The Lost Queen (Collector's Edition)": [
-        "Adventure",
-        "Casual",
-        "Puzzle",
-        "Hidden object",
-        "Point-and-click"
-    ],
-    "Spirits of Mystery: Whisper of the Past (Collector's Edition)": [
-        "Adventure",
-        "Casual",
-        "Puzzle",
-        "Hidden object",
-        "Point-and-click"
-    ],
-    "The Walking Dead: Season One": [
-        "Adventure",
-        "Movie",
-        "Point-and-click"
-    ],
-    "Trollface Quest": [
-        "Point-and-click",
-        "Puzzle"
-    ],
-    "Trollface Quest 2": [
-        "Point-and-click",
-        "Puzzle"
-    ],
-    "Trollface Quest 3": [
-        "Point-and-click",
-        "Puzzle"
-    ],
-    "Trollface Quest 4": [
-        "Point-and-click",
-        "Puzzle"
-    ],
-    "Trollface Quest 5": [
-        "Point-and-click",
-        "Puzzle"
-    ],
-    "Trollface Quest 6": [
-        "Point-and-click",
-        "Puzzle"
-    ],
-    "Trollface Quest 7": [
-        "Point-and-click",
-        "Puzzle"
-    ],
-    "Как достать соседа 2: Адские каникулы / Neighbours from Hell 2: On Vacation": [
-        "Adventure",
-        "Arcade",
-        "Logic",
-        "Puzzle"
-    ],
-    "Как достать соседа 3: В офисе (2006) / Pranksterz: Off Your Boss": [
-        "Adventure",
-        "Arcade",
-        "Logic",
-        "Puzzle"
-    ],
-    "Как достать соседа: Сладкая месть / Neighbours from Hell: Revenge Is a Sweet": [
-        "Adventure",
-        "Arcade",
-        "Logic",
-        "Puzzle"
-    ],
-    "Как достать соседку: Полный гламур (2009) / Neighbours from Hell: Full Glamor": [
-        "Adventure",
-        "Arcade",
-        "Logic",
-        "Puzzle"
-    ],
-    "[Chilla's Art] The Closing Shift": [
-        "Horror"
-    ],
-    "[Chilla's Art] Night Security": [
-        "Horror"
-    ],
-    "[Chilla's Art] Stigmatized Property": [
-        "Horror"
-    ],
-    "[Chilla's Art] The Caregiver": [
-        "Horror"
-    ],
-    "[Chilla's Art] Night Delivery": [
-        "Horror"
-    ],
-    "[Chilla's Art] The Convenience Store": [
-        "Horror"
-    ],
-    "[Chilla's Art] Parasocial": [
-        "Horror"
-    ],
-    "[Chilla's Art] The Karaoke": [
-        "Horror"
-    ],
-    "[Chilla's Art] The Kidnap": [
-        "Horror"
-    ],
-    "[Chilla's Art] The Bathhouse": [
-        "Horror"
-    ],
-    "[Chilla's Art] Shinkansen 0": [
-        "Horror"
-    ],
-    "[Chilla's Art] Cursed Digicam": [
-        "Horror"
+        "FPS",
+        "Sci-fi",
+        "Shoot 'em up",
+        "Survival horror"
     ],
     "Bad Dream: Bridge": [
         "Adventure",
@@ -286,6 +74,43 @@
         "Fighting",
         "Platformer"
     ],
+    "Beholder (Beta)": [
+        "Adventure",
+        "Life simulation",
+        "Logic",
+        "Puzzle",
+        "Quest",
+        "RPG",
+        "Stealth",
+        "Strategy"
+    ],
+    "Berzerk Ball 2": [
+        "Action",
+        "Arcade"
+    ],
+    "Blues and Bullets: Episode 1": [
+        "Action-adventure",
+        "Quest",
+        "Third-person"
+    ],
+    "Blues and Bullets: Episode 2 (DLC)": [
+        "Action-adventure",
+        "Quest",
+        "Third-person"
+    ],
+    "Cat Mario": [
+        "Adventure",
+        "Arcade",
+        "Platformer"
+    ],
+    "Chernobyl Liquidators": [
+        "First-person",
+        "Simulation",
+        "Survival"
+    ],
+    "Circuit Scramble": [
+        "Puzzle"
+    ],
     "Costume Quest: Grubbins on Ice Part": [
         "Action-adventure",
         "Action/RPG",
@@ -296,17 +121,110 @@
         "TBS",
         "Third-person"
     ],
+    "D4: Dark Dreams Don't Die -Season One-": [
+        "Adventure",
+        "Casual"
+    ],
+    "Death Must Die v0.7": [
+        "Action/RPG",
+        "Casual",
+        "Fantasy",
+        "Isometric",
+        "Roguelike"
+    ],
+    "Disney's Action Game Featuring Hercules": [
+        "Action",
+        "Arcade",
+        "Platformer"
+    ],
+    "Disney's Story Studio: Mulan": [
+        "Adventure"
+    ],
+    "Don't Look Back (Terry Cavanagh)": [
+        "Action",
+        "Platformer"
+    ],
     "Doom II: Hell on Earth": [
         "Action-adventure",
         "Arcade",
         "FPS",
         "Shoot 'em up"
     ],
+    "Down Stairs": [
+        "Action-adventure",
+        "Roguelike"
+    ],
+    "Dracula: The Ressurection": [
+        "Adventure",
+        "Horror",
+        "Point-and-click"
+    ],
     "Draw a Stickman: Episode 1": [
         "Adventure"
     ],
     "Draw a Stickman: Episode 2": [
         "Adventure"
+    ],
+    "Escape Ghost Villa": [
+        "Adventure",
+        "Horror",
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Escape the Bunker: 1944": [
+        "Adventure",
+        "Puzzle",
+        "Survival horror"
+    ],
+    "Escape the Room Zombies": [
+        "Adventure",
+        "Horror",
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Failman": [
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Final Fantasy III (Remake)": [
+        "Adventure",
+        "Arcade",
+        "Fantasy",
+        "JRPG",
+        "RPG",
+        "TBS"
+    ],
+    "Final Fantasy IV (Remake)": [
+        "Adventure",
+        "Casual",
+        "Fantasy",
+        "JRPG",
+        "RPG",
+        "TBS"
+    ],
+    "Final Fantasy IV: The After Years (Remake)": [
+        "Adventure",
+        "Casual",
+        "Fantasy",
+        "JRPG",
+        "RPG",
+        "TBS"
+    ],
+    "Five Nights at Freddy's 3D": [
+        "Point-and-click",
+        "Simulation",
+        "Survival horror"
+    ],
+    "Five Nights in Anime v3": [
+        "Point-and-click",
+        "Simulation",
+        "Survival horror"
+    ],
+    "Grim Tales 9: Threads Of Destiny (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Hidden object",
+        "Puzzle"
     ],
     "Half-Life: Paranoia": [
         "Action",
@@ -320,10 +238,39 @@
         "FPS",
         "Sci-fi"
     ],
+    "Halloween Stories: Invitation (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Hidden object",
+        "Puzzle"
+    ],
+    "Heavy Metal: F.A.K.K.²": [
+        "Action-adventure",
+        "Hack and slash",
+        "TPS"
+    ],
+    "Heavy Rain Chronicles: Episode One - The Taxidermist": [
+        "Action-adventure"
+    ],
+    "Joker Show": [
+        "Action-adventure",
+        "Survival horror"
+    ],
+    "Life After Us: Shipwrecked": [
+        "Adventure",
+        "Horror"
+    ],
+    "Love Is Strange (DEMO)": [
+        "Visual novel"
+    ],
     "Madagascar 2: Escape Africa": [
         "Action-adventure",
         "Arcade",
         "Platformer"
+    ],
+    "Magic Rune Stone v0.9.20": [
+        "Action-adventure",
+        "Roguelike"
     ],
     "Mass Effect 2: Legendary Edition": [
         "Action/RPG",
@@ -337,7 +284,274 @@
         "Shoot 'em up",
         "TPS"
     ],
+    "Mickey Mania - Timeless Adventures of Mickey Mouse": [
+        "Action",
+        "Platformer"
+    ],
+    "Mortal Kombat IX": [
+        "2D",
+        "Action",
+        "Arcade",
+        "Fighting"
+    ],
+    "Nevertales 8: The Abomination (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Hidden object",
+        "Puzzle"
+    ],
+    "Nightmares from the Deep 2: The Sirens Call (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Hidden object",
+        "Puzzle"
+    ],
+    "Nightmares from the Deep 3: Davy Jones (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Hidden object",
+        "Puzzle"
+    ],
+    "Nox Timore": [
+        "Horror"
+    ],
+    "Obscure II: The Aftermath": [
+        "Action-adventure",
+        "Action/RPG",
+        "Survival horror",
+        "Third-person"
+    ],
+    "One Hand Clapping (DEMO)": [
+        "Adventure",
+        "Platformer",
+        "Puzzle"
+    ],
+    "P.T. (Silent Hills)": [
+        "Horror",
+        "Puzzle"
+    ],
+    "Paranormal Files: Chaos Weekend (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Hidden object",
+        "Puzzle"
+    ],
+    "Paranormal Files: Counterpart (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Hidden object",
+        "Puzzle"
+    ],
+    "Paranormal Files: Sacrifice to Shadows (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Hidden object",
+        "Puzzle"
+    ],
+    "Paranormal Files: The Trap of Truth (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Hidden object",
+        "Puzzle"
+    ],
+    "Pizza Delivery 2": [
+        "Adventure",
+        "Horror"
+    ],
+    "Pluviophile": [
+        "Adventure",
+        "Simulation"
+    ],
+    "Project Zero II: Crimson Butterfly": [
+        "Adventure",
+        "Survival horror"
+    ],
+    "Resident Evil / Biohazard HD REMASTER": [
+        "Action-adventure",
+        "Zombie"
+    ],
+    "Resident Evil 0 / Biohazard 0 HD REMASTER": [
+        "Action-adventure",
+        "Zombie"
+    ],
+    "Resident Evil 2 / Biohazard RE:2": [
+        "Action",
+        "Horror",
+        "Zombie"
+    ],
+    "Resident Evil 2 / Biohazard RE:2: The 4th Survivor (DLC)": [
+        "Action",
+        "Horror",
+        "Zombie"
+    ],
+    "Resident Evil 2 / Biohazard RE:2: The Ghost Survivors (DLC)": [
+        "Action",
+        "Horror",
+        "Zombie"
+    ],
+    "Resident Evil 2 Remake / Biohazard RE:2": [
+        "Action-adventure",
+        "Survival horror",
+        "Zombie",
+        "Puzzle",
+        "Shoot 'em up",
+        "Third-person"
+    ],
+    "Resident Evil 2 Remake / Biohazard RE:2 - The 4th Survivor (DLC)": [
+        "Action-adventure",
+        "Survival horror",
+        "Zombie",
+        "Puzzle",
+        "Shoot 'em up",
+        "Third-person"
+    ],
+    "Resident Evil 2 Remake / Biohazard RE:2 - The Ghost Survivors (DLC)": [
+        "Action-adventure",
+        "Survival horror",
+        "Zombie",
+        "Puzzle",
+        "Shoot 'em up",
+        "Third-person"
+    ],
+    "Resident Evil 4 (2023)": [
+        "Action-adventure",
+        "Survival horror",
+        "TPS",
+        "Zombie"
+    ],
+    "Resident Evil 6": [
+        "Action-adventure",
+        "Survival horror",
+        "TPS",
+        "Zombie"
+    ],
+    "Resident Evil 7: Biohazard": [
+        "Action-adventure",
+        "FPS",
+        "Survival horror",
+        "Zombie"
+    ],
+    "Resident Evil 9: Requiem": [
+        "Action-adventure",
+        "FPS",
+        "Survival horror",
+        "TPS"
+    ],
     "Sable Maze: Forbidden Garden (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Sable Maze: Nightmare Shadows (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Sable Maze: Norwich Caves (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Sable Maze: Sinister Knowledge (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Sable Maze: Soul Catcher (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Sable Maze: Sullivan River (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Sable Maze: Twelve Fears (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Sacred 2: Fallen Angel (Ice & Blood)": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Isometric",
+        "Open world",
+        "Third-person"
+    ],
+    "Saga of the Nine Worlds: The Four Stags (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Saga of the Nine Worlds: The Gathering (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Saga of the Nine Worlds: The Hunt (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Serious Sam: Greek Encounter": [
+        "Action",
+        "Arcade",
+        "Shooter"
+    ],
+    "Silence on The Line": [
+        "Adventure",
+        "Horror"
+    ],
+    "Silent Hill: Alchemilla": [
+        "Action-adventure",
+        "Survival horror",
+        "TPS"
+    ],
+    "Silent Hill: Alchemilla (MOD)": [
+        "Action-adventure",
+        "Survival horror",
+        "TPS"
+    ],
+    "Slap-Man": [
+        "Action",
+        "Arcade",
+        "Casual"
+    ],
+    "Slay Bells": [
+        "Action",
+        "Stealth",
+        "Survival horror"
+    ],
+    "Spirits of Mystery: Amber Maiden (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Spirits of Mystery: Chains of Promise (Collector's Edition)": [
         "Adventure",
         "Casual",
         "Puzzle",
@@ -372,6 +586,27 @@
         "Hidden object",
         "Point-and-click"
     ],
+    "Spirits of Mystery: The Fifth Kingdom (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Spirits of Mystery: The Last Fire Queen (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
+    "Spirits of Mystery: The Lost Queen (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
+    ],
     "Spirits of Mystery: The Moon Crystal (Collector's Edition)": [
         "Adventure",
         "Casual",
@@ -386,59 +621,233 @@
         "Hidden object",
         "Point-and-click"
     ],
-    "Resident Evil / Biohazard HD REMASTER": [
-        "Action-adventure",
-        "Zombie"
+    "Spirits of Mystery: Whisper of the Past (Collector's Edition)": [
+        "Adventure",
+        "Casual",
+        "Puzzle",
+        "Hidden object",
+        "Point-and-click"
     ],
-    "Resident Evil 0 / Biohazard 0 HD REMASTER": [
-        "Action-adventure",
-        "Zombie"
-    ],
-    "Resident Evil 2 / Biohazard RE:2": [
-        "Action",
-        "Horror",
-        "Zombie"
-    ],
-    "Resident Evil 2 / Biohazard RE:2: The 4th Survivor (DLC)": [
-        "Action",
-        "Horror",
-        "Zombie"
-    ],
-    "Resident Evil 2 / Biohazard RE:2: The Ghost Survivors (DLC)": [
-        "Action",
-        "Horror",
-        "Zombie"
-    ],
-    "Resident Evil 6": [
-        "Action-adventure",
-        "Survival horror",
-        "TPS",
-        "Zombie"
-    ],
-    "Resident Evil 7: Biohazard": [
+    "The Chronicles of Riddick: Escape from Butcher Bay (2009)": [
         "Action-adventure",
         "FPS",
-        "Survival horror",
-        "Zombie"
+        "Stealth"
     ],
-    "Resident Evil 4 (2023)": [
+    "The Lion King 2": [
+        "Action",
+        "Platformer"
+    ],
+    "The Mask Man": [
         "Action-adventure",
-        "Survival horror",
-        "TPS",
-        "Zombie"
+        "Horror"
     ],
-    "Spirits of Mystery: Amber Maiden (Collector's Edition)": [
-        "Adventure",
-        "Casual",
+    "The Nun": [
         "Puzzle",
-        "Hidden object",
+        "Stealth",
+        "Survival horror"
+    ],
+    "The Slippery Slope": [
+        "Adventure"
+    ],
+    "The Walking Dead: Season One": [
+        "Adventure",
+        "Movie",
         "Point-and-click"
     ],
-    "Spirits of Mystery: Chains of Promise (Collector's Edition)": [
+    "Trollface Quest": [
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Trollface Quest 2": [
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Trollface Quest 3": [
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Trollface Quest 4": [
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Trollface Quest 5": [
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Trollface Quest 6": [
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Trollface Quest 7": [
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Turok: Dinosaur Hunter - Remastered": [
+        "Action-adventure",
+        "FPS"
+    ],
+    "V.I.P. with Pam Anderson": [
+        "Action-adventure",
+        "TPS"
+    ],
+    "Whack The Thief": [
+        "Action",
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Whack Your Boss": [
+        "Action",
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Whack Your Neighbour": [
+        "Action",
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "Whack Your Teacher": [
+        "Action",
+        "Point-and-click",
+        "Puzzle"
+    ],
+    "WorldBox - God Simulator v0.22.9": [
+        "Sandbox",
+        "Simulation",
+        "Strategy"
+    ],
+    "X-Blades / Ониблэйд": [
+        "Action-adventure",
+        "Hack and slash",
+        "TPS"
+    ],
+    "Xlll (2003)": [
+        "Action",
+        "FPS",
+        "Stealth"
+    ],
+    "Yet Another Zombie Survivors v0.6": [
+        "Action",
+        "Roguelike",
+        "Survival"
+    ],
+    "[Chilla's Art] Cursed Digicam": [
+        "Horror"
+    ],
+    "[Chilla's Art] Jisatsu": [
+        "Horror"
+    ],
+    "[Chilla's Art] Night Delivery": [
+        "Horror"
+    ],
+    "[Chilla's Art] Night Security": [
+        "Horror"
+    ],
+    "[Chilla's Art] Parasocial": [
+        "Horror"
+    ],
+    "[Chilla's Art] Shinkansen 0": [
+        "Horror"
+    ],
+    "[Chilla's Art] Stigmatized Property": [
+        "Horror"
+    ],
+    "[Chilla's Art] The Bathhouse": [
+        "Horror"
+    ],
+    "[Chilla's Art] The Caregiver": [
+        "Horror"
+    ],
+    "[Chilla's Art] The Closing Shift": [
+        "Horror"
+    ],
+    "[Chilla's Art] The Convenience Store": [
+        "Horror"
+    ],
+    "[Chilla's Art] The Karaoke": [
+        "Horror"
+    ],
+    "[Chilla's Art] The Kidnap": [
+        "Horror"
+    ],
+    "Вольт / Bolt": [
+        "Action-adventure",
+        "Platformer"
+    ],
+    "Как достать соседа 2: Адские каникулы / Neighbours from Hell 2: On Vacation": [
         "Adventure",
+        "Arcade",
+        "Logic",
+        "Puzzle"
+    ],
+    "Как достать соседа 3: В офисе (2006) / Pranksterz: Off Your Boss": [
+        "Adventure",
+        "Arcade",
+        "Logic",
+        "Puzzle"
+    ],
+    "Как достать соседа: Сладкая месть / Neighbours from Hell: Revenge Is a Sweet": [
+        "Adventure",
+        "Arcade",
+        "Logic",
+        "Puzzle"
+    ],
+    "Как достать соседку: Полный гламур (2009) / Neighbours from Hell: Full Glamor": [
+        "Adventure",
+        "Arcade",
+        "Logic",
+        "Puzzle"
+    ],
+    "Красные Сумерки / Tokoyo no Hoshizora": [
+        "Visual novel"
+    ],
+    "Ледниковый период 2: Глобальное потепление / Ice Age 2: The Meltdown": [
+        "Action-adventure",
+        "Platformer"
+    ],
+    "Ледниковый период 3: Эра динозавров / Ice Age 3: Dawn of the Dinosaurs": [
+        "Action-adventure",
+        "Platformer"
+    ],
+    "Лесная братва / Over the Hedge": [
+        "Action-adventure",
+        "Platformer"
+    ],
+    "Мемасики": [
         "Casual",
-        "Puzzle",
-        "Hidden object",
-        "Point-and-click"
+        "Puzzle"
+    ],
+    "Предатор": [
+        "Action-adventure",
+        "Survival horror"
+    ],
+    "Рапунцель: Запутанная история / Disney Tangled": [
+        "Action-adventure",
+        "Platformer"
+    ],
+    "Сезон охоты / Open Season": [
+        "Action-adventure",
+        "Platformer"
+    ],
+    "Стоп-Гоп": [
+        "Action",
+        "Arcade",
+        "Casual"
+    ],
+    "Стоп-Гоп 2": [
+        "Action",
+        "Arcade",
+        "Casual"
+    ],
+    "Трудно Быть Богом / Hard to Be a God": [
+        "Action/RPG",
+        "Hack and slash"
+    ],
+    "Хоббит: Предыстория саги Властелин колец / The Hobbit": [
+        "Action-adventure",
+        "Platformer"
+    ],
+    "Храбрая сердцем / Brave": [
+        "Action-adventure",
+        "Platformer"
     ]
 }
