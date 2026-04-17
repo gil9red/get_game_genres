@@ -4,15 +4,13 @@
 __author__ = "ipetrash"
 
 
-import shutil
 import re
 
 from pathlib import Path
 
-from common import get_current_datetime_str, load_json, save_json, get_logger
+from common import load_json, save_json, get_logger
 from db import Dump, Game
 from genre_translate_file.load import FILE_NAME_GENRE_TRANSLATE
-
 
 log = get_logger("generate_games.txt")
 
@@ -21,9 +19,6 @@ DIR = Path(__file__).parent.resolve()
 
 FILE_NAME_GAMES = DIR / "game_by_genres.json"
 FILE_NAME_GAMES_HARDCORED = DIR / "game_by_genres__hardcored.json"
-
-FILE_NAME_BACKUP = DIR / "backup"
-FILE_NAME_BACKUP.mkdir(parents=True, exist_ok=True)
 
 # Example: "Action", "Adventure" -> "Action-adventure"
 GENRE_COMPRESSION = [
@@ -68,9 +63,7 @@ def remove_partial_duplicates(genres: list[str], need_log: bool = True) -> list[
     words_by_complex_genre: dict[tuple[str], str] = dict()
     for genre in genres:
         words: list[str] = [
-            word.lower()
-            for word in map(str.strip, re.split(r"\W", genre))
-            if word
+            word.lower() for word in map(str.strip, re.split(r"\W", genre)) if word
         ]
         if len(words) > 1:
             words_by_complex_genre[tuple(words)] = genre
@@ -97,9 +90,7 @@ def fill_dlc(game_by_genres: dict) -> None:
     log.info("Заполнение DLC игр")
 
     not_defined_dlc: list[str] = [
-        name
-        for name, genres in game_by_genres.items()
-        if re.search(r"\(\w+\)", name)
+        name for name, genres in game_by_genres.items() if re.search(r"\(\w+\)", name)
     ]
     log.info(f"Не имеют жанры: {len(not_defined_dlc)}")
 
@@ -119,7 +110,7 @@ def fill_dlc(game_by_genres: dict) -> None:
         if variants:
             # Выбираем игры с наибольшим количеством символов
             name = max(variants, key=len)
-            log.info(f'{name}\n{name_dlc}\n')
+            log.info(f"{name}\n{name_dlc}\n")
 
             game_by_genres[name_dlc] = game_by_genres[name]
 
@@ -129,14 +120,6 @@ def run() -> None:
 
     game_by_genres_hardcored: dict = load_json(FILE_NAME_GAMES_HARDCORED)
     log.info(f"Явно заданные игры из файла: {len(game_by_genres_hardcored)}")
-
-    if FILE_NAME_GAMES.exists():
-        backup_file_name = str(
-            FILE_NAME_BACKUP / f"{get_current_datetime_str()}_{FILE_NAME_GAMES.name}"
-        )
-        shutil.copy(FILE_NAME_GAMES, backup_file_name)
-        log.info(f"Сохранение бекапа в: {backup_file_name}")
-        log.info("")
 
     log.info("Загрузка кэша...")
 
@@ -185,7 +168,9 @@ def run() -> None:
             log.info(f"Завершение трансляции жанров ({len(new_genres)}): {new_genres}")
         else:
             new_genres: list[str] = game_by_genres_hardcored[game]
-            log.info(f"Жанры из явно заданного списка ({len(new_genres)}): {new_genres}")
+            log.info(
+                f"Жанры из явно заданного списка ({len(new_genres)}): {new_genres}"
+            )
 
         if game_by_genres.get(game) != new_genres:
             updated += 1
