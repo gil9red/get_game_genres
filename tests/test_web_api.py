@@ -11,8 +11,8 @@ from urllib.parse import quote
 
 import requests
 
-from config import PORT
-from db import Game, Genre
+from get_game_genres.config import PORT
+from get_game_genres.db import Game, Genre
 
 
 URL_BASE = f"http://127.0.0.1:{PORT}"
