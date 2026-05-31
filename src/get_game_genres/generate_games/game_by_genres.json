@@ -354,6 +354,10 @@
         "Sci-fi",
         "Shoot 'em up"
     ],
+    "All Hail the Orb": [
+        "Casual",
+        "Simulation"
+    ],
     "Almost My Floor": [
         "Adventure",
         "Horror",
@@ -550,6 +554,12 @@
         "Point-and-click",
         "Puzzle",
         "Quest"
+    ],
+    "Antro": [
+        "Action-adventure",
+        "Arcade",
+        "Logic",
+        "Platformer"
     ],
     "Apartament 1406: Horror": [
         "Action-adventure",
@@ -748,6 +758,14 @@
         "Sci-fi",
         "Stealth"
     ],
+    "Atomic Heart: Кровь на Хрустале (DLC)": [
+        "Action-adventure",
+        "FPS",
+        "Horror",
+        "Robot war",
+        "Sci-fi",
+        "Stealth"
+    ],
     "Atomic Heart: Узник Лимбо (DLC)": [
         "Action-adventure",
         "FPS",
@@ -775,6 +793,14 @@
         "Shoot 'em up",
         "Simulation",
         "TPS"
+    ],
+    "BABBDI": [
+        "Adventure",
+        "Casual",
+        "Comedy",
+        "First-person",
+        "Horror",
+        "Simulation"
     ],
     "BALL x PIT": [
         "2D",
@@ -3560,6 +3586,11 @@
         "Puzzle",
         "Quest"
     ],
+    "Doom (2016)": [
+        "Action",
+        "FPS",
+        "Sci-fi"
+    ],
     "Doom 3": [
         "Action",
         "Arcade",
@@ -3597,11 +3628,24 @@
         "Horror",
         "Shoot 'em up"
     ],
+    "Doom Eternal": [
+        "Action-adventure",
+        "FPS",
+        "Fantasy",
+        "Horror",
+        "Sci-fi"
+    ],
     "Doom II: Hell on Earth": [
         "Action-adventure",
         "Arcade",
         "FPS",
         "Shoot 'em up"
+    ],
+    "Doom: The Dark Ages": [
+        "Action-adventure",
+        "FPS",
+        "Fantasy",
+        "Sci-fi"
     ],
     "Door Game Deluxe": [
         "RPG"
@@ -3784,6 +3828,13 @@
         "RPG",
         "TPS",
         "Western"
+    ],
+    "Draugen": [
+        "Action-adventure",
+        "FPS",
+        "Puzzle",
+        "Quest",
+        "Survival horror"
     ],
     "Draw a Stickman: Episode 1": [
         "Adventure"
@@ -5539,6 +5590,14 @@
         "Casual",
         "Hidden object",
         "Puzzle"
+    ],
+    "Grind Survivors": [
+        "Action/RPG",
+        "Arcade",
+        "Isometric",
+        "Roguelike",
+        "Shooter",
+        "Survival"
     ],
     "Gris": [
         "Action-adventure",
@@ -7359,6 +7418,19 @@
         "TBS",
         "Third-person"
     ],
+    "Lunistice": [
+        "Action-adventure",
+        "Arcade",
+        "Platformer",
+        "Third-person"
+    ],
+    "Lyca": [
+        "Arcade",
+        "Casual",
+        "Isometric",
+        "Simulation",
+        "Strategy"
+    ],
     "MANDAGON": [
         "Adventure",
         "Arcade",
@@ -7395,6 +7467,15 @@
         "Action",
         "FPS",
         "Sci-fi"
+    ],
+    "MOTORSLICE": [
+        "Action-adventure",
+        "Beat 'em up",
+        "Hack and slash",
+        "Platformer",
+        "Post apocalypse",
+        "Sci-fi",
+        "Third-person"
     ],
     "Machick": [
         "2D",
@@ -7805,6 +7886,15 @@
         "Platformer",
         "Third-person"
     ],
+    "Megabonk": [
+        "Action",
+        "Casual",
+        "Fantasy",
+        "Hack and slash",
+        "Roguelike",
+        "Survival",
+        "TPS"
+    ],
     "Men in Black: The Series - Crashdown": [
         "Action",
         "FPS",
@@ -8133,6 +8223,13 @@
         "Survival horror",
         "Zombie"
     ],
+    "Mixtape": [
+        "Adventure",
+        "Casual",
+        "Platformer",
+        "Quest",
+        "Third-person"
+    ],
     "Monkey Island 2 Special Edition: LeChuck's Revenge": [
         "Action-adventure",
         "Humor",
@@ -8158,6 +8255,10 @@
         "Fantasy",
         "Open world",
         "Third-person"
+    ],
+    "Monsters are Coming!": [
+        "Action",
+        "Strategy"
     ],
     "Monsters, Inc. Scream Team": [
         "Action",
@@ -8271,6 +8372,11 @@
         "Arcade",
         "Simulation",
         "Sport"
+    ],
+    "Mouse P.I. For Hire / Частный детектив МАУС": [
+        "Action",
+        "FPS",
+        "Retro"
     ],
     "Mouthwashing": [
         "Action-adventure",
@@ -8637,6 +8743,12 @@
     ],
     "Nox Timore": [
         "Horror"
+    ],
+    "Nuclear Blaze": [
+        "Action-adventure",
+        "Arcade",
+        "Platformer",
+        "Survival"
     ],
     "Nunholy": [
         "Action/RPG",
@@ -9857,6 +9969,12 @@
         "Shoot 'em up",
         "Shooter"
     ],
+    "Rental": [
+        "Action-adventure",
+        "Horror",
+        "Retro",
+        "Third-person"
+    ],
     "Republique Remastered": [
         "Action-adventure",
         "Cyberpunk",
@@ -10269,6 +10387,16 @@
         "Strategy",
         "TPS"
     ],
+    "Rogue: Genesia": [
+        "Action/RPG",
+        "Arcade",
+        "Casual",
+        "Fantasy",
+        "Isometric",
+        "Roguelike",
+        "Strategy",
+        "Survival"
+    ],
     "RollerCoaster Legends": [
         "Adventure",
         "Arcade"
@@ -10279,6 +10407,13 @@
         "First-person",
         "Horror",
         "Simulation"
+    ],
+    "Royal Revolt Survivors": [
+        "Action-adventure",
+        "Action/RPG",
+        "Casual",
+        "Hack and slash",
+        "Survival"
     ],
     "Runic Rampage": [
         "Action-adventure",
@@ -10820,6 +10955,18 @@
         "Fantasy",
         "Platformer"
     ],
+    "Shard Squad": [
+        "Action-adventure",
+        "Casual",
+        "Fantasy",
+        "Roguelike"
+    ],
+    "Sheepy: A Short Adventure": [
+        "Adventure",
+        "Casual",
+        "Fantasy",
+        "Platformer"
+    ],
     "Sherlock Holmes versus Jack the Ripper": [
         "Adventure",
         "RPG"
@@ -10939,6 +11086,11 @@
         "Survival horror",
         "Third-person"
     ],
+    "Silent Hill f": [
+        "Action-adventure",
+        "Survival horror",
+        "Third-person"
+    ],
     "Silent Hill: Alchemilla": [
         "Action-adventure",
         "Survival horror",
@@ -10976,6 +11128,10 @@
         "Survival horror",
         "Third-person"
     ],
+    "Silly Survivors": [
+        "Action",
+        "Casual"
+    ],
     "Silverfall": [
         "Action-adventure",
         "Action/RPG"
@@ -11003,6 +11159,14 @@
         "Horror",
         "Sci-fi",
         "Shoot 'em up"
+    ],
+    "Skull Horde": [
+        "Action-adventure",
+        "Casual",
+        "Dungeon",
+        "Fantasy",
+        "Isometric",
+        "Strategy"
     ],
     "Skyhill": [
         "Action-adventure",
@@ -11954,6 +12118,13 @@
         "Isometric",
         "JRPG"
     ],
+    "Tales of Symphonia": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "JRPG",
+        "Third-person"
+    ],
     "Tales of Vesperia": [
         "Action/RPG",
         "Fantasy",
@@ -12024,6 +12195,13 @@
         "Beat 'em up",
         "Fighting",
         "Sport"
+    ],
+    "Temtem: Swarm": [
+        "Action/RPG",
+        "Beat 'em up",
+        "Casual",
+        "Hack and slash",
+        "Isometric"
     ],
     "Tenchu 2: Birth of the Stealth Assassins": [
         "Action-adventure",
@@ -12139,6 +12317,17 @@
         "Strategy",
         "TPS"
     ],
+    "The Alters": [
+        "Action-adventure",
+        "Crafting",
+        "Isometric",
+        "Management",
+        "Sci-fi",
+        "Simulation",
+        "Strategy",
+        "Survival",
+        "Third-person"
+    ],
     "The Banner Saga": [
         "RPG",
         "TBS",
@@ -12210,6 +12399,12 @@
         "Stealth",
         "Survival horror",
         "Third-person"
+    ],
+    "The Caribou Trail": [
+        "Action-adventure",
+        "Casual",
+        "First-person",
+        "Wargame"
     ],
     "The Casting of Frank Stone": [
         "Action-adventure",
@@ -12791,6 +12986,14 @@
         "Sci-fi",
         "Space"
     ],
+    "The Plan": [
+        "Adventure",
+        "Arcade",
+        "Casual",
+        "Music",
+        "Platformer",
+        "Simulation"
+    ],
     "The Plucky Squire": [
         "Action-adventure",
         "Arcade",
@@ -13234,6 +13437,10 @@
         "Puzzle",
         "Shoot 'em up",
         "TPS"
+    ],
+    "Tomba! Special Edition": [
+        "Action",
+        "Platformer"
     ],
     "Tonight We Riot": [
         "Action",
@@ -13729,6 +13936,14 @@
         "Point-and-click",
         "Puzzle",
         "Quest"
+    ],
+    "Vampire Crawlers: The Turbo Wildcard from Vampire Survivors": [
+        "Action/RPG",
+        "Cardgame",
+        "Fantasy",
+        "First-person",
+        "Roguelike",
+        "TBS"
     ],
     "Vampire Survivors": [
         "Action/RPG",
@@ -14665,6 +14880,7 @@
         "Action-adventure",
         "Platformer"
     ],
+    "Симбионт / MorphX": [],
     "Стоп-Гоп": [
         "Action",
         "Arcade",
