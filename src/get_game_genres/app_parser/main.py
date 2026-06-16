@@ -108,7 +108,7 @@ def run_parser(parser: BaseParser, games: list[str], max_num_request: int = 5) -
                         )
                         if num_request >= max_num_request:
                             text: str = (
-                                f"Попытки закончились для {game_name!r} ({site_name})"
+                                f"Попытки закончились для поиска {game_name!r} ({site_name})"
                             )
                             log.info(f"#{number}. {text}")
 
