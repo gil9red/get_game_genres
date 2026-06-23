@@ -1824,6 +1824,11 @@
         "Action-adventure",
         "Survival"
     ],
+    "CBT With Yuuka Kazami / КПТ с Юкой Казами": [
+        "Adventure",
+        "Casual",
+        "Visual novel"
+    ],
     "CRABS MUST DIE!": [
         "Action-adventure",
         "Action/RPG",
@@ -2990,6 +2995,12 @@
         "Survival horror",
         "TPS"
     ],
+    "Dead Space (2023)": [
+        "Action-adventure",
+        "Horror",
+        "Sci-fi",
+        "TPS"
+    ],
     "Dead Space 2": [
         "Action-adventure",
         "Arcade",
@@ -3846,6 +3857,11 @@
         "Action-adventure",
         "Survival horror",
         "Third-person"
+    ],
+    "Dreamcore: Rabbit Hole": [
+        "Adventure",
+        "First-person",
+        "Simulation"
     ],
     "Dreamless": [
         "Action-adventure",
@@ -6117,6 +6133,21 @@
         "Humor",
         "Sci-fi"
     ],
+    "Hive Jump 2: Survivors": [
+        "Action/RPG",
+        "Casual",
+        "Roguelike",
+        "Sci-fi",
+        "Shooter"
+    ],
+    "Hobby Horse": [
+        "Action-adventure",
+        "Casual",
+        "First-person",
+        "Racing",
+        "Simulation",
+        "Sport"
+    ],
     "Hogs of War": [
         "Action",
         "Humor",
@@ -7150,6 +7181,14 @@
         "Sci-fi",
         "Third-person"
     ],
+    "Let Them Come: Onslaught": [
+        "Action",
+        "Isometric",
+        "Roguelike",
+        "Sci-fi",
+        "Shooter",
+        "Survival"
+    ],
     "Life After Us: Shipwrecked": [
         "Adventure",
         "Horror"
@@ -7281,6 +7320,12 @@
         "Platformer",
         "Puzzle",
         "Stealth"
+    ],
+    "Little Witch Survivors / Выжившие ведьмы": [
+        "Action-adventure",
+        "Action/RPG",
+        "Casual",
+        "Strategy"
     ],
     "Live A Live": [
         "Adventure",
@@ -8410,6 +8455,10 @@
         "Adventure",
         "Casual"
     ],
+    "Ms. Holmes: The Milverton Plot (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
     "Ms. Holmes: The Monster of the Baskervilles (Collector's Edition)": [
         "Adventure",
         "Casual"
@@ -9349,6 +9398,13 @@
         "Hack and slash",
         "Quest",
         "Third-person"
+    ],
+    "Pixel Survivors: Roguelike": [
+        "Action-adventure",
+        "Action/RPG",
+        "Casual",
+        "Isometric",
+        "Strategy"
     ],
     "Pizza Delivery 2": [
         "Adventure",
@@ -13438,6 +13494,13 @@
         "Shoot 'em up",
         "TPS"
     ],
+    "Tomba! 2: The Evil Swine Return Special Edition": [
+        "Action-adventure",
+        "Comedy",
+        "Fantasy",
+        "Platformer",
+        "Third-person"
+    ],
     "Tomba! Special Edition": [
         "Action",
         "Platformer"
@@ -13551,6 +13614,9 @@
         "FPS",
         "Horror"
     ],
+    "Tri Survive": [
+        "Action/RPG"
+    ],
     "Trials Evolution": [
         "Arcade",
         "Logic",
@@ -13615,6 +13681,9 @@
         "Fantasy",
         "Platformer",
         "Puzzle"
+    ],
+    "Trinity Survivors": [
+        "Action/RPG"
     ],
     "Troll Tale": [
         "Puzzle"
@@ -14066,6 +14135,14 @@
     "Viscera Cleanup Detail: Shadow Warrior": [
         "Action",
         "Simulation"
+    ],
+    "Vital Shell": [
+        "Action/RPG",
+        "Isometric",
+        "Robot war",
+        "Roguelike",
+        "Sci-fi",
+        "Shooter"
     ],
     "Vladik Brutal": [
         "Action-adventure",
@@ -14880,7 +14957,14 @@
         "Action-adventure",
         "Platformer"
     ],
-    "Симбионт / MorphX": [],
+    "Симбионт / MorphX": [
+        "Beat 'em up",
+        "Hack and slash",
+        "Horror",
+        "Sci-fi",
+        "TBS",
+        "TPS"
+    ],
     "Стоп-Гоп": [
         "Action",
         "Arcade",
