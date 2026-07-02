@@ -827,6 +827,10 @@
         "First-person",
         "Simulation"
     ],
+    "BRUTUS MAXIMUS": [
+        "Action-adventure",
+        "Action/RPG"
+    ],
     "Back": [
         "Adventure",
         "RPG",
@@ -2143,6 +2147,10 @@
         "Action/RPG"
     ],
     "Cat Quest III": [
+        "Action-adventure",
+        "Action/RPG"
+    ],
+    "Catjinni Survivors": [
         "Action-adventure",
         "Action/RPG"
     ],
@@ -5742,6 +5750,11 @@
         "Sci-fi",
         "Shoot 'em up"
     ],
+    "Half-Life 2 RTX (DEMO)": [
+        "Action-adventure",
+        "FPS",
+        "Sci-fi"
+    ],
     "Half-Life 2: Episode One": [
         "Action",
         "Arcade",
@@ -8447,6 +8460,10 @@
         "Adventure",
         "Casual"
     ],
+    "Ms. Holmes: Letter M (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
     "Ms. Holmes: The Adventure of the McKirk Ritual (Collector's Edition)": [
         "Adventure",
         "Casual"
@@ -8455,6 +8472,7 @@
         "Adventure",
         "Casual"
     ],
+    "Ms. Holmes: The Death of Peter Blackheart (Collector's Edition)": [],
     "Ms. Holmes: The Milverton Plot (Collector's Edition)": [
         "Adventure",
         "Casual"

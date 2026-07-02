@@ -231,6 +231,11 @@
         "Hidden object",
         "Puzzle"
     ],
+    "Half-Life 2 RTX (DEMO)": [
+        "Action-adventure",
+        "FPS",
+        "Sci-fi"
+    ],
     "Half-Life: Paranoia": [
         "Action",
         "Arcade",
@@ -309,6 +314,10 @@
         "Action",
         "FPS",
         "Retro"
+    ],
+    "Ms. Holmes: The Death of Peter Blackheart (Collector's Edition)": [
+        "Adventure",
+        "Casual"
     ],
     "Nevertales 8: The Abomination (Collector's Edition)": [
         "Adventure",
