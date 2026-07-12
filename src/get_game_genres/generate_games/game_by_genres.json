@@ -626,6 +626,13 @@
         "Adventure",
         "First-person"
     ],
+    "Artifact Seeker: Resurrection": [
+        "Action-adventure",
+        "Action/RPG",
+        "Fantasy",
+        "Isometric",
+        "Survival"
+    ],
     "As Long As You're Here": [
         "Adventure",
         "First-person",
@@ -5297,6 +5304,12 @@
         "Horror",
         "Puzzle"
     ],
+    "Gatekeeper": [
+        "Action-adventure",
+        "Isometric",
+        "Roguelike",
+        "TPS"
+    ],
     "Gears 5": [
         "Action-adventure",
         "Sci-fi",
@@ -5773,6 +5786,14 @@
         "Shoot 'em up"
     ],
     "Half-Life 2: Lost Coast (MOD)": [
+        "Action-adventure",
+        "Arcade",
+        "FPS",
+        "Puzzle",
+        "Sci-fi",
+        "Shoot 'em up"
+    ],
+    "Half-Life 2: Synergy (MOD)": [
         "Action-adventure",
         "Arcade",
         "FPS",
@@ -8472,7 +8493,10 @@
         "Adventure",
         "Casual"
     ],
-    "Ms. Holmes: The Death of Peter Blackheart (Collector's Edition)": [],
+    "Ms. Holmes: The Death of Peter Blackheart (Collector's Edition)": [
+        "Adventure",
+        "Casual"
+    ],
     "Ms. Holmes: The Milverton Plot (Collector's Edition)": [
         "Adventure",
         "Casual"
@@ -9321,6 +9345,14 @@
         "First-person",
         "Horror",
         "Quest"
+    ],
+    "Persona 5 Royal": [
+        "Comedy",
+        "Fantasy",
+        "JRPG",
+        "RPG",
+        "TBS",
+        "Third-person"
     ],
     "Pesadelo: The Beginning": [
         "Action-adventure",
